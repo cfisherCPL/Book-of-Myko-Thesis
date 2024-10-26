@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: f03267dda26574ba0b6a16c2c4cdcd6e
+  - enabled: 1
+    path: Assets/Scenes/Cabin_Interior.unity
+    guid: 1301d171db2394828983da2615c7541d
+  - enabled: 1
+    path: Assets/Scenes/Cabin_Outside.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GrassLands_Outside.unity
+    guid: fdc67dc38328840c6932a6205be5f9f4
+  - enabled: 1
+    path: Assets/Scenes/SodHouse_Interior.unity
+    guid: 95daceeb5b7374af5a8c3965a9978c2a
+  - enabled: 1
+    path: Assets/Scenes/Forest_Outside.unity
+    guid: a25e9baba347e4e33a111e09eefdeff9
+  - enabled: 1
+    path: Assets/Scenes/GigaTree_Interior.unity
+    guid: 968c072c4c9b24af5846cdb24683cf87
+  - enabled: 1
+    path: Assets/Scenes/Mountain_Outside.unity
+    guid: fb940304cef3d449c87c2afb0c8ff3ac
+  - enabled: 1
+    path: Assets/Scenes/Cavern_Interior.unity
+    guid: 3a01f46d88def4d2289177b281bdc4db
+  m_configObjects: {}

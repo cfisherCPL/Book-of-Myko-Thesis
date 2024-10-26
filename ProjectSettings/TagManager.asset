@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Music
+  - Mushroom
+  - MushroomSpawner
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Character
+  - Mushroom
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1429442341
+    locked: 0
+  - name: InvisibleCollision
+    uniqueID: 1550410845
+    locked: 0
+  - name: Collision
+    uniqueID: 1973910895
+    locked: 0
+  - name: WalkOver
+    uniqueID: 1547454641
+    locked: 0
+  - name: Mushrooms
+    uniqueID: 2865164363
+    locked: 0
+  - name: Character
+    uniqueID: 578052715
+    locked: 0
+  - name: WalkUnder
+    uniqueID: 2495096535
+    locked: 0
