@@ -9166,6 +9166,7 @@ GameObject:
   - component: {fileID: 1541608359}
   - component: {fileID: 1541608358}
   - component: {fileID: 1541608357}
+  - component: {fileID: 1541608360}
   m_Layer: 0
   m_Name: spritesheet_0
   m_TagString: Untagged
@@ -9202,7 +9203,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -9275,6 +9276,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1541608360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541608356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654dbb2029218864a84cb1bb0e8f801b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1565922101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5961757818730464296, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
@@ -46338,6 +46351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be24968814e6444a8a303dec0607dc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory:
+    slots: []
 --- !u!114 &8778750225359048706
 MonoBehaviour:
   m_ObjectHideFlags: 3
