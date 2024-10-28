@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
+using System;
 
 public class PickupItem : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class PickupItem : MonoBehaviour
 
     private ScoreManager _scoreController;
     private StaminaManager _staminaController;
+    private bool canPickUp;
+
+    GameObject player;
+    PlayerIsTrigger playerInventory;
 
    private void Awake()
    {
@@ -30,8 +35,14 @@ public class PickupItem : MonoBehaviour
         soundEffect = GetComponent<AudioSource>();
         trigger = GetComponent<Collider2D>();
         popupText.gameObject.SetActive(false);
+        canPickUp = false;
 
-   }
+        //find the player in the scene to make it the target to place the item
+        //make their inventory an object we can place things
+        player = FindObjectOfType<PlayerIsTrigger>().gameObject;
+        playerInventory = player.GetComponent<PlayerIsTrigger>();
+
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -40,21 +51,32 @@ public class PickupItem : MonoBehaviour
         if (player)
         {
             popupText.gameObject.SetActive(true);
-            //soundEffect.Play();
+            canPickUp = true;
+            
+            //manager features and old stamina system are for testing only
             //ScoreManager.Instance.IncreaseScore(pointsPerCollect);
             //StaminaManager.Instance.DecreaseStamina(staminaCost);
             //itemWasTouched.Invoke();
-            //player.inventory.Add(itemType);
-
-            //Destroy(this.gameObject, 0.1f);
         }
-        
+
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
         popupText.gameObject.SetActive(false);
+        canPickUp = false;
     }
+
+    public void Update()
+    {
+        if (canPickUp && Input.GetKeyDown("g"))
+        {
+            soundEffect.Play();
+            playerInventory.inventory.Add(itemType);
+            Destroy(this.gameObject, 0.1f);
+        }
+    }
+
 
 
 }
