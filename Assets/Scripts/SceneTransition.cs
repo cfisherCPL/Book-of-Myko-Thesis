@@ -16,7 +16,13 @@ public class SceneTransition : MonoBehaviour
     public bool showMushroomsCheck;
     public AlreadySpawned mushSpawnTracker;
 
+    GameObject mushSpawnManager;
 
+    private void Awake()
+    {
+        mushSpawnManager = GameObject.Find("Mushroom Spawn Manager");
+        //not working. once set inactive by hidMushroomsCheck, no other method works
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //check to see if going back to the cabin area
@@ -29,10 +35,10 @@ public class SceneTransition : MonoBehaviour
             
             if (clearMushroomsCheck) //works
             {
-                GameObject mushList = GameObject.Find("Mushroom Spawn Manager");
-                if (mushList != null)
+                //GameObject mushList = GameObject.Find("Mushroom Spawn Manager");
+                if (mushSpawnManager != null)
                 {
-                    Destroy(mushList);
+                    Destroy(mushSpawnManager);
                     mushSpawnTracker.alreadySpawned = false;
                     Debug.Log("cleared all mushrooms");
                 }
@@ -41,16 +47,29 @@ public class SceneTransition : MonoBehaviour
             
             else if (hideMushroomsCheck) //works
             {
+                if (mushSpawnManager != null)
+                {
+                    mushSpawnManager.SetActive(false);
+
+                }
+                /* working version
                 GameObject mushList = GameObject.Find("Mushroom Spawn Manager");
                 if (mushList != null)
                 {
                     mushList.SetActive(false);
                     Debug.Log("hid all mushrooms");
                 }
+                */
             }
 
             else if (showMushroomsCheck) //doesnt work due to .find not working for inactive objects
             {
+                if (mushSpawnManager != null)
+                {
+                    mushSpawnManager.SetActive(true);
+
+                }
+                /*
                 GameObject[] spawnManager = Resources.FindObjects
                 GameObject mushList = GameObject.Find("Mushroom Spawn Manager");
                 //GameObject spawnLocations = mushList.transform.GetChild(0).gameObject;
@@ -59,7 +78,7 @@ public class SceneTransition : MonoBehaviour
                     //spawnLocations.SetActive(true);
                     Debug.Log("showed all mushrooms");
                 }
-                
+                */
             }
 
             Debug.Log("Made it past the if-else group");
