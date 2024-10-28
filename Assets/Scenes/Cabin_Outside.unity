@@ -1688,6 +1688,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1803,6 +1804,50 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1001 &576765490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2338,6 +2383,52 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.0871723
+--- !u!1 &709932877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 709932879}
+  - component: {fileID: 709932878}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &709932878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709932877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798f7ec02bccda848bc8649c32bdbdd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+    slots: []
+--- !u!4 &709932879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709932877}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.0064177215, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &711170217
 GameObject:
   m_ObjectHideFlags: 0
@@ -9344,11 +9435,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.013078213, y: 0.12974548}
   m_Size: {x: 0.5261564, y: 2.6268697}
   m_Direction: 0
---- !u!1 &1801331076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5421854357384700396, guid: 8234cd3bc9a0b4be389eb5fa2551c646, type: 3}
-  m_PrefabInstance: {fileID: 3681653493692404864}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1824758157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46006,10 +46092,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5421854357384700396, guid: 8234cd3bc9a0b4be389eb5fa2551c646, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7760688380162339632}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8234cd3bc9a0b4be389eb5fa2551c646, type: 3}
 --- !u!1001 &3822979546998553279
 PrefabInstance:
@@ -46292,20 +46375,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6821074173059724563, guid: 8234cd3bc9a0b4be389eb5fa2551c646, type: 3}
   m_PrefabInstance: {fileID: 3681653493692404864}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7760688380162339632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801331076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be24968814e6444a8a303dec0607dc3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory:
-    slots: []
 --- !u!114 &8778750225359048706
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -46524,3 +46593,4 @@ SceneRoots:
   - {fileID: 4885853353214770626}
   - {fileID: 451424772}
   - {fileID: 1220518077}
+  - {fileID: 709932879}

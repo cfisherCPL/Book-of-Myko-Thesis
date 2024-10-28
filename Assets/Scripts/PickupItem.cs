@@ -25,8 +25,7 @@ public class PickupItem : MonoBehaviour
     private StaminaManager _staminaController;
     private bool canPickUp;
 
-    GameObject player;
-    PlayerIsTrigger playerInventory;
+    InventoryManager inventoryTarget;
 
    private void Awake()
    {
@@ -37,10 +36,9 @@ public class PickupItem : MonoBehaviour
         popupText.gameObject.SetActive(false);
         canPickUp = false;
 
-        //find the player in the scene to make it the target to place the item
-        //make their inventory an object we can place things
-        player = FindObjectOfType<PlayerIsTrigger>().gameObject;
-        playerInventory = player.GetComponent<PlayerIsTrigger>();
+        //find the inventory manager in the scene to make it the target to place items
+        inventoryTarget = FindObjectOfType<InventoryManager>();
+        
 
     }
 
@@ -69,10 +67,10 @@ public class PickupItem : MonoBehaviour
 
     public void Update()
     {
-        if (canPickUp && Input.GetKeyDown("g"))
+        if (canPickUp && Input.GetKeyDown("f"))
         {
             soundEffect.Play();
-            playerInventory.inventory.Add(itemType);
+            inventoryTarget.inventory.Add(itemType);
             Destroy(this.gameObject, 0.1f);
         }
     }
