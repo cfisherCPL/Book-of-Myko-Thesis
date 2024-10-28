@@ -7749,6 +7749,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: bd1bd6f16bf334b5fa294f68c680c6af, type: 2}
     - target: {fileID: 8636240397771626462, guid: 9aaeddbdfe97d45afa86f7af45b4dae0, type: 3}
+      propertyPath: mushSpawnTracker
+      value: 
+      objectReference: {fileID: 11400000, guid: 82ea472301fb54c8bb495d8c2f28b130, type: 2}
+    - target: {fileID: 8636240397771626462, guid: 9aaeddbdfe97d45afa86f7af45b4dae0, type: 3}
       propertyPath: playerPositionToSpawn.x
       value: 12.5
       objectReference: {fileID: 0}
@@ -68200,6 +68204,10 @@ PrefabInstance:
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: bd1bd6f16bf334b5fa294f68c680c6af, type: 2}
+    - target: {fileID: 8636240397771626462, guid: 9aaeddbdfe97d45afa86f7af45b4dae0, type: 3}
+      propertyPath: mushSpawnTracker
+      value: 
+      objectReference: {fileID: 11400000, guid: 82ea472301fb54c8bb495d8c2f28b130, type: 2}
     - target: {fileID: 8636240397771626462, guid: 9aaeddbdfe97d45afa86f7af45b4dae0, type: 3}
       propertyPath: playerPositionToSpawn.x
       value: 0

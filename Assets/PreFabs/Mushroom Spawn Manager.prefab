@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 7558598856406658323}
   m_Layer: 0
   m_Name: Mushroom Spawn Manager
-  m_TagString: Untagged
+  m_TagString: MushSpawnManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

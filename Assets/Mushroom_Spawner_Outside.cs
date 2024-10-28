@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mushroom_Spawner : MonoBehaviour
+public class Mushroom_Spawner_Outside : MonoBehaviour
 {
-    public static Mushroom_Spawner Instance { get; private set; }
+    public static Mushroom_Spawner_Outside Instance { get; private set; }
 
     public AlreadySpawned mushSpawned;
 
