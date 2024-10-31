@@ -17,10 +17,14 @@ public class SceneTransition : MonoBehaviour
     public AlreadySpawned mushSpawnTracker;
 
     GameObject mushSpawnManager;
+    GameObject mushSpawnLocations;
+
+    public GameObject[] mushroomsInScene;
 
     private void Awake()
     {
         mushSpawnManager = GameObject.Find("Mushroom Spawn Manager");
+        mushSpawnLocations = GameObject.Find("Mushroom Spawn Locations");
         //not working. once set inactive by hidMushroomsCheck, no other method works
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,9 +42,15 @@ public class SceneTransition : MonoBehaviour
                 //GameObject mushList = GameObject.Find("Mushroom Spawn Manager");
                 if (mushSpawnManager != null)
                 {
-                    Destroy(mushSpawnManager);
+                    //find all mushrooms in current scene by tag
+                    mushroomsInScene = GameObject.FindGameObjectsWithTag("Mushroom");
+                    foreach (GameObject mushToKill in mushroomsInScene)
+                    {
+                        Destroy(mushToKill);
+                    }
                     mushSpawnTracker.alreadySpawned = false;
                     Debug.Log("cleared all mushrooms");
+
                 }
                 
             }
@@ -49,7 +59,13 @@ public class SceneTransition : MonoBehaviour
             {
                 if (mushSpawnManager != null)
                 {
-                    mushSpawnManager.SetActive(false);
+                    mushroomsInScene = GameObject.FindGameObjectsWithTag("Mushroom");
+                    foreach (GameObject mushToHide in mushroomsInScene)
+                    {
+                        float alpha = 0.0f;
+                        Color color = mushToHide.GetComponent<Renderer>().material.color;
+                        color.a = alpha;
+                    }
 
                 }
                 /* working version
@@ -66,8 +82,13 @@ public class SceneTransition : MonoBehaviour
             {
                 if (mushSpawnManager != null)
                 {
-                    mushSpawnManager.SetActive(true);
-
+                    mushroomsInScene = GameObject.FindGameObjectsWithTag("Mushroom");
+                    foreach (GameObject mushToHide in mushroomsInScene)
+                    {
+                        float alpha = 1.0f;
+                        Color color = mushToHide.GetComponent<Renderer>().material.color;
+                        color.a = alpha;
+                    }
                 }
                 /*
                 GameObject[] spawnManager = Resources.FindObjects
@@ -80,7 +101,7 @@ public class SceneTransition : MonoBehaviour
                 }
                 */
             }
-
+        
             Debug.Log("Made it past the if-else group");
             playerStorage.initialValue = playerPositionToSpawn;
             //FindObjectTag<"Player"> transform.position = spawnPosition.initialValue;

@@ -8732,6 +8732,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d94c9d59b7c14607951c49ae286e03c, type: 3}
+--- !u!1001 &1473182142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504103470223583328, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858365828631614966, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
+      propertyPath: m_Name
+      value: Mushroom Spawn Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2843cc01edd264e0aa7fadc0beb51d38, type: 3}
 --- !u!1001 &1568753311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9132,3 +9189,4 @@ SceneRoots:
   - {fileID: 1461961493}
   - {fileID: 2105890595}
   - {fileID: 399013968}
+  - {fileID: 1473182142}

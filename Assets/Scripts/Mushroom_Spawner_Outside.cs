@@ -14,7 +14,7 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
 
     public List<GameObject> spawnLocations = new List<GameObject>();
 
-
+    
     private void Awake()
     {
 
@@ -28,9 +28,10 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 
     // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (!mushSpawned.alreadySpawned)
         {
