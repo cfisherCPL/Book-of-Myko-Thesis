@@ -27,6 +27,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    /*
     void Update()
     {
 
@@ -36,9 +37,24 @@ public class PauseMenu : MonoBehaviour
         {
             Pause();
         }
-        else if (pauseButtonPressed && pauseMenu.activeSelf)
+        
+        if (pauseButtonPressed && pauseMenu.activeSelf)
         {
             Resume();
         }
     }
+    */
+
+    public void togglePause()
+    {
+        if (!pauseMenu.activeSelf)
+        {
+            Pause();
+        }
+        else
+       {
+            Resume();
+        }
+    }
+
 }
