@@ -13,6 +13,8 @@ public class PickupItem : MonoBehaviour
     //item is deleted from the scene
 
     public CollectableType itemType;
+    public Sprite icon;
+
     public UnityEvent itemWasTouched;
     AudioSource soundEffect;
     Collider2D trigger;
@@ -72,7 +74,7 @@ public class PickupItem : MonoBehaviour
     {
         if (canPickUp && Input.GetKeyDown("f"))
         {
-            playerTarget.inventory.Add(itemType);
+            playerTarget.inventory.Add(this);
             soundEffect.Play();
             //inventoryTarget.inventory.Add(itemType);
             //not adding item to inventory bc cant find inventoryTarget

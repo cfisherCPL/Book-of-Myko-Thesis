@@ -6,6 +6,10 @@ public class Inventory_UI : MonoBehaviour
 {
     public GameObject inventoryPanel;
 
+    public PlayerIsTrigger player;
+
+    public List<Slots_UI> slots = new List<Slots_UI> ();
+
     // Update is called once per frame
     void Update()
     {
@@ -21,10 +25,30 @@ public class Inventory_UI : MonoBehaviour
         if(!inventoryPanel.activeSelf)
         {
             inventoryPanel.SetActive(true);
+            Setup();
         }
         else
         {
             inventoryPanel.SetActive(false);
+        }
+    }
+
+
+    void Setup()
+    {
+        if(slots.Count == player.inventory.slots.Count)
+        {
+            for (int i = 0; i < slots.Count; i++)
+            {
+                if (player.inventory.slots[i].itemType != CollectableType.NONE)
+                {
+                    slots[i].SetItem(player.inventory.slots[i]);
+                }
+                else
+                {
+                    slots[i].SetEmpty();
+                }
+            }
         }
     }
 }

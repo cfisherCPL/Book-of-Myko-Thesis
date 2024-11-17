@@ -11,7 +11,7 @@ public class PlayerIsTrigger : MonoBehaviour
     private void Awake()
     {
 
-        inventory = new InventoryTest(21);
+        inventory = new InventoryTest(14);
 
     }
 

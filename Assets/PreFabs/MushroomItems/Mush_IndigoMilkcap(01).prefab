@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 1
+  icon: {fileID: -1413637420, guid: fbea4b6e6f2ca4759a531f686edc16bd, type: 3}
   itemWasTouched:
     m_PersistentCalls:
       m_Calls: []

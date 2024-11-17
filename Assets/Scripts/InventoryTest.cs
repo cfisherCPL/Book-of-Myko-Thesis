@@ -12,6 +12,8 @@ public class InventoryTest
         public int count;
         public int maxAllowed;
 
+        public Sprite icon;
+
         public Slot()
         {
             itemType = CollectableType.NONE;
@@ -28,9 +30,10 @@ public class InventoryTest
             return false;
         }
 
-        public void AddItem(CollectableType itemType)
+        public void AddItem(PickupItem item)
         {
-            this.itemType = itemType;
+            this.itemType = item.itemType;
+            this.icon = item.icon;
             count++;
         }
     }
@@ -46,13 +49,13 @@ public class InventoryTest
         }
     }
 
-    public void Add(CollectableType typeToAdd)
+    public void Add(PickupItem item)
     {
         foreach (Slot slot in slots)
         {
-            if(slot.itemType == typeToAdd && slot.CanAddItem())
+            if(slot.itemType == item.itemType && slot.CanAddItem())
             {
-                slot.AddItem(typeToAdd);
+                slot.AddItem(item);
                 return;
             }
         }
@@ -61,7 +64,7 @@ public class InventoryTest
         {
             if(slot.itemType == CollectableType.NONE)
             {
-                slot.AddItem(typeToAdd);
+                slot.AddItem(item);
                 return;
             }
         }
