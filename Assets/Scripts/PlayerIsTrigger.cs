@@ -13,6 +13,16 @@ public class PlayerIsTrigger : MonoBehaviour
 
         inventory = new InventoryTest(14);
 
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     

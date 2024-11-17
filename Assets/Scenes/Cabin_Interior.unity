@@ -5704,6 +5704,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6821074173059724563, guid: 8234cd3bc9a0b4be389eb5fa2551c646, type: 3}
   m_PrefabInstance: {fileID: 515563274}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &515563276 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5278769067193382494, guid: 8234cd3bc9a0b4be389eb5fa2551c646, type: 3}
+  m_PrefabInstance: {fileID: 515563274}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be24968814e6444a8a303dec0607dc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &522145520
 GameObject:
   m_ObjectHideFlags: 0
@@ -8796,6 +8807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7490163460084104519, guid: 89a71a11d2f974ab58cf79da5866ed61, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 515563276}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
