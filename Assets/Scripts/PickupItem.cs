@@ -86,5 +86,5 @@ public class PickupItem : MonoBehaviour
 
 public enum CollectableType
 {
-    NONE, INDIGO_MUSH1,
+    NONE, INDIGO_MUSH1, CRIMSON_MUSH1
 }
