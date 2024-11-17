@@ -27,6 +27,8 @@ public class PickupItem : MonoBehaviour
 
     InventoryManager inventoryTarget;
 
+    PlayerIsTrigger playerTarget;
+
    private void Awake()
    {
         _scoreController = FindObjectOfType<ScoreManager>();
@@ -45,6 +47,7 @@ public class PickupItem : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerIsTrigger player = collision.GetComponent<PlayerIsTrigger>();
+        playerTarget = player;
 
         if (player)
         {
@@ -69,8 +72,10 @@ public class PickupItem : MonoBehaviour
     {
         if (canPickUp && Input.GetKeyDown("f"))
         {
+            playerTarget.inventory.Add(itemType);
             soundEffect.Play();
-            inventoryTarget.inventory.Add(itemType);
+            //inventoryTarget.inventory.Add(itemType);
+            //not adding item to inventory bc cant find inventoryTarget
             Destroy(this.gameObject, 0.1f);
         }
     }
