@@ -28,9 +28,11 @@ public class PlayerLightAuto : MonoBehaviour
             flashlight.gameObject.SetActive(true);
         }
 
+        /*
         if (SceneManager.GetActiveScene().name.Contains("Interior") )
         {
            flashlight.gameObject.SetActive(true); 
         }
+        */
     }
 }
