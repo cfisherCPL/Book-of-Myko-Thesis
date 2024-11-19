@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7178017544772191868}
   - component: {fileID: 2751753610596125264}
-  - component: {fileID: 7366996424769193874}
   m_Layer: 0
   m_Name: PlayerFlashlight
   m_TagString: Untagged
@@ -83,20 +82,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &7366996424769193874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2194495808379795156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f70a4d1f47ef1410bb2c0eda811258bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tod: {fileID: 11400000, guid: d5b5e185083f24deda51641a6a523893, type: 2}
-  flashlight: {fileID: 2751753610596125264}
 --- !u!1 &5421854357384700396
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +97,8 @@ GameObject:
   - component: {fileID: 6122680321738284425}
   - component: {fileID: 7681119728508991872}
   - component: {fileID: 5278769067193382494}
+  - component: {fileID: 6210927694802339112}
+  - component: {fileID: 3893910981779890107}
   m_Layer: 6
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -308,3 +295,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory:
     slots: []
+--- !u!114 &6210927694802339112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421854357384700396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a8b954ebd19244db2ced4f0b508ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3893910981779890107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421854357384700396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70a4d1f47ef1410bb2c0eda811258bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tod: {fileID: 11400000, guid: d5b5e185083f24deda51641a6a523893, type: 2}
+  flashlight: {fileID: 2751753610596125264}
