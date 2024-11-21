@@ -12,12 +12,15 @@ public class GoToSleep : MonoBehaviour
     private bool sleepAllowed;
 
     private DayTimeManager dayOfWeek;
-    private StaminaManager _stamina;
+
+    //stamina deprecated as mechanic 11-19-24
+    //private StaminaManager _stamina;
+    
 
     private void Awake()
     {
         dayOfWeek = FindObjectOfType<DayTimeManager>();
-        _stamina = FindObjectOfType<StaminaManager>();
+        //_stamina = FindObjectOfType<StaminaManager>();
     }
 
     private void Start()
@@ -30,7 +33,7 @@ public class GoToSleep : MonoBehaviour
         if (sleepAllowed && Input.GetKeyDown("n"))
         {
             dayOfWeek.nextDay();
-            _stamina.ResetStamina();
+            //_stamina.ResetStamina();
         }
             
             
