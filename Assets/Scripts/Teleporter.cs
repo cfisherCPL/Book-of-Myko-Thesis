@@ -8,6 +8,13 @@ public class Teleporter : MonoBehaviour
     [SerializeField] private Transform destination;
     [SerializeField] private TMP_Text popupText;
     [SerializeField] public bool changesTime;
+    [SerializeField] public bool clearsMushrooms;
+    [SerializeField] public GameObject localMushroomSpawner;
+
+    public GameObject GetMushSpawner()
+    {
+        return localMushroomSpawner;
+    }
 
     public Transform GetDestination()
     {

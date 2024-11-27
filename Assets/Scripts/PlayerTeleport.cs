@@ -8,7 +8,6 @@ public class PlayerTeleport : MonoBehaviour
     private DayTimeManager timeController;
     private bool changeTime;
 
-
     void Awake()
     {
         changeTime = false;
@@ -19,12 +18,23 @@ public class PlayerTeleport : MonoBehaviour
         {
             if (currentTeleporter != null)
             {
+                //wipe current area's mushrooms
+                if (currentTeleporter.GetComponent<Teleporter>().clearsMushrooms)
+                {
+                    GameObject spawnerAccess = currentTeleporter.GetComponent<Teleporter>().GetMushSpawner();
+                    spawnerAccess.GetComponent<Mushroom_Spawner_Outside>().clearSpawnedMushrooms();
+
+                }
+
+                //change time to  next if that's what the teleporter does
                 if (changeTime)
                 {
                     DayTimeManager.Instance.nextTime();
                 }
+
+                //move the player to the target location
                 transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
-                
+                                          
             }
         }
     }
