@@ -17,7 +17,7 @@ public class TreeObject : MonoBehaviour
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         defaultColor = mySpriteRenderer.color;
         fadedColor = defaultColor;
-        fadedColor.a = 0.6f;
+        fadedColor.a = 0.5f;
     }
 
     public void FadeOut()
