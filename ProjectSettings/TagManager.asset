@@ -46,6 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground Fill
+    uniqueID: 2517955287
+    locked: 0
   - name: Ground
     uniqueID: 1429442341
     locked: 0
