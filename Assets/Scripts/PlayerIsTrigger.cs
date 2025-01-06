@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerIsTrigger : MonoBehaviour
 {
+    [SerializeField] private DialogueUI dialogueUI;
+
+    public DialogueUI DialogueUI => dialogueUI;
+
+    public IInteractable Interactable { get; set; }
 
     public InventoryTest inventory;
 
@@ -27,6 +32,19 @@ public class PlayerIsTrigger : MonoBehaviour
             Destroy(gameObject);
         }
         */
+    }
+
+    private void Update()
+    {
+        //if (dialogueUI.IsOpen) return;
+
+        if (Input.GetKeyDown("e") && dialogueUI.IsOpen != true)
+        {
+            if (Interactable != null)
+            {
+                Interactable.Interact(this);
+            }
+        }
     }
 
     

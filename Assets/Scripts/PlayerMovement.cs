@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 2f;
-    
+    [SerializeField] private DialogueUI dialogueUI;
+    public DialogueUI DialogueUI => dialogueUI;
+
     public VectorValue spawnPosition;
 
 
@@ -33,12 +35,21 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //prevent movement while dialogue box is open
+        if (dialogueUI.IsOpen) return;
+      
         movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;   
     }
 
 
     void FixedUpdate()
     {
+        if (dialogueUI.IsOpen)
+        {
+            rb.velocity = new Vector2(0, 0);
+            return;
+        }
+
         rb.velocity = movementDirection * movementSpeed;
 
         inputHorizontal = Input.GetAxisRaw("Horizontal");
