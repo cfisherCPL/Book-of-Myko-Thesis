@@ -10,17 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
-  m_Name: TestDialogue
+  m_Name: Yes
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Hello there friend!
-
-    Let''s find some mushrooms and see GOD.'
-  - 'Okay then.
-
-    See you later friend!'
-  responses:
-  - responseText: Yes
-    dialogueObject: {fileID: 11400000, guid: ee66246bfac8e4d3c88de009b5d0f1f9, type: 2}
-  - responseText: No
-    dialogueObject: {fileID: 11400000, guid: 246bd51dcd0a34c8882c11bdb17b81fe, type: 2}
+  - You said yes.
+  responses: []
