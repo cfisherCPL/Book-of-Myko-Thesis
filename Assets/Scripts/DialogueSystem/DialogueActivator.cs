@@ -10,6 +10,10 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     [SerializeField] private DialogueObject dialogueObject;
     [SerializeField] private TMP_Text popupText;
 
+    public void UpdateDialogueObject(DialogueObject dialogueObject)
+    {
+        this.dialogueObject = dialogueObject;
+    }
 
     private void Awake()
     {
@@ -45,6 +49,15 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
     public void Interact(PlayerIsTrigger player)
     {
+        foreach (DialogueResponseEvents responseEvents in GetComponents<DialogueResponseEvents>())
+        {
+            if (responseEvents.DialogueObject == dialogueObject)
+            {
+                player.DialogueUI.AddResponseEvents(responseEvents.Events);
+                break;
+            }
+        }
+        
         player.DialogueUI.ShowDialogue(dialogueObject);
     }
 
