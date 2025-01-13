@@ -34,6 +34,17 @@ public class PlayerIsTrigger : MonoBehaviour
         */
     }
 
+    public void DropItem (PickupItem item)
+    {
+        Vector2 spawnLocation = transform.position;
+
+        Vector2 spawnOffset = Random.insideUnitCircle * 1.25f;
+
+        PickupItem droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.identity);
+
+        droppedItem.rb2D.AddForce(spawnOffset * .2f, ForceMode2D.Impulse);
+    }
+
     private void Update()
     {
         //if (dialogueUI.IsOpen) return;

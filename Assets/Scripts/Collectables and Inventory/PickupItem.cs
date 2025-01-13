@@ -14,6 +14,9 @@ public class PickupItem : MonoBehaviour
 
     public CollectableType itemType;
     public Sprite icon;
+    public Color iconColor;
+
+    public Rigidbody2D rb2D;
 
     public UnityEvent itemWasTouched;
     AudioSource soundEffect;
@@ -42,8 +45,13 @@ public class PickupItem : MonoBehaviour
 
         //find the inventory manager in the scene to make it the target to place items
         inventoryTarget = FindObjectOfType<InventoryManager>();
-        
 
+        SpriteRenderer thisSprite = GetComponent<SpriteRenderer>();
+        icon = thisSprite.sprite;
+        iconColor = thisSprite.color;
+
+
+        rb2D = GetComponent<Rigidbody2D> ();
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

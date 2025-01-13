@@ -11,10 +11,30 @@ PrefabInstance:
     - target: {fileID: 2704794646214499853, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: -1777357803, guid: fbea4b6e6f2ca4759a531f686edc16bd, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2704794646214499853, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
       propertyPath: itemType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598088804292758955, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598088804292758955, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598088804292758955, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598088804292758955, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598088804292758955, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5961757818730464296, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
       propertyPath: m_LocalPosition.x

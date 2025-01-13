@@ -13,6 +13,7 @@ public class InventoryTest
         public int maxAllowed;
 
         public Sprite icon;
+        public Color iconColor;
 
         public Slot()
         {
@@ -34,6 +35,7 @@ public class InventoryTest
         {
             this.itemType = item.itemType;
             this.icon = item.icon;
+            this.iconColor = item.iconColor;
             count++;
         }
 

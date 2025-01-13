@@ -14,7 +14,7 @@ public class Slots_UI : MonoBehaviour
         if(slot != null)
         {
             itemIcon.sprite = slot.icon;
-            itemIcon.color = new Color(1, 1, 1, 1);
+            itemIcon.color = slot.iconColor;
             quantityText.text = slot.count.ToString();
 
         }
