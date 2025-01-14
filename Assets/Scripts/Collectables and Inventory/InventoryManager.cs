@@ -22,7 +22,7 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
         }
       
-        inventory = new InventoryTest(21);
+        inventory = new InventoryTest(8);
     }
 
 

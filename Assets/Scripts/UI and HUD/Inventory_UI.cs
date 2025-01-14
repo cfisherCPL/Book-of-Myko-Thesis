@@ -27,6 +27,12 @@ public class Inventory_UI : MonoBehaviour
         }
 
     }
+
+    private void Start()
+    {
+        Refresh();
+    }
+   
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Tab))
@@ -50,7 +56,7 @@ public class Inventory_UI : MonoBehaviour
     }
 
 
-    void Refresh()
+    public void Refresh()
     {
         if(slots.Count == player.inventory.slots.Count)
         {
@@ -63,6 +69,7 @@ public class Inventory_UI : MonoBehaviour
                 else
                 {
                     slots[i].SetEmpty();
+                    
                 }
             }
         }

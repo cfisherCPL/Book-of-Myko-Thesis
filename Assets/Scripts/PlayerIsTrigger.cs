@@ -5,12 +5,13 @@ using UnityEngine;
 public class PlayerIsTrigger : MonoBehaviour
 {
     [SerializeField] private DialogueUI dialogueUI;
-
+    [SerializeField] private int inventorySlots;
     public DialogueUI DialogueUI => dialogueUI;
 
     public IInteractable Interactable { get; set; }
 
     public InventoryTest inventory;
+    public bool inventoryFull = false;
 
     //singleton pattern disables 11-19-24
     //public static PlayerIsTrigger Instance { get; private set; }
@@ -18,8 +19,9 @@ public class PlayerIsTrigger : MonoBehaviour
     private void Awake()
     {
 
-        inventory = new InventoryTest(14);
+        inventory = new InventoryTest(inventorySlots);
 
+        inventory.inventory_UI = FindObjectOfType<Inventory_UI>();  
         //disable singleton pattern for new single scene verrsion
         /*
         if (Instance == null)
@@ -56,6 +58,8 @@ public class PlayerIsTrigger : MonoBehaviour
                 Interactable.Interact(this);
             }
         }
+
+      
     }
 
     

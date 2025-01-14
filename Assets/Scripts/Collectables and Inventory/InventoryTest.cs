@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 [System.Serializable]
 public class InventoryTest
 {
-    [System.Serializable]
+    [SerializeField] public Inventory_UI inventory_UI;
+
+    [SerializeField] public int numSlotsOpen;
+
+    
+    [System.Serializable]    
     public class Slot
     {
         public CollectableType itemType;
@@ -37,6 +44,7 @@ public class InventoryTest
             this.icon = item.icon;
             this.iconColor = item.iconColor;
             count++;
+
         }
 
         public void RemoveItem()
@@ -49,6 +57,7 @@ public class InventoryTest
                 {
                     icon = null;
                     itemType = CollectableType.NONE;
+                  
                 }
             }
         }
@@ -56,13 +65,22 @@ public class InventoryTest
 
     public List<Slot> slots = new List<Slot>();
 
+    /*Instantiates the slots list
+     * with the number of slots defined
+     * in PlayerIsTrigger
+    */
     public InventoryTest(int numSlots)
     {
+        numSlotsOpen = 0;
         for (int i = 0; i < numSlots; i++)
         {
             Slot slot = new Slot();
             slots.Add(slot);
+            numSlotsOpen++;
         }
+
+      
+
     }
 
     public void Add(PickupItem item)
@@ -72,6 +90,7 @@ public class InventoryTest
             if(slot.itemType == item.itemType && slot.CanAddItem())
             {
                 slot.AddItem(item);
+                inventory_UI.Refresh();
                 return;
             }
         }
@@ -81,14 +100,37 @@ public class InventoryTest
             if(slot.itemType == CollectableType.NONE)
             {
                 slot.AddItem(item);
+                inventory_UI.Refresh();
+                numSlotsOpen--;
                 return;
             }
         }
+
+        foreach (Slot slot in slots)
+        {
+            if (slot.itemType == CollectableType.NONE)
+            {
+                numSlotsOpen++;
+            }
+        }
+
     }
+    
 
     public void Remove (int index)
     {
         slots[index].RemoveItem();
+
+        numSlotsOpen = 0;
+        foreach (Slot slot in slots)
+        {
+            
+            if (slot.itemType == CollectableType.NONE)
+            {
+                numSlotsOpen++;
+            }
+        }
+
     }
 
 }

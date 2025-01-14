@@ -34,6 +34,8 @@ public class PickupItem : MonoBehaviour
 
     PlayerIsTrigger playerTarget;
 
+    public UnityEvent itemPickedUp;
+
    private void Awake()
    {
         _scoreController = FindObjectOfType<ScoreManager>();
@@ -51,7 +53,7 @@ public class PickupItem : MonoBehaviour
         iconColor = thisSprite.color;
 
 
-        rb2D = GetComponent<Rigidbody2D> ();
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -83,6 +85,7 @@ public class PickupItem : MonoBehaviour
         if (canPickUp && Input.GetKeyDown("f"))
         {
             playerTarget.inventory.Add(this);
+            itemPickedUp.Invoke();
             soundEffect.Play();
             //inventoryTarget.inventory.Add(itemType);
             //not adding item to inventory bc cant find inventoryTarget

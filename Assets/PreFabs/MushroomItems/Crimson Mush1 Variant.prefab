@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: itemType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2704794646214499853, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+      propertyPath: itemPickedUp.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704794646214499853, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+      propertyPath: itemPickedUp.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3598088804292758955, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
       propertyPath: m_Mass
       value: 2
