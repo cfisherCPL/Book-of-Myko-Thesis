@@ -6,7 +6,7 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance {  get; private set; }
 
-    public InventoryTest inventory;
+    public Inventory inventory;
 
     private void Awake()
     {
@@ -22,8 +22,12 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
         }
       
-        inventory = new InventoryTest(8);
+        inventory = new Inventory(8);
     }
 
-
+    /* 1-14-25 Not sure this manager is ever used?
+     * not referenced by anything, and the PlayerIsTrigger manages 
+     * its own inventory 
+     * 
+     * */
 }

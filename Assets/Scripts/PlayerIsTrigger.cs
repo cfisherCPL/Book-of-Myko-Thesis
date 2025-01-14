@@ -10,7 +10,7 @@ public class PlayerIsTrigger : MonoBehaviour
 
     public IInteractable Interactable { get; set; }
 
-    public InventoryTest inventory;
+    public Inventory inventory;
     public bool inventoryFull = false;
 
     //singleton pattern disables 11-19-24
@@ -19,7 +19,7 @@ public class PlayerIsTrigger : MonoBehaviour
     private void Awake()
     {
 
-        inventory = new InventoryTest(inventorySlots);
+        inventory = new Inventory(inventorySlots);
 
         inventory.inventory_UI = FindObjectOfType<Inventory_UI>();  
         //disable singleton pattern for new single scene verrsion
@@ -36,13 +36,13 @@ public class PlayerIsTrigger : MonoBehaviour
         */
     }
 
-    public void DropItem (PickupItem item)
+    public void DropItem (Item item)
     {
         Vector2 spawnLocation = transform.position;
 
         Vector2 spawnOffset = Random.insideUnitCircle * 1.25f;
 
-        PickupItem droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.identity);
+        Item droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.identity);
 
         droppedItem.rb2D.AddForce(spawnOffset * .2f, ForceMode2D.Impulse);
     }

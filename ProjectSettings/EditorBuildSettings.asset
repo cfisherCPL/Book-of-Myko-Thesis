@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cavern_Interior.unity
     guid: 3a01f46d88def4d2289177b281bdc4db
+  - enabled: 1
+    path: Assets/Scenes/Mixed Exterior Test Environment.unity
+    guid: b159c8dcbbb1f05459fa9c06b81e8bb7
   m_configObjects: {}

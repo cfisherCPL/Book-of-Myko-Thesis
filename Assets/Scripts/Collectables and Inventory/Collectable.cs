@@ -5,64 +5,88 @@ using UnityEngine.Events;
 using TMPro;
 using System;
 
-public class PickupItem : MonoBehaviour
+[RequireComponent(typeof(Item))]
+public class Collectable : MonoBehaviour
 {
-    //player enters trigger area of item
-    //player pressed "pickup" button
-    //item is added to player inventory
-    //item is deleted from the scene
-
-    public CollectableType itemType;
+    /* refactoring items to use Scriptable Objects 1-14-25
+     * many features of this were split between Item and ItemData
+     * Keeping some features based on custom use in how
+     * Inventory handles moving items to a Slot prefab
+     * 
+     * Part of this refactor means PickupItem is 
+     * only responsible for collision and sending out
+     * an Add/Destory command for the prefab in the scene
+     * and turning it into a thing in Inventory
+     */
     public Sprite icon;
     public Color iconColor;
-
-    public Rigidbody2D rb2D;
-
+    
     public UnityEvent itemWasTouched;
     AudioSource soundEffect;
     Collider2D trigger;
-
     [SerializeField] private TMP_Text popupText;
+
+    /*We're done using points and Stamina 1-14-25
     [SerializeField] private int pointsPerCollect;
     [SerializeField] private int staminaCost;
-
     private ScoreManager _scoreController;
     private StaminaManager _staminaController;
+    */
+
     private bool canPickUp;
 
+    // THIS is where InventoryManager is made...but never used?
     InventoryManager inventoryTarget;
 
     PlayerIsTrigger playerTarget;
 
     public UnityEvent itemPickedUp;
 
+    public Item item;
+    public Mushroom mushroom;
+
    private void Awake()
    {
-        _scoreController = FindObjectOfType<ScoreManager>();
-        _staminaController = FindObjectOfType<StaminaManager>();
+        //_scoreController = FindObjectOfType<ScoreManager>();
+        //_staminaController = FindObjectOfType<StaminaManager>();
+        //icon = GetComponent<Sprite>();
+        //iconColor = GetComponent<Color>();
+        
         soundEffect = GetComponent<AudioSource>();
         trigger = GetComponent<Collider2D>();
-        popupText.gameObject.SetActive(false);
+        item = GetComponent<Item>();
+        mushroom = GetComponent<Mushroom>();
+
         canPickUp = false;
 
         //find the inventory manager in the scene to make it the target to place items
         inventoryTarget = FindObjectOfType<InventoryManager>();
 
+        //this is where we share components with Slot
+        //to make the inventory item look like the actual pickupItem
         SpriteRenderer thisSprite = GetComponent<SpriteRenderer>();
         icon = thisSprite.sprite;
         iconColor = thisSprite.color;
 
+        //update the scriptable objects using existing data
+        //test: it doesnt work 1-14-25
+        item.data.iconColor = iconColor;
+        item.data.icon = icon;
+        item.data.itemName = mushroom.mushName;
 
-        rb2D = GetComponent<Rigidbody2D>();
+        popupText.gameObject.SetActive(false);
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerIsTrigger player = collision.GetComponent<PlayerIsTrigger>();
         playerTarget = player;
+        Item item = this.item;
 
-        if (player)
+        if (player && playerTarget.inventory.ItemCanBeSlotted(item))
         {
+            popupText.SetText("Press F to Pickup");
             popupText.gameObject.SetActive(true);
             canPickUp = true;
             
@@ -71,11 +95,18 @@ public class PickupItem : MonoBehaviour
             //StaminaManager.Instance.DecreaseStamina(staminaCost);
             //itemWasTouched.Invoke();
         }
+        else if (player && !playerTarget.inventory.ItemCanBeSlotted(item))
+        {
+            popupText.SetText("Backpack is Full");
+            popupText.gameObject.SetActive(true);
+            canPickUp = false;
+        }
 
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
+        popupText.SetText("");
         popupText.gameObject.SetActive(false);
         canPickUp = false;
     }
@@ -84,19 +115,27 @@ public class PickupItem : MonoBehaviour
     {
         if (canPickUp && Input.GetKeyDown("f"))
         {
-            playerTarget.inventory.Add(this);
-            itemPickedUp.Invoke();
-            soundEffect.Play();
-            //inventoryTarget.inventory.Add(itemType);
-            //not adding item to inventory bc cant find inventoryTarget
-            Destroy(this.gameObject, 0.1f);
+            Item item = GetComponent<Item>();
+            if (item != null)
+            {
+                playerTarget.inventory.Add(item);
+                itemPickedUp.Invoke();
+                soundEffect.Play();
+                Destroy(this.gameObject, 0.1f);
+            }
+            
         }
     }
 
 
 
 }
+/* CollectableType will be deprecated with Item refactoring 1-14-25
+ * it may still be useable, and full delete will require fixing LOTS
+ * hold and comment out for now until refactor and rebuild of items is complete
+ * */
 
+/*
 public enum CollectableType
 {
     NONE, INDIGO_MUSH1,
@@ -109,3 +148,4 @@ public enum CollectableType
     TAL_CRWN,TAL_PARA,TAL_FNNL,TAL_PUFF,TAL_FNGS,TAL_SHLD,TAL_TRUF,
     ROC_CRWN, ROC_PARA, ROC_FNNL, ROC_PUFF, ROC_FNGS, ROC_SHLD, ROC_TRUF,
 }
+*/

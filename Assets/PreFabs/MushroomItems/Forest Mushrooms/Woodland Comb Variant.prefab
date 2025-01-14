@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 993445312249169037, guid: 486f8651c2e33bb4fb840a184ba31d2f, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d8b68078547b7e41a74e653c4f755f4, type: 2}
     - target: {fileID: 4140053008909397838, guid: 486f8651c2e33bb4fb840a184ba31d2f, type: 3}
       propertyPath: icon
       value: 
@@ -112,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589ff4d36187f491cbc3405cda6d3871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mushName: Moonlit  Button
+  mushName: Woodland Comb
   flavorText: Shows up every day at night!
   daysList: 
   timesList: 

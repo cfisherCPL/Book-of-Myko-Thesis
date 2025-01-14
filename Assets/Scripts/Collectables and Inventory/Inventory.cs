@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using static UnityEditor.Progress;
 
 [System.Serializable]
-public class InventoryTest
+public class Inventory
 {
     [SerializeField] public Inventory_UI inventory_UI;
 
@@ -15,7 +16,7 @@ public class InventoryTest
     [System.Serializable]    
     public class Slot
     {
-        public CollectableType itemType;
+        public string itemName;
         public int count;
         public int maxAllowed;
 
@@ -24,7 +25,7 @@ public class InventoryTest
 
         public Slot()
         {
-            itemType = CollectableType.NONE;
+            itemName = "";
             count = 0;
             maxAllowed = 9;
         }
@@ -38,11 +39,11 @@ public class InventoryTest
             return false;
         }
 
-        public void AddItem(PickupItem item)
+        public void AddItem(Item item)
         {
-            this.itemType = item.itemType;
-            this.icon = item.icon;
-            this.iconColor = item.iconColor;
+            this.itemName = item.data.itemName;
+            this.icon = item.data.icon;
+            this.iconColor = item.data.iconColor;
             count++;
 
         }
@@ -56,7 +57,7 @@ public class InventoryTest
                 if (count ==0)
                 {
                     icon = null;
-                    itemType = CollectableType.NONE;
+                    itemName = "";
                   
                 }
             }
@@ -69,7 +70,7 @@ public class InventoryTest
      * with the number of slots defined
      * in PlayerIsTrigger
     */
-    public InventoryTest(int numSlots)
+    public Inventory(int numSlots)
     {
         numSlotsOpen = 0;
         for (int i = 0; i < numSlots; i++)
@@ -78,44 +79,66 @@ public class InventoryTest
             slots.Add(slot);
             numSlotsOpen++;
         }
-
-      
-
     }
 
-    public void Add(PickupItem item)
+    public void Add(Item item)
     {
         foreach (Slot slot in slots)
         {
-            if(slot.itemType == item.itemType && slot.CanAddItem())
+            if(slot.itemName == item.data.itemName && slot.CanAddItem())
             {
                 slot.AddItem(item);
                 inventory_UI.Refresh();
+                UnityEngine.Debug.Log("Item added to existing group.");
                 return;
             }
         }
 
         foreach (Slot slot in slots)
         {
-            if(slot.itemType == CollectableType.NONE)
+            if(slot.itemName == "")
             {
                 slot.AddItem(item);
                 inventory_UI.Refresh();
                 numSlotsOpen--;
+                UnityEngine.Debug.Log("Item added to new slot.");
                 return;
             }
         }
 
         foreach (Slot slot in slots)
         {
-            if (slot.itemType == CollectableType.NONE)
+            if (slot.itemName == "")
             {
                 numSlotsOpen++;
+                UnityEngine.Debug.Log("Open Slot Found.");
             }
         }
 
     }
     
+    public bool ItemCanBeSlotted(Item item)
+    {
+        bool slotAvailable = false;
+        
+        foreach (Slot slot in slots)
+        {
+            if (slot.itemName == item.data.itemName && slot.CanAddItem())
+            {
+                slotAvailable = true;
+            }
+        }
+
+        foreach (Slot slot in slots)
+        {
+            if (slot.itemName == "")
+            {
+                slotAvailable = true;
+            }
+        }
+
+        return slotAvailable;
+    }
 
     public void Remove (int index)
     {
@@ -125,7 +148,7 @@ public class InventoryTest
         foreach (Slot slot in slots)
         {
             
-            if (slot.itemType == CollectableType.NONE)
+            if (slot.itemName == "")
             {
                 numSlotsOpen++;
             }

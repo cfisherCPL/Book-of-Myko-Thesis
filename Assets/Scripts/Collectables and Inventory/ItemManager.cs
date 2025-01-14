@@ -4,32 +4,32 @@ using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-    public PickupItem[] collectableItems;
+    public Item[] items;
 
-    private Dictionary<CollectableType, PickupItem> collectableItemsDict = 
-        new Dictionary<CollectableType, PickupItem>();
+    private Dictionary<string, Item> nameToItemDict = 
+        new Dictionary<string, Item>();
 
     private void Awake()
     {
-        foreach (PickupItem item in collectableItems)
+        foreach (Item item in items)
         {
             AddItem(item);
         }
     }
 
-    private void AddItem(PickupItem item)
+    private void AddItem(Item item)
     {
-        if (!collectableItemsDict.ContainsKey(item.itemType))
+        if (!nameToItemDict.ContainsKey(item.data.itemName))
         {
-            collectableItemsDict.Add(item.itemType, item);
+            nameToItemDict.Add(item.data.itemName, item);
         }
     }
 
-    public PickupItem GetItemByType(CollectableType type)
+    public Item GetItemByName(string key)
     {
-        if (collectableItemsDict.ContainsKey(type))
+        if (nameToItemDict.ContainsKey(key))
         {
-            return collectableItemsDict[type];
+            return nameToItemDict[key];
         }
         else
         {

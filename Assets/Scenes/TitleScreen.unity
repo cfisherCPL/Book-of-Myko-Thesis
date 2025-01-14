@@ -27288,7 +27288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7664af65f37fb43ddb87163ed7c23648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Cabin_Interior
+  sceneToLoad: Mixed Exterior Test Environment
   playerPositionToSpawn: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: bd1bd6f16bf334b5fa294f68c680c6af, type: 2}
   scoreToReset: {fileID: 11400000, guid: 478df219751d245caae8afdf5a6210c0, type: 2}
