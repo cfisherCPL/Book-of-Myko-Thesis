@@ -31,6 +31,7 @@ public class Inventory_UI : MonoBehaviour
     private void Start()
     {
         Refresh();
+        //inventoryPanel.SetActive(false);
     }
    
     void Update()

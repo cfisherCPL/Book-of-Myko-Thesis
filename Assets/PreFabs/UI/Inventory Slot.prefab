@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 786698366582954152}
   - component: {fileID: 4956304745030403718}
   m_Layer: 5
-  m_Name: Slot
+  m_Name: Inventory Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -569,3 +569,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 1902106062021672450}
   quantityText: {fileID: 4742225821998851712}
+  dropItemButton: {fileID: 2433815784317982342}

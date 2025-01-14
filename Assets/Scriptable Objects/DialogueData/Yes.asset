@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Yes
   m_EditorClassIdentifier: 
   dialogue:
-  - You said yes.
+  - 'You said yes.
+
+
+    {Space to Close}'
   responses: []

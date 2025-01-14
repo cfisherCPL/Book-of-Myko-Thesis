@@ -21,10 +21,7 @@ MonoBehaviour:
     to continue}'
   - "This is the maximum line length in this box.\nWell, what do you know... \nYou
     can have FOUR lines.\n{Space to continue}"
-  - 'Get busy and find some mushrooms!
-
-
-    {Space to end}'
+  - Get busy and find some mushrooms!
   responses:
   - responseText: Okay bud.
     dialogueObject: {fileID: 11400000, guid: ee66246bfac8e4d3c88de009b5d0f1f9, type: 2}
