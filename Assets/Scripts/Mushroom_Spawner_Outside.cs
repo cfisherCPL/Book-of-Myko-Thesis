@@ -23,6 +23,22 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D collision)
     {
+        pickViableMushrooms();
+        pickSpawns();
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (!mushSpawned.alreadySpawned)
+        {
+            
+            placeMushrooms();
+            //mushSpawned.alreadySpawned = true;
+        }
+    }
+
+    void pickViableMushrooms()
+    {
         foreach (GameObject listMush in allLocationMushrooms)
         {
             //check if spawnable day matches current
@@ -38,34 +54,36 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
             }
 
         }
-        
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (!mushSpawned.alreadySpawned)
-        {
-            pickSpawns();
-            placeMushrooms();
-            //mushSpawned.alreadySpawned = true;
-        }
-    }
-
-
 
     void pickSpawns()
     {
+
         //generate a randomized list of possible spawn locations from all
         //possible spawns that were added to that list in the inspector
         for (int j = 0; j < allPotentialSpawns.Count; j++)
         {
-            int rnd = Random.Range(0, allPotentialSpawns.Count);
-            GameObject temp = allPotentialSpawns[rnd];
+            GameObject temp = allPotentialSpawns[j];
             spawnLocations.Add(temp);
-            //allPotentialSpawns.RemoveAt(rnd);
+            ShuffleList(spawnLocations);
         }
-
     }
+
+    //ShuffleList is a Fisher-Yates method
+    //intended to randomize the order of items
+    //in an existing list
+    void ShuffleList(List <GameObject> list)
+    {
+        for (int i = list.Count - 1; i > 0; i--)
+        {
+            int j = UnityEngine.Random.Range(0, i + 1);
+            GameObject temp = list[i];
+            list[i] = list[j];
+            list[j] = temp;
+        }
+    }
+
+
 
     void placeMushrooms()
     {
@@ -74,7 +92,7 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
         "All Location Mushrooms" list in the inspector
         is how many of that mushroom will get spawned at a time
         */
-        for (int i = 0; i < currentlySpawnableMushrooms.Count; i++ )
+        for (int i = 0; i < currentlySpawnableMushrooms.Count - 1; i++ )
         {
             Transform placeHere;
             placeHere = spawnLocations[i].GetComponent<Transform>();

@@ -45,6 +45,9 @@ public class Collectable : MonoBehaviour
     public Item item;
     public Mushroom mushroom;
 
+
+    PlayerIsTrigger playerTemp;
+
    private void Awake()
    {
         //_scoreController = FindObjectOfType<ScoreManager>();
@@ -56,7 +59,6 @@ public class Collectable : MonoBehaviour
         trigger = GetComponent<Collider2D>();
         item = GetComponent<Item>();
         mushroom = GetComponent<Mushroom>();
-
         canPickUp = false;
 
         //find the inventory manager in the scene to make it the target to place items
@@ -82,18 +84,16 @@ public class Collectable : MonoBehaviour
     {
         PlayerIsTrigger player = collision.GetComponent<PlayerIsTrigger>();
         playerTarget = player;
+        playerTemp = player;
         Item item = this.item;
+
 
         if (player && playerTarget.inventory.ItemCanBeSlotted(item))
         {
             popupText.SetText("Press F to Pickup");
             popupText.gameObject.SetActive(true);
             canPickUp = true;
-            
-            //manager features and old stamina system are for testing only
-            //ScoreManager.Instance.IncreaseScore(pointsPerCollect);
-            //StaminaManager.Instance.DecreaseStamina(staminaCost);
-            //itemWasTouched.Invoke();
+
         }
         else if (player && !playerTarget.inventory.ItemCanBeSlotted(item))
         {
@@ -104,15 +104,18 @@ public class Collectable : MonoBehaviour
 
     }
 
+
     public void OnTriggerExit2D(Collider2D collision)
     {
         popupText.SetText("");
         popupText.gameObject.SetActive(false);
         canPickUp = false;
+        playerTemp = null;
     }
 
     public void Update()
     {
+        
         if (canPickUp && Input.GetKeyDown("f"))
         {
             Item item = GetComponent<Item>();
