@@ -156,4 +156,18 @@ public class Inventory
 
     }
 
+    public void Remove(int index, int numToRemove)
+    {
+        if (slots[index].count >= numToRemove)
+        {
+            for (int i = 0; i < numToRemove; i++) 
+            {
+                Remove(index);
+            }
+        }
+
+
+    }
+
+
 }

@@ -49,6 +49,14 @@ public class PlayerIsTrigger : MonoBehaviour
         droppedItem.rb2D.AddForce(spawnOffset * .2f, ForceMode2D.Impulse);
     }
 
+    public void DropItem(Item item, int numToDrop)
+    {
+        for (int i = 0; i < numToDrop; i++) 
+        {
+            DropItem(item);
+        }
+    }
+
     private void Update()
     {
         //if (dialogueUI.IsOpen) return;

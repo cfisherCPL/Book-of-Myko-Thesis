@@ -6,9 +6,10 @@ using TMPro;
 
 public class Slots_UI : MonoBehaviour
 {
+    public int slotID;
     public Image itemIcon;
     public TextMeshProUGUI quantityText;
-    [SerializeField] public GameObject dropItemButton;
+    //[SerializeField] public GameObject dropItemButton;
 
     [SerializeField] private GameObject highlight;
 
@@ -19,7 +20,7 @@ public class Slots_UI : MonoBehaviour
             itemIcon.sprite = slot.icon;
             itemIcon.color = slot.iconColor;
             quantityText.text = slot.count.ToString();
-            dropItemButton.SetActive(true);
+            //dropItemButton.SetActive(true);
         }
     }
 
@@ -28,7 +29,7 @@ public class Slots_UI : MonoBehaviour
         itemIcon.sprite = null;
         itemIcon.color = new Color(1, 1, 1, 0);
         quantityText.text = "";
-        dropItemButton.SetActive(false);
+        //dropItemButton.SetActive(false);
     }
 
     public void SetHighlight(bool isOn)

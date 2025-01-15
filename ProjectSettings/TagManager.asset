@@ -9,6 +9,8 @@ TagManager:
   - MushroomSpawner
   - MushSpawnManager
   - Teleporter
+  - MushroomClone
+  - DroppedMushroom
   layers:
   - Default
   - TransparentFX
