@@ -44,6 +44,8 @@ public class PlayerIsTrigger : MonoBehaviour
 
         Item droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.identity);
 
+        droppedItem.tag = "DroppedMushroom";
+
         droppedItem.rb2D.AddForce(spawnOffset * .2f, ForceMode2D.Impulse);
     }
 

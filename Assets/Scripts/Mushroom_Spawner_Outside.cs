@@ -32,6 +32,7 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
             bool timeTest = listMush.GetComponent<Mushroom>().timesList[timeNumber];
             if (dayTest && timeTest)
             {
+                //listMush.tag = "MushroomClone";
                 currentlySpawnableMushrooms.Add(listMush);
                 Debug.Log("Mushroom added to spawnable!");
             }
@@ -78,7 +79,7 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
             Transform placeHere;
             placeHere = spawnLocations[i].GetComponent<Transform>();
        
-            Instantiate(currentlySpawnableMushrooms[i], placeHere.position, placeHere.rotation, locationMushroomParent.transform);
+            GameObject mushClone = Instantiate(currentlySpawnableMushrooms[i], placeHere.position, placeHere.rotation, locationMushroomParent.transform);
             Debug.Log("Mushroom Spawned.");
             Debug.Log(i);
         }
@@ -89,10 +90,23 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
 
     public void clearSpawnedMushrooms()
     {
+        //wipe any spawned mushrooms in local area
         while (locationMushroomParent.transform.childCount > 0)
         {
             DestroyImmediate(locationMushroomParent.transform.GetChild(0).gameObject);
         }
+
+        
+        //find any stray mushrooms in the scene
+        GameObject[] foundMushrooms;
+        foundMushrooms = GameObject.FindGameObjectsWithTag("DroppedMushroom");
+
+        //destroy any stray mushrooms that were found
+        foreach (GameObject mushroom in foundMushrooms)
+        {
+            Destroy(mushroom);
+        }
+        
     }
 
 
