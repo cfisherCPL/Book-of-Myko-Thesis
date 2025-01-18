@@ -19,7 +19,7 @@ public class Toolbar_UI : MonoBehaviour
     }
     public void SelectSlot(int index)
     {
-        if (toolbarSlots.Count == 8)
+        if (toolbarSlots.Count == 9)
         {
             if (selectedSlot != null) 
             {
@@ -64,6 +64,10 @@ public class Toolbar_UI : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha8))
         {
             SelectSlot(7);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            SelectSlot(8);
         }
     }
 

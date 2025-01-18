@@ -88,14 +88,14 @@ public class Collectable : MonoBehaviour
         Item item = this.item;
 
 
-        if (player && playerTarget.inventory.ItemCanBeSlotted(item))
+        if (player && playerTarget.inventory.backpack.ItemCanBeSlotted(item))
         {
             popupText.SetText("Press F to Pickup");
             popupText.gameObject.SetActive(true);
             canPickUp = true;
 
         }
-        else if (player && !playerTarget.inventory.ItemCanBeSlotted(item))
+        else if (player && !playerTarget.inventory.backpack.ItemCanBeSlotted(item))
         {
             popupText.SetText("Backpack is Full");
             popupText.gameObject.SetActive(true);
@@ -120,11 +120,11 @@ public class Collectable : MonoBehaviour
         {
             Item item = GetComponent<Item>();
 
-            if (playerTarget.inventory.ItemCanBeSlotted(item)) 
+            if (playerTarget.inventory.backpack.ItemCanBeSlotted(item)) 
             { 
                 if (item != null)
                 {
-                    playerTarget.inventory.Add(item);
+                    playerTarget.inventory.Add("Backpack", item);
                     itemPickedUp.Invoke();
                     soundEffect.Play();
                     Destroy(this.gameObject, 0.1f);

@@ -183,7 +183,6 @@ GameObject:
   - component: {fileID: 7198841988859034136}
   - component: {fileID: 7336186661710344563}
   - component: {fileID: 3598088804292758955}
-  - component: {fileID: 2704794646214499853}
   - component: {fileID: 889718518118327304}
   m_Layer: 0
   m_Name: Mush_IndigoMilkcap(01)
@@ -322,26 +321,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2704794646214499853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6552987616814518544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f61a85a3b84f34e8ca7aac582571b29e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemType: 1
-  icon: {fileID: -1413637420, guid: fbea4b6e6f2ca4759a531f686edc16bd, type: 3}
-  itemWasTouched:
-    m_PersistentCalls:
-      m_Calls: []
-  popupText: {fileID: 4613243045818233140}
-  pointsPerCollect: 0
-  staminaCost: 0
 --- !u!82 &889718518118327304
 AudioSource:
   m_ObjectHideFlags: 0

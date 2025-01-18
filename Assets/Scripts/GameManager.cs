@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public ItemManager itemManager;
 
+    public PlayerIsTrigger player;
+
     private void Awake()
     {
         if(instance != null && instance != this)
@@ -24,5 +26,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
 
         itemManager = GetComponent<ItemManager>();
+
+        player = FindObjectOfType<PlayerIsTrigger>();
     }
 }

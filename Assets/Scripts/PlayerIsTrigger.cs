@@ -9,31 +9,27 @@ public class PlayerIsTrigger : MonoBehaviour
     public DialogueUI DialogueUI => dialogueUI;
 
     public IInteractable Interactable { get; set; }
-
-    public Inventory inventory;
+        
+    //public Inventory inventory;
     public bool inventoryFull = false;
+    //public Inventory toolbar;
+    public InventoryManager inventory;
 
-    //singleton pattern disables 11-19-24
+   
+
+    //singleton pattern disabled 11-19-24
     //public static PlayerIsTrigger Instance { get; private set; }
 
     private void Awake()
     {
 
-        inventory = new Inventory(inventorySlots);
+        inventory = GetComponent<InventoryManager>();
 
-        inventory.inventory_UI = FindObjectOfType<Inventory_UI>();  
-        //disable singleton pattern for new single scene verrsion
-        /*
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        */
+        //this find call is likely causing a mistake in run identification between invnetory and toolbar 1-18-25 cvf
+        //inventory.inventory_UI = FindObjectOfType<Inventory_UI>();
+
+        //toolbar = new Inventory(9);
+ 
     }
 
     public void DropItem (Item item)

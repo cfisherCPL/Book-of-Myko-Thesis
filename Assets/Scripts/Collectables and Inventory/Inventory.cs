@@ -8,7 +8,7 @@ using static UnityEditor.Progress;
 [System.Serializable]
 public class Inventory
 {
-    [SerializeField] public Inventory_UI inventory_UI;
+    //[SerializeField] public Inventory_UI inventory_UI;
 
     [SerializeField] public int numSlotsOpen;
 
@@ -30,9 +30,22 @@ public class Inventory
             maxAllowed = 9;
         }
 
-        public bool CanAddItem()
+        public bool IsEmpty
         {
-            if(count < maxAllowed)
+            get
+            {
+                if(itemName == "" && count == 0)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+        }
+
+        public bool CanAddItem(string itemName)
+        {
+            if(this.itemName == itemName && count < maxAllowed)
             {
                 return true;
             }
@@ -47,6 +60,18 @@ public class Inventory
             count++;
 
         }
+
+        public void AddItem(string itemName, Sprite icon, int maxAllowed, Color iconColor)
+        {
+            this.itemName = itemName;
+            this.icon = icon;
+            this.iconColor =iconColor;
+            count++;
+            this.maxAllowed = maxAllowed;
+
+        }
+
+
 
         public void RemoveItem()
         {
@@ -85,10 +110,10 @@ public class Inventory
     {
         foreach (Slot slot in slots)
         {
-            if(slot.itemName == item.data.itemName && slot.CanAddItem())
+            if(slot.itemName == item.data.itemName && slot.CanAddItem(item.data.itemName))
             {
                 slot.AddItem(item);
-                inventory_UI.Refresh();
+                //inventory_UI.Refresh();
                 UnityEngine.Debug.Log("Item added to existing group.");
                 return;
             }
@@ -99,7 +124,7 @@ public class Inventory
             if(slot.itemName == "")
             {
                 slot.AddItem(item);
-                inventory_UI.Refresh();
+                //inventory_UI.Refresh();
                 numSlotsOpen--;
                 UnityEngine.Debug.Log("Item added to new slot.");
                 return;
@@ -123,7 +148,7 @@ public class Inventory
         
         foreach (Slot slot in slots)
         {
-            if (slot.itemName == item.data.itemName && slot.CanAddItem())
+            if (slot.itemName == item.data.itemName && slot.CanAddItem(item.data.itemName))
             {
                 slotAvailable = true;
             }
@@ -165,9 +190,17 @@ public class Inventory
                 Remove(index);
             }
         }
-
-
     }
 
+    public void MoveSlot(int fromIndex, int toIndex)
+    {
+        Slot fromSlot = slots[fromIndex];
+        Slot toSlot = slots[toIndex];
 
+        if (toSlot.IsEmpty || toSlot.CanAddItem(fromSlot.itemName))
+        {
+            toSlot.AddItem(fromSlot.itemName, fromSlot.icon, fromSlot.maxAllowed, fromSlot.iconColor);
+            fromSlot.RemoveItem();
+        }
+    }
 }

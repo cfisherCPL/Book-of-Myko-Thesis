@@ -4,30 +4,46 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    public static InventoryManager Instance {  get; private set; }
+    /*InventoryManager exists to handle the use of 
+     * multiple inventorys on a player or in the game
+     * such as the backback, collection box, and display case
+     * 1-18-25
+     * */
+    
+    public Dictionary<string, Inventory> inventoryByName = new Dictionary<string, Inventory>();
+    
+    [Header("Backpack")]
+    public Inventory backpack;
+    public int backpackSlotsCount;
 
-    public Inventory inventory;
+    [Header("Toolbar")]
+    public Inventory toolbar;
+    public int toolbarSlotsCount;
+
 
     private void Awake()
     {
-        //singleton pattern to persist across scenes
-      
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-      
-        inventory = new Inventory(8);
+        backpack = new Inventory(backpackSlotsCount);
+        toolbar = new Inventory(toolbarSlotsCount);
+
+        inventoryByName.Add("Backpack", backpack);
+        inventoryByName.Add("Toolbar", toolbar);
+
     }
 
-    /* 1-14-25 Not sure this manager is ever used?
-     * not referenced by anything, and the PlayerIsTrigger manages 
-     * its own inventory 
-     * 
-     * */
+    public void Add(string inventoryName, Item item)
+    {
+        if (inventoryByName.ContainsKey(inventoryName))
+        {
+            inventoryByName[inventoryName].Add(item);
+            Debug.Log("Item sent to " +inventoryName);
+        }
+    }
+
+    public Inventory GetInventoryByName(string inventoryName)
+    {
+        if (inventoryByName.ContainsKey(inventoryName)) return inventoryByName[inventoryName];
+        return null;
+    }
+
 }
