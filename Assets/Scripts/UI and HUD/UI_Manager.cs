@@ -1,0 +1,101 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro.Examples;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class UI_Manager : MonoBehaviour
+{
+    public Dictionary<string, Inventory_UI> inventoryUIByName = new Dictionary<string, Inventory_UI> ();
+   
+    public List<Inventory_UI> inventoryUIs;
+
+    public static Slots_UI draggedSlot;
+    public static Image draggedIcon;
+    public static bool dragSingle;
+    public GameObject inventoryPanel;
+
+    public void Awake()
+    {
+        Initialize();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            ToggleInventory();
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            dragSingle = true;
+            Debug.Log("LeftShift Held");
+        }
+        else
+        {
+            dragSingle = false;
+        }
+
+        //Inventories should always be updated and active, even if non-performant 1-18-25
+        //so sayeth the command of "getting this shit done"
+        RefreshAll();
+    }
+
+    public void ToggleInventory()
+    {
+        //adding this if surround seems to prevent the inventory panel 
+        //(not the toolbar) from updating as normal unless it is toggled 1-18-25 cvf
+        if (inventoryPanel != null)
+        {
+            if (!inventoryPanel.activeSelf)
+            {
+                inventoryPanel.SetActive(true);
+                RefreshInventoryUI("Backpack");
+            }
+            else
+            {
+                inventoryPanel.SetActive(false);
+            }
+        }
+    }
+
+    public void RefreshInventoryUI(string inventoryName)
+    {
+        if (inventoryUIByName.ContainsKey(inventoryName))
+        {
+            inventoryUIByName[inventoryName].Refresh();
+        }
+    }
+
+    public void RefreshAll()
+    {
+        foreach (KeyValuePair<string, Inventory_UI> keyValuePair in inventoryUIByName) 
+        {
+            keyValuePair.Value.Refresh();
+        }
+    }
+
+
+    public Inventory_UI GetInventoryUI(string inventoryName)
+    {
+        if (inventoryUIByName.ContainsKey(inventoryName))
+        {
+            return inventoryUIByName[inventoryName];
+        }
+
+        Debug.LogWarning("There is not inventory ui for " + inventoryName);
+        return null;
+    }
+
+    void Initialize()
+    {
+        foreach (Inventory_UI ui in inventoryUIs)
+        {
+            if (!inventoryUIByName.ContainsKey(ui.inventoryName))
+            {
+                inventoryUIByName.Add(ui.inventoryName, ui);
+            }
+        }
+    }
+}
