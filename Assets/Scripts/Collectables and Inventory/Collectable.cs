@@ -84,7 +84,7 @@ public class Collectable : MonoBehaviour
     {
         PlayerIsTrigger player = collision.GetComponent<PlayerIsTrigger>();
         playerTarget = player;
-        playerTemp = player;
+        playerTemp = player; //what is this for? 1-19-25
         Item item = this.item;
 
 

@@ -25,10 +25,6 @@ public class PlayerIsTrigger : MonoBehaviour
 
         inventory = GetComponent<InventoryManager>();
 
-        //this find call is likely causing a mistake in run identification between invnetory and toolbar 1-18-25 cvf
-        //inventory.inventory_UI = FindObjectOfType<Inventory_UI>();
-
-        //toolbar = new Inventory(9);
  
     }
 

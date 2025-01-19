@@ -98,4 +98,9 @@ public class UI_Manager : MonoBehaviour
             }
         }
     }
+
+    public void RemoveDragged()
+    {
+        draggedSlot.localInventoryUI.Remove();
+    }
 }

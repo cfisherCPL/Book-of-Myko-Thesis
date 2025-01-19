@@ -31,6 +31,7 @@ public class InventoryManager : MonoBehaviour
 
     }
 
+    //this Add() is where it is checking which inventory an item should go to?
     public void Add(string inventoryName, Item item)
     {
         if (inventoryByName.ContainsKey(inventoryName))

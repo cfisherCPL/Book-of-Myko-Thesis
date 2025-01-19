@@ -7,6 +7,9 @@ using TMPro;
 public class Slots_UI : MonoBehaviour
 {
     public int slotID;
+
+    [SerializeField] public GameObject localInventory;
+    public Inventory_UI localInventoryUI;
     public Inventory inventory;
 
     public Image itemIcon;
@@ -14,6 +17,12 @@ public class Slots_UI : MonoBehaviour
     //[SerializeField] public GameObject dropItemButton;
 
     [SerializeField] private GameObject highlight;
+
+    void Awake()
+    {
+        localInventoryUI = localInventory.GetComponent<Inventory_UI>();
+    }
+
 
     public void SetItem(Inventory.Slot slot)
     {
