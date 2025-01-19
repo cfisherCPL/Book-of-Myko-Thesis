@@ -14,10 +14,17 @@ public class UI_Manager : MonoBehaviour
     public static Image draggedIcon;
     public static bool dragSingle;
     public GameObject inventoryPanel;
+    public GameObject storagePanel;
 
     public void Awake()
     {
         Initialize();
+    }
+
+    private void Start()
+    {
+        inventoryPanel.SetActive (false);
+        storagePanel.SetActive (false);
     }
 
     void Update()

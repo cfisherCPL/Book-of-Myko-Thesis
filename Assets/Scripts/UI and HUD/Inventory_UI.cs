@@ -31,7 +31,7 @@ public class Inventory_UI : MonoBehaviour
         inventory = GameManager.instance.player.inventory.GetInventoryByName(inventoryName); 
         SetupSlots();
         Refresh();
-        //inventoryPanel.SetActive(false);
+        
     }
    
 
