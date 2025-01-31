@@ -15,6 +15,7 @@ public class UI_Manager : MonoBehaviour
     public static bool dragSingle;
     public GameObject inventoryPanel;
     public GameObject storagePanel;
+    public GameObject toolbarPanel;
 
     public void Awake()
     {
@@ -25,6 +26,13 @@ public class UI_Manager : MonoBehaviour
     {
         inventoryPanel.SetActive (false);
         storagePanel.SetActive (false);
+        /*
+         * right now the toolbar is useful but not used
+         * removing it entirely requires updating gameobjects AND inventory scripts
+         * just hide it until its needed as a mechanic 
+         * 30 jan 2025 CVF (sorry future me)
+         */
+        toolbarPanel.SetActive(false);
     }
 
     void Update()
