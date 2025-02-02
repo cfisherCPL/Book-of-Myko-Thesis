@@ -17,6 +17,7 @@ public class Inventory
     public class Slot
     {
         public string itemName;
+        public int itemNumber;
         public int count;
         public int maxAllowed;
 
@@ -26,6 +27,7 @@ public class Inventory
         public Slot()
         {
             itemName = "";
+            itemNumber = -1;
             count = 0;
             maxAllowed = 9;
         }
@@ -55,6 +57,7 @@ public class Inventory
         public void AddItem(Item item)
         {
             this.itemName = item.data.itemName;
+            this.itemNumber = item.data.itemNumber;
             this.icon = item.data.icon;
             this.iconColor = item.data.iconColor;
             count++;
@@ -83,6 +86,7 @@ public class Inventory
                 {
                     icon = null;
                     itemName = "";
+                    itemNumber = -1;
                   
                 }
             }

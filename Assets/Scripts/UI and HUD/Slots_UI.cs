@@ -17,6 +17,7 @@ public class Slots_UI : MonoBehaviour
     //[SerializeField] public GameObject dropItemButton;
 
     [SerializeField] private GameObject highlight;
+    [SerializeField] private GameObject newItemIndicator;
 
     void Awake()
     {
@@ -31,7 +32,10 @@ public class Slots_UI : MonoBehaviour
             itemIcon.sprite = slot.icon;
             itemIcon.color = slot.iconColor;
             quantityText.text = slot.count.ToString();
-            
+            newItemIndicator.SetActive(true);
+
+
+
         }
     }
 
@@ -40,6 +44,10 @@ public class Slots_UI : MonoBehaviour
         itemIcon.sprite = null;
         itemIcon.color = new Color(1, 1, 1, 0);
         quantityText.text = "";
+        if (newItemIndicator != null)
+        {
+            newItemIndicator.SetActive(false);
+        }
     }
 
     public void SetHighlight(bool isOn)

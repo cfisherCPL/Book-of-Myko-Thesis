@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4e905d58a47ed47944b61dd67e4a69, type: 3}
   m_Name: Basic Button
   m_EditorClassIdentifier: 
-  itemNumber: 1
+  itemNumber: 0
   itemName: Basic Button
-  icon: {fileID: 0}
-  iconColor: {r: 0, g: 0, b: 0, a: 0}
+  icon: {fileID: 1892229279, guid: fbea4b6e6f2ca4759a531f686edc16bd, type: 3}
+  iconColor: {r: 1, g: 1, b: 1, a: 1}

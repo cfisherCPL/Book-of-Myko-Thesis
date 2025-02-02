@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Inventory_UI : MonoBehaviour
 {
-
+    [SerializeField] private FoundMushroomTracker unlockedMushrooms;
 
     public string inventoryName;
 
@@ -45,11 +45,28 @@ public class Inventory_UI : MonoBehaviour
                 if (inventory.slots[i].itemName != "")
                 {
                     slots[i].SetItem(inventory.slots[i]);
+                    
+                    //check and see if this item has already been found and unlocked in the cabin mushroom collection
+                    //if it hasn't set the new item indicator to active
+                    int thisItemNum;
+                    thisItemNum = inventory.slots[i].itemNumber;
+                    if (thisItemNum >= 0)
+                    {
+                        if (!unlockedMushrooms.mushroomByItemNumber[thisItemNum])
+                        {
+                            slots[i].transform.Find("NewItemBurst").gameObject.SetActive(true);
+                        }
+                        else
+                        {
+                            slots[i].transform.Find("NewItemBurst").gameObject.SetActive(false);
+                        }
+                    }
+                    
                 }
                 else
                 {
                     slots[i].SetEmpty();
-                    
+
                 }
             }
         }
@@ -88,6 +105,8 @@ public class Inventory_UI : MonoBehaviour
         UI_Manager.draggedIcon.raycastTarget = false;
         UI_Manager.draggedIcon.rectTransform.sizeDelta = new Vector2(50, 50); //not sure this does anything 1-19-25
 
+ 
+
         MoveToMousePosition(UI_Manager.draggedIcon.gameObject);
 
         Debug.Log("Start Drag: " + UI_Manager.draggedSlot.name);
@@ -118,6 +137,7 @@ public class Inventory_UI : MonoBehaviour
 
             Debug.Log("Dropped Slot: " + slot.name);
             Debug.Log("Dropped Slot Inventory: " + slot.inventory);
+
             UI_Manager.draggedSlot.inventory.MoveSlot(UI_Manager.draggedSlot.slotID, slot.slotID, slot.inventory);
         }
         else

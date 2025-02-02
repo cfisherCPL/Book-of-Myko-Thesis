@@ -16,6 +16,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject inventoryPanel;
     public GameObject storagePanel;
     public GameObject toolbarPanel;
+    public GameObject journalPanel;
 
     public void Awake()
     {
@@ -26,6 +27,7 @@ public class UI_Manager : MonoBehaviour
     {
         inventoryPanel.SetActive (false);
         storagePanel.SetActive (false);
+        journalPanel.SetActive(false);
         /*
          * right now the toolbar is useful but not used
          * removing it entirely requires updating gameobjects AND inventory scripts
@@ -33,6 +35,7 @@ public class UI_Manager : MonoBehaviour
          * 30 jan 2025 CVF (sorry future me)
          */
         toolbarPanel.SetActive(false);
+        
     }
 
     void Update()
