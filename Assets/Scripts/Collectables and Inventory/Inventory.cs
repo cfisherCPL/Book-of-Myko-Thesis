@@ -27,7 +27,7 @@ public class Inventory
         public Slot()
         {
             itemName = "";
-            itemNumber = -1;
+            itemNumber = 0;
             count = 0;
             maxAllowed = 9;
         }
@@ -64,9 +64,10 @@ public class Inventory
 
         }
 
-        public void AddItem(string itemName, Sprite icon, int maxAllowed, Color iconColor)
+        public void AddItem(string itemName, int itemNum, Sprite icon, int maxAllowed, Color iconColor)
         {
             this.itemName = itemName;
+            this.itemNumber = itemNum;
             this.icon = icon;
             this.iconColor =iconColor;
             count++;
@@ -86,7 +87,7 @@ public class Inventory
                 {
                     icon = null;
                     itemName = "";
-                    itemNumber = -1;
+                    itemNumber = 0;
                   
                 }
             }
@@ -205,7 +206,7 @@ public class Inventory
         {
             for (int i = 0; i < numToMove; i++)
             {
-                toSlot.AddItem(fromSlot.itemName, fromSlot.icon, fromSlot.maxAllowed, fromSlot.iconColor);
+                toSlot.AddItem(fromSlot.itemName, fromSlot.itemNumber, fromSlot.icon, fromSlot.maxAllowed, fromSlot.iconColor);
                 fromSlot.RemoveItem(); 
             }
         }

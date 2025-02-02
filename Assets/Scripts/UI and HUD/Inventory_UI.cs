@@ -46,22 +46,19 @@ public class Inventory_UI : MonoBehaviour
                 {
                     slots[i].SetItem(inventory.slots[i]);
                     
-                    //check and see if this item has already been found and unlocked in the cabin mushroom collection
-                    //if it hasn't set the new item indicator to active
-                    int thisItemNum;
+                    
+                    int thisItemNum = 0;
                     thisItemNum = inventory.slots[i].itemNumber;
-                    if (thisItemNum >= 0)
+                    Debug.Log("The Length of the MushCheckList is: " + unlockedMushrooms.mushroomByItemNumber.Count);
+                    Debug.Log("Passed Item Number was: " + thisItemNum);
+
+                    if (thisItemNum < unlockedMushrooms.mushroomByItemNumber.Count && !unlockedMushrooms.mushroomByItemNumber[thisItemNum])
                     {
-                        if (!unlockedMushrooms.mushroomByItemNumber[thisItemNum])
-                        {
-                            slots[i].transform.Find("NewItemBurst").gameObject.SetActive(true);
-                        }
-                        else
-                        {
-                            slots[i].transform.Find("NewItemBurst").gameObject.SetActive(false);
-                        }
+                        slots[i].newItemIndicator.SetActive(true);
                     }
                     
+                    
+                 
                 }
                 else
                 {

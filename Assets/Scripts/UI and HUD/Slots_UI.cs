@@ -9,6 +9,8 @@ public class Slots_UI : MonoBehaviour
     public int slotID;
 
     [SerializeField] public GameObject localInventory;
+    [SerializeField] public FoundMushroomTracker unlockedMushrooms;
+
     public Inventory_UI localInventoryUI;
     public Inventory inventory;
 
@@ -17,7 +19,7 @@ public class Slots_UI : MonoBehaviour
     //[SerializeField] public GameObject dropItemButton;
 
     [SerializeField] private GameObject highlight;
-    [SerializeField] private GameObject newItemIndicator;
+    [SerializeField] public GameObject newItemIndicator;
 
     void Awake()
     {
@@ -32,8 +34,6 @@ public class Slots_UI : MonoBehaviour
             itemIcon.sprite = slot.icon;
             itemIcon.color = slot.iconColor;
             quantityText.text = slot.count.ToString();
-            newItemIndicator.SetActive(true);
-
 
 
         }
