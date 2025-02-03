@@ -25,8 +25,15 @@ public class UI_Manager : MonoBehaviour
 
     private void Start()
     {
+        Invoke("HidePanels", 0.001f);
+        
+    }
+
+    private void HidePanels()
+    {
+        //making this it's own thing to be able to Invoke after micro delay
         inventoryPanel.SetActive (false);
-        storagePanel.SetActive (false);
+        storagePanel.SetActive(false);
         journalPanel.SetActive(false);
         /*
          * right now the toolbar is useful but not used
@@ -35,7 +42,6 @@ public class UI_Manager : MonoBehaviour
          * 30 jan 2025 CVF (sorry future me)
          */
         toolbarPanel.SetActive(false);
-        
     }
 
     void Update()
@@ -57,6 +63,7 @@ public class UI_Manager : MonoBehaviour
 
         //Inventories should always be updated and active, even if non-performant 1-18-25
         //so sayeth the command of "getting this shit done"
+        //2-3-25 this is working, but it is a problem to debug when it calls as fast as it does
         RefreshAll();
     }
 

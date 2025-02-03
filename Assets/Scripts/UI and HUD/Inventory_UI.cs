@@ -23,11 +23,12 @@ public class Inventory_UI : MonoBehaviour
     {
 
         canvas = FindObjectOfType<Canvas>();
-
+   
     }
 
     private void Start()
     {
+        
         inventory = GameManager.instance.player.inventory.GetInventoryByName(inventoryName); 
         SetupSlots();
         Refresh();
@@ -38,7 +39,9 @@ public class Inventory_UI : MonoBehaviour
 
     public void Refresh()
     {
-        if(slots.Count == inventory.slots.Count)
+        //2-3-35 suddenly throwing null ref error at startup
+        //error was NOT present at save and quit prior evening
+        if (slots.Count == inventory.slots.Count)
         {
             for (int i = 0; i < slots.Count; i++)
             {

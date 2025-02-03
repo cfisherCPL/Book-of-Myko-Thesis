@@ -8,7 +8,7 @@ public class FoundMushroomTracker : ScriptableObject
     [field: SerializeField]
     public List<bool> mushroomByItemNumber { get; set; }
 
-
+    public int totalFound;
     
 
 
