@@ -33,10 +33,16 @@ public class StorageContainer : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Exited Storage Trigger");
-        storageInventoryUI.SetActive(false);
-        popupText.gameObject.SetActive(false);
         inRange = false;
+        Debug.Log("Exited Storage Trigger");
+        popupText.gameObject.SetActive(false);
+        if (storageInventoryUI.activeSelf)
+        {
+            storageInventoryUI.SetActive(false);
+        }
+        
+        
+        
     }
 
     void Update()
