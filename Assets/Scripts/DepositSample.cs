@@ -9,6 +9,7 @@ public class DepositSample : MonoBehaviour
 {
     [SerializeField] private TMP_Text popupText;
     [SerializeField] public FoundMushroomTracker mushroomTracker;
+    [SerializeField] public Inventory_UI backpackUI;
     
     public string inventoryName;
     private Inventory inventoryToCheck;
@@ -62,6 +63,8 @@ public class DepositSample : MonoBehaviour
                     slot.RemoveItem();
                 }
             }
+            
+            backpackUI.Refresh();
 
         }
     }

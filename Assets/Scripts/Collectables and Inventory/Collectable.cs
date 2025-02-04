@@ -72,6 +72,8 @@ public class Collectable : MonoBehaviour
 
         //update the scriptable objects using existing data
         //test: it doesnt work 1-14-25
+        //test2: grasslands are being overwritten with common mush data and name
+        // forest itemDatas are NOT being overwritten though...why? 2-4-25
         item.data.iconColor = iconColor;
         item.data.icon = icon;
         item.data.itemName = mushroom.mushName;

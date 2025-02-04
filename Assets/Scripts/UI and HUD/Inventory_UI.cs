@@ -60,6 +60,10 @@ public class Inventory_UI : MonoBehaviour
                         slots[i].newItemIndicator.SetActive(true);
                     }
                     
+                    if (unlockedMushrooms.mushroomByItemNumber[thisItemNum])
+                    {
+                        slots[i].newItemIndicator.SetActive(false);
+                    }
                     
                  
                 }
