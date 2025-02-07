@@ -25,6 +25,11 @@ public class BlockTravel : MonoBehaviour
         {
             blocker.gameObject.SetActive(true);
         }
+        else 
+        { 
+            blocker.gameObject.SetActive(false); 
+        }
+
     }
 
 

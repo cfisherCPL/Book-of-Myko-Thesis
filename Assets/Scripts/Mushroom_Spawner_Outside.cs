@@ -33,26 +33,29 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
         {
             
             placeMushrooms();
-            //mushSpawned.alreadySpawned = true;
+            mushSpawned.alreadySpawned = true;
         }
     }
 
     void pickViableMushrooms()
     {
-        foreach (GameObject listMush in allLocationMushrooms)
+        if (!mushSpawned.alreadySpawned)
         {
-            //check if spawnable day matches current
-            int dayNumber = dayofWeek.currentDay;
-            int timeNumber = timeOfDay.currentTimeOfDay;
-            bool dayTest = listMush.GetComponent<Mushroom>().daysList[dayNumber];
-            bool timeTest = listMush.GetComponent<Mushroom>().timesList[timeNumber];
-            if (dayTest && timeTest)
+            foreach (GameObject listMush in allLocationMushrooms)
             {
-                //listMush.tag = "MushroomClone";
-                currentlySpawnableMushrooms.Add(listMush);
-                Debug.Log("Mushroom added to spawnable!");
-            }
+                //check if spawnable day matches current
+                int dayNumber = dayofWeek.currentDay;
+                int timeNumber = timeOfDay.currentTimeOfDay;
+                bool dayTest = listMush.GetComponent<Mushroom>().daysList[dayNumber];
+                bool timeTest = listMush.GetComponent<Mushroom>().timesList[timeNumber];
+                if (dayTest && timeTest)
+                {
+                    //listMush.tag = "MushroomClone";
+                    currentlySpawnableMushrooms.Add(listMush);
+                    Debug.Log("Mushroom added to spawnable!");
+                }
 
+            }
         }
     }
 
@@ -61,11 +64,14 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
 
         //generate a randomized list of possible spawn locations from all
         //possible spawns that were added to that list in the inspector
-        for (int j = 0; j < allPotentialSpawns.Count; j++)
-        {
-            GameObject temp = allPotentialSpawns[j];
-            spawnLocations.Add(temp);
-            ShuffleList(spawnLocations);
+        if (!mushSpawned.alreadySpawned)
+        { 
+            for (int j = 0; j < allPotentialSpawns.Count; j++)
+            {
+                GameObject temp = allPotentialSpawns[j];
+                spawnLocations.Add(temp);
+                ShuffleList(spawnLocations);
+            }
         }
     }
 
@@ -124,7 +130,10 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
         {
             Destroy(mushroom);
         }
-        
+
+        //when leaving an area that clears mushrooms
+        //reset and allow spawning again 2-7-25
+        mushSpawned.alreadySpawned = false;
     }
 
 

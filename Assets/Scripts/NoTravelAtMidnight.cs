@@ -14,11 +14,12 @@ public class NoTravelAtMidnight : MonoBehaviour
 
     private void Awake()
     {
+        midnightTextPopUp.gameObject.SetActive(false);
     }
 
     private void Start()
     {
-        midnightTextPopUp.gameObject.SetActive(false);
+        
     }
 
 
