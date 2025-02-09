@@ -10,18 +10,33 @@ public class HoverTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     private Slots_UI thisSlot;
 
+    public FoundMushroomTracker tracker;
 
-    public void Start()
-    {
-        
-    }
     
     public void OnPointerEnter(PointerEventData eventData)
     {
         StopAllCoroutines();
         thisSlot = this.GetComponent<Slots_UI>();
         Debug.Log("Set slotID to " + thisSlot.slotID);
-        tipToShow = thisSlot.inventory.slots[thisSlot.slotID].itemName;
+        
+        int mushNum = 0;
+        string mushName = thisSlot.inventory.slots[thisSlot.slotID].itemName;
+        mushNum = thisSlot.inventory.slots[thisSlot.slotID].itemNumber;
+
+        if (!string.IsNullOrEmpty(mushName) && tracker.mushroomByItemNumber[mushNum])
+        {
+            tipToShow = mushName;
+        }
+        else if (!string.IsNullOrEmpty(mushName) && !tracker.mushroomByItemNumber[mushNum])
+        {
+            tipToShow = "??? Not yet researched!";
+        }
+        else
+        {
+            tipToShow = null;
+        }
+        
+
         StartCoroutine(StartTimer());
     }
 

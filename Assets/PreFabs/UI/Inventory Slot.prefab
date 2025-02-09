@@ -430,6 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipToShow: MushInfo PopUp!
+  tracker: {fileID: 11400000, guid: a0f1a6849a2d1724c86555afac161f6a, type: 2}
 --- !u!1 &6204364221624454995
 GameObject:
   m_ObjectHideFlags: 0
