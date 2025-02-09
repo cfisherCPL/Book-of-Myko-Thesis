@@ -20,7 +20,6 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
     
     
 
-    // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D collision)
     {
         pickViableMushrooms();

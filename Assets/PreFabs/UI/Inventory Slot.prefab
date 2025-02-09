@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 786698366582954152}
   - component: {fileID: 4956304745030403718}
   - component: {fileID: 1521446604985065767}
+  - component: {fileID: 1830469475686244661}
   m_Layer: 5
   m_Name: Inventory Slot
   m_TagString: Untagged
@@ -378,6 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotID: 0
   localInventory: {fileID: 0}
+  unlockedMushrooms: {fileID: 0}
   localInventoryUI: {fileID: 0}
   inventory:
     numSlotsOpen: 0
@@ -415,6 +417,19 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls: []
+--- !u!114 &1830469475686244661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5617543670765818786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abfa3469ee3a1bf49b57f0b086b60bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipToShow: MushInfo PopUp!
 --- !u!1 &6204364221624454995
 GameObject:
   m_ObjectHideFlags: 0

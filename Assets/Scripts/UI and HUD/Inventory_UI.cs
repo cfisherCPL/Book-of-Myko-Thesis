@@ -52,8 +52,8 @@ public class Inventory_UI : MonoBehaviour
                     
                     int thisItemNum = 0;
                     thisItemNum = inventory.slots[i].itemNumber;
-                    Debug.Log("The Length of the MushCheckList is: " + unlockedMushrooms.mushroomByItemNumber.Count);
-                    Debug.Log("Passed Item Number was: " + thisItemNum);
+                    //Debug.Log("The Length of the MushCheckList is: " + unlockedMushrooms.mushroomByItemNumber.Count);
+                    //Debug.Log("Passed Item Number was: " + thisItemNum);
 
                     if (thisItemNum < unlockedMushrooms.mushroomByItemNumber.Count && !unlockedMushrooms.mushroomByItemNumber[thisItemNum])
                     {
