@@ -64,7 +64,12 @@ public class UI_Manager : MonoBehaviour
         //Inventories should always be updated and active, even if non-performant 1-18-25
         //so sayeth the command of "getting this shit done"
         //2-3-25 this is working, but it is a problem to debug when it calls as fast as it does
-        RefreshAll();
+        //2-16-25 only run refresh all if the panel is actually active. dur.
+        if (inventoryPanel.activeSelf |  storagePanel.activeSelf)
+        {
+            RefreshAll();
+        }
+        
     }
 
     public void ToggleInventory()
