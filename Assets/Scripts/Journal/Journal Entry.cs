@@ -73,6 +73,8 @@ public class JournalEntry : MonoBehaviour
         iconColor.GetComponent<Image>().color = mushData.iconColor;
         mushName.GetComponent<TMP_Text>().text = mushData.itemName;
 
+        // make sure this is off in final
+        //should only happen once at begining of playthrough for a new game
         RandomKnowledge();
     }
 
