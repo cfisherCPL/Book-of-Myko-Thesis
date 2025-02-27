@@ -40,6 +40,10 @@ public class StorageContainer : MonoBehaviour
         {
             storageInventoryUI.SetActive(false);
         }
+        if (uiManager.inventoryPanel.activeSelf)
+        {
+            uiManager.inventoryPanel.SetActive(false);
+        }
         
         
         

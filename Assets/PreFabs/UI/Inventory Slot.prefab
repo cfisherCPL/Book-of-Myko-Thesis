@@ -379,7 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotID: 0
   localInventory: {fileID: 0}
-  unlockedMushrooms: {fileID: 0}
+  unlockedMushrooms: {fileID: 11400000, guid: a0f1a6849a2d1724c86555afac161f6a, type: 2}
   localInventoryUI: {fileID: 0}
   inventory:
     numSlotsOpen: 0

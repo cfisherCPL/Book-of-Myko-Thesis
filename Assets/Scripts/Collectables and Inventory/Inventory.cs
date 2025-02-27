@@ -27,7 +27,7 @@ public class Inventory
         public Slot()
         {
             itemName = "";
-            itemNumber = 0;
+            itemNumber = 666;
             count = 0;
             maxAllowed = 9;
         }
@@ -87,7 +87,7 @@ public class Inventory
                 {
                     icon = null;
                     itemName = "";
-                    itemNumber = 0;
+                    itemNumber = 666;
                   
                 }
             }

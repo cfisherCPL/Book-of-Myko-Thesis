@@ -92,7 +92,7 @@ public class Collectable : MonoBehaviour
 
         if (player && playerTarget.inventory.backpack.ItemCanBeSlotted(item))
         {
-            popupText.SetText("Press F to Pickup");
+            popupText.SetText("Press E to Pickup");
             popupText.gameObject.SetActive(true);
             canPickUp = true;
 
@@ -118,7 +118,7 @@ public class Collectable : MonoBehaviour
     public void Update()
     {
         
-        if (canPickUp && Input.GetKeyDown("f"))
+        if (canPickUp && Input.GetKeyDown("e"))
         {
             Item item = GetComponent<Item>();
 

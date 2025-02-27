@@ -32,7 +32,7 @@ public class GoToSleep : MonoBehaviour
 
     private void Update()
     {
-        if (sleepAllowed && Input.GetKeyDown("n"))
+        if (sleepAllowed && Input.GetKeyDown("e"))
         {
             dayOfWeek.nextDay();
             spawnTracker.alreadySpawned = false;

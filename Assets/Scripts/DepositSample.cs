@@ -57,10 +57,13 @@ public class DepositSample : MonoBehaviour
         {
             foreach (Inventory.Slot slot in inventoryToCheck.slots) 
             {
-                if(!mushroomTracker.mushroomByItemNumber[slot.itemNumber])
+                if (slot.itemNumber < mushroomTracker.mushroomByItemNumber.Count)
                 {
-                    mushroomTracker.mushroomByItemNumber[slot.itemNumber] = true;
-                    slot.RemoveItem();
+                    if (!mushroomTracker.mushroomByItemNumber[slot.itemNumber])
+                    {
+                        mushroomTracker.mushroomByItemNumber[slot.itemNumber] = true;
+                        slot.RemoveItem();
+                    }
                 }
             }
             

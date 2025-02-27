@@ -12,10 +12,21 @@ public class SaveController : MonoBehaviour
     [SerializeField] public AlreadySpawned spawnTracker;
     [SerializeField] public FoundMushroomTracker foundTracker;
 
-    [SerializeField] public GameObject commonJournalPanel;
+    
     [SerializeField] public NewGameTracker newGameTracker;
+    [SerializeField] public GameObject gameManager;
 
     public GameObject[] menuPanels;
+
+    //all the different mushroom info pages in the journal that need save states
+
+    [SerializeField] public GameObject commonJournalPanel;
+    [SerializeField] public GameObject forestJournalPanel;
+    [SerializeField] public GameObject grasslandsJournalPanel;
+    [SerializeField] public GameObject mountainJournalPanel;
+    [SerializeField] public GameObject specialJournalPanel;
+
+    [SerializeField] public GameObject[] journalTrackers;
 
     private string saveLocation;
     void Start()
@@ -41,12 +52,20 @@ public class SaveController : MonoBehaviour
             timeOfDay = currentTime.currentTimeOfDay,
             alreadySpawned = spawnTracker.alreadySpawned,
             foundMushList = new List<bool>(foundListNum),
-            journalPanel_common = new JournalPanelSaveData(commonJournalPanel.GetComponent<JournalEntryTracker>().panelEntries.Count),
+            //journalPanel_common = new JournalPanelSaveData(journalTrackers[0].GetComponent<JournalEntryTracker>().panelEntries.Count),
+            //journalPanel_forest = new JournalPanelSaveData(journalTrackers[1].GetComponent<JournalEntryTracker>().panelEntries.Count),
+            //journalPanel_grasslands = new JournalPanelSaveData(journalTrackers[2].GetComponent<JournalEntryTracker>().panelEntries.Count),
+            //journalPanel_mountain = new JournalPanelSaveData(journalTrackers[3].GetComponent<JournalEntryTracker>().panelEntries.Count),
+            //journalPanel_special = new JournalPanelSaveData(journalTrackers[4].GetComponent<JournalEntryTracker>().panelEntries.Count),
             saveBackpack = new Inventory(playerBackpack),
             saveStorage = new Inventory(playerStorage),
-
-
         };
+
+        //make new JPSD in the SaveData array for them using the number of entries per panel tracker
+        for(int i=0; i<saveData.allPanels.Length; i++)
+        {
+            saveData.allPanels[i] = new JournalPanelSaveData(journalTrackers[i].GetComponent<JournalEntryTracker>().panelEntries.Count);
+        }
 
         //read playerbackpack into saveData
         for (int i = 0; i < saveData.saveBackpack.slots.Count; i++)
@@ -79,30 +98,31 @@ public class SaveController : MonoBehaviour
         //UnityEngine.Debug.Log("Count of Saved Tracker List is: " + saveData.foundMushList.Count);
         //UnityEngine.Debug.Log("Capacity of Saved Tracker List is: " + saveData.foundMushList.Capacity);
 
-        //copy the state data of each element in the journal panel for common mushrooms
-        int entryCount = commonJournalPanel.GetComponent<JournalEntryTracker>().panelEntries.Count;
-        for (int i = 0; i < entryCount; i++)
+        UnityEngine.Debug.Log("saveData.allPanels.Lenght is: " + saveData.allPanels.Length);
+
+        //copy the state data of each element in the each journal panel
+        for (int q = 0; q < saveData.allPanels.Length; q++)
         {
-            int knownInfo = 12;
-            for (int j = 0; j < knownInfo; j++)
+            int entryCount = journalTrackers[q].GetComponent<JournalEntryTracker>().panelEntries.Count;
+            for (int i = 0; i < entryCount; i++)
             {
-                bool temp = false;
-                temp = commonJournalPanel.GetComponent<JournalEntryTracker>().panelEntries[i].GetComponent<JournalEntry>().knownTracker[j];
-                saveData.journalPanel_common.entryTracker[i].knownTracker[j] = temp;
-                    
-            }
+                int knownInfo = 12;
+                for (int j = 0; j < knownInfo; j++)
+                {
+                    bool temp = false;
+                    temp = journalTrackers[q].GetComponent<JournalEntryTracker>().panelEntries[i].GetComponent<JournalEntry>().knownTracker[j];
+                    saveData.allPanels[q].entryTracker[i].knownTracker[j] = temp;
+                }
 
-            int missingInfo = 12;
-            for (int j = 0; j < missingInfo; j++)
-            {
-                bool temp = false;
-                temp = commonJournalPanel.GetComponent<JournalEntryTracker>().panelEntries[i].GetComponent<JournalEntry>().missingTracker[j];
-                saveData.journalPanel_common.entryTracker[i].missingTracker[j] = temp;
-                    
+                int missingInfo = 12;
+                for (int j = 0; j < missingInfo; j++)
+                {
+                    bool temp = false;
+                    temp = journalTrackers[q].GetComponent<JournalEntryTracker>().panelEntries[i].GetComponent<JournalEntry>().missingTracker[j];
+                    saveData.allPanels[q].entryTracker[i].missingTracker[j] = temp;
+                }
             }
-
         }
-
 
 
 
@@ -162,6 +182,7 @@ public class SaveController : MonoBehaviour
                     
             }
 
+            /*
             //copy the state data of each element in the journal panel for common mushrooms
             int entryCount = commonJournalPanel.GetComponent<JournalEntryTracker>().panelEntries.Count;
             for (int i = 0; i < entryCount; i++)
@@ -185,7 +206,32 @@ public class SaveController : MonoBehaviour
                 }
 
             }
+            */
 
+            for (int q = 0; q < saveData.allPanels.Length; q++)
+            {
+                int entryCount = journalTrackers[q].GetComponent<JournalEntryTracker>().panelEntries.Count;
+                for (int i = 0; i < entryCount; i++)
+                {
+                    int knownInfo = 12;
+                    for (int j = 0; j < knownInfo; j++)
+                    {
+                        bool temp = false;
+                        temp = saveData.allPanels[q].entryTracker[i].knownTracker[j];
+                        journalTrackers[q].GetComponent<JournalEntryTracker>().panelEntries[i].GetComponent<JournalEntry>().knownTracker[j] = temp;
+                        
+                    }
+
+                    int missingInfo = 12;
+                    for (int j = 0; j < missingInfo; j++)
+                    {
+                        bool temp = false;
+                        temp = saveData.allPanels[q].entryTracker[i].missingTracker[j];
+                        journalTrackers[q].GetComponent<JournalEntryTracker>().panelEntries[i].GetComponent<JournalEntry>().missingTracker[j] = temp;
+                        
+                    }
+                }
+            }
 
             UnityEngine.Debug.Log("Data was Loaded!");
         }
@@ -196,9 +242,18 @@ public class SaveController : MonoBehaviour
 
     }
 
-
-    public void CopyJournalState()
+    public void NewGameClean()
     {
+        foreach (GameObject journalTracker in journalTrackers)
+        {
+            for (int i = 0; i < journalTracker.GetComponent<JournalEntryTracker>().panelEntries.Count; i++)
+            {
+                JournalEntry entry = journalTracker.GetComponent<JournalEntryTracker>().panelEntries[i].GetComponent<JournalEntry>();
+                entry.ResetAll();
+                entry.RandomKnowledge();
+            }
 
+        }
     }
+
 }

@@ -53,4 +53,24 @@ public class InventoryManager : MonoBehaviour
         return null;
     }
 
+
+    public void ResetInventories()
+    {
+        for (int i = 0; i < backpackSlotsCount; i++)
+        {
+            while (backpack.slots[i].count > 0)
+            {
+                backpack.Remove(i);
+            }
+        }
+
+        for (int i = 0; i < storageSlotsCount; i++)
+        {
+            while (storage.slots[i].count > 0)
+            {
+                storage.Remove(i);
+            }
+        }
+    }
+
 }

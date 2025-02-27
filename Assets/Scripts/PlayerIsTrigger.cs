@@ -53,7 +53,7 @@ public class PlayerIsTrigger : MonoBehaviour
     {
         //if (dialogueUI.IsOpen) return;
 
-        if (Input.GetKeyDown("e") && dialogueUI.IsOpen != true)
+        if (Input.GetKeyDown("e") && !dialogueUI.IsOpen)
         {
             if (Interactable != null)
             {

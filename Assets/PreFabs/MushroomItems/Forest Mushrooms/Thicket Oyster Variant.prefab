@@ -68,6 +68,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6699307009493418103, guid: 486f8651c2e33bb4fb840a184ba31d2f, type: 3}
+      propertyPath: m_text
+      value: Press E to forage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6699307009493418103, guid: 486f8651c2e33bb4fb840a184ba31d2f, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 51ae41e8e3b5b0546af2692ff4867fd6, type: 2}
+    - target: {fileID: 6699307009493418103, guid: 486f8651c2e33bb4fb840a184ba31d2f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733164427724881968, guid: 486f8651c2e33bb4fb840a184ba31d2f, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9158734520301734747, guid: 486f8651c2e33bb4fb840a184ba31d2f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -169,7 +185,7 @@ MonoBehaviour:
   - {x: 0.05073166, y: -0.16795349, z: 0}
   m_ShapePathHash: -1695696857
   m_Mesh: {fileID: 0}
-  m_InstanceId: 37196
+  m_InstanceId: -4912
   m_LocalBounds:
     m_Center: {x: 0, y: -0.007167816, z: 0}
     m_Extent: {x: 0.15623093, y: 0.16078568, z: 0}

@@ -16,6 +16,7 @@ public class JournalEntry : MonoBehaviour
     public GameObject icon;
     public GameObject iconColor;
     public GameObject mushName;
+    public NewGameTracker newGameTracker;
 
     [field: SerializeField] 
     public List<GameObject> knownInfoFeatures { get; set; }
@@ -50,11 +51,18 @@ public class JournalEntry : MonoBehaviour
         {
             missingTracker.Add(true);
         }
-
+        ResetAll(); 
 
         // make sure this is off in final
         //should only happen once at begining of playthrough for a new game
-        RandomKnowledge();
+        if (newGameTracker.isNewGame)
+        {
+            RandomKnowledge();
+        }
+        else
+        {
+            CorrectJournalFromSave();
+        }
     }
 
     void Start()
@@ -89,7 +97,30 @@ public class JournalEntry : MonoBehaviour
         }
     }
 
-    void RandomKnowledge()
+    public void ResetAll()
+    {
+        foreach (GameObject feature in missingInfoFeatures)
+        {
+            feature.SetActive(true);
+        }
+
+        for (int i = 0; i < missingTracker.Count; i++)
+        {
+            missingTracker[i] = true;
+        }
+
+        foreach (GameObject feature in knownInfoFeatures)
+        {
+            feature.SetActive(false);
+        }
+
+        for (int i = 0; i < knownTracker.Count; i++)
+        {
+            knownTracker[i] = false;
+        }
+    }
+
+    public void RandomKnowledge()
     {
         //festures in the entry we want to potentially show, as ints
         List<int> numbers = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };

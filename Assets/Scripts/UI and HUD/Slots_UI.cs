@@ -31,6 +31,7 @@ public class Slots_UI : MonoBehaviour
     {
         if(slot != null)
         {
+        
             itemIcon.sprite = slot.icon;
             itemIcon.color = slot.iconColor;
             quantityText.text = slot.count.ToString();

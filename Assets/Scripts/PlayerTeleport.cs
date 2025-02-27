@@ -14,7 +14,7 @@ public class PlayerTeleport : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (currentTeleporter != null)
             {

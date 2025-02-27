@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Blue Circle
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Sure is a good day to be blue.
+  - 'Sure is a good day to be me.
 
     I can also say a second line!
 
     {Space
     to continue}'
-  - "This is the maximum line length in this box.\nWell, what do you know... \nYou
+  - "This is the maximum line length in this box.\nWell, what do you know... \nI
     can have FOUR lines.\n{Space to continue}"
-  - Get busy and find some mushrooms!
-  responses:
-  - responseText: Okay bud.
-    dialogueObject: {fileID: 11400000, guid: ee66246bfac8e4d3c88de009b5d0f1f9, type: 2}
+  - 'Get busy and find some mushrooms!
+
+    {Space to close}'
+  responses: []

@@ -18,6 +18,12 @@ public class SaveData
     public Inventory saveStorage;
 
     public JournalPanelSaveData journalPanel_common;
+    public JournalPanelSaveData journalPanel_forest;
+    public JournalPanelSaveData journalPanel_grasslands;
+    public JournalPanelSaveData journalPanel_mountain;
+    public JournalPanelSaveData journalPanel_special;
 
+    public JournalPanelSaveData[] allPanels = new JournalPanelSaveData[5]; 
+    
 
 }
