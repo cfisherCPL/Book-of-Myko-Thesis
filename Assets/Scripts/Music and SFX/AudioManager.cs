@@ -1,0 +1,57 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioManager : MonoBehaviour
+{
+    [Header("--------- Audio Source ---------")]
+    [SerializeField] AudioSource musicSource;
+    [SerializeField] AudioSource ambianceSource;
+    [SerializeField] AudioSource SFXSource;
+
+    [Header("--------- Audio Clip ---------")]
+
+    public AudioClip titleMusic;
+    public AudioClip backgroundMusic;
+    public AudioClip dayAmbiance;
+    public AudioClip nightAmbiance;
+
+
+    private void Start()
+    {
+        musicSource.clip = titleMusic;
+        musicSource.Play();
+    }
+
+    public void PlaySFX(AudioClip clip)
+    {
+        SFXSource.PlayOneShot(clip);
+    }
+
+    public void PlayAmbiance(AudioClip clip)
+    {
+        ambianceSource.clip = clip;
+        ambianceSource.Play();
+    }
+
+    public void StopMusic()
+    {
+        musicSource.Stop();
+    }
+
+    public void PlayMusic(AudioClip clip)
+    {
+        musicSource.clip = clip;
+        musicSource.Play();
+    }
+
+
+    /*
+     * 
+     * guidance from https://www.youtube.com/watch?v=N8whM1GjH4w
+     *
+     * fade in and out: https://www.youtube.com/watch?v=kYGXGDjL5jM
+     * 
+     * 
+    */
+}

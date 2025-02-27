@@ -10,6 +10,10 @@ public class Teleporter : MonoBehaviour
     [SerializeField] public bool changesTime;
     [SerializeField] public bool clearsMushrooms;
     [SerializeField] public GameObject localMushroomSpawner;
+    [SerializeField] public AudioClip musicToStart;
+    [SerializeField] public bool stopsMusic;
+
+    public AudioManager audioManager;
 
     public GameObject GetMushSpawner()
     {
@@ -29,6 +33,7 @@ public class Teleporter : MonoBehaviour
     private void Awake()
     {
         popupText.gameObject.SetActive(false);
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {

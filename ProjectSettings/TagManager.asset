@@ -13,6 +13,7 @@ TagManager:
   - DroppedMushroom
   - MenuPanel
   - PrimaryUI
+  - Audio
   layers:
   - Default
   - TransparentFX

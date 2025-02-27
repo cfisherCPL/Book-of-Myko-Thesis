@@ -8,9 +8,12 @@ public class PlayerTeleport : MonoBehaviour
     private DayTimeManager timeController;
     private bool changeTime;
 
+    AudioManager audioManager;
+
     void Awake()
     {
         changeTime = false;
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     void Update()
     {
@@ -30,11 +33,29 @@ public class PlayerTeleport : MonoBehaviour
                 if (changeTime)
                 {
                     DayTimeManager.Instance.nextTime();
+                    if (DayTimeManager.Instance.currentTime.currentTimeOfDay >2)
+                    {
+                        audioManager.PlayAmbiance(audioManager.nightAmbiance);
+                    }
+                    else
+                    {
+                        audioManager.PlayAmbiance(audioManager.dayAmbiance);
+                    }
                 }
 
                 //move the player to the target location
                 transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
-                                          
+
+                
+
+                if (currentTeleporter.GetComponent<Teleporter>().stopsMusic)
+                {
+                    audioManager.StopMusic();
+                }
+                else
+                {
+                    audioManager.PlayMusic(currentTeleporter.GetComponent<Teleporter>().musicToStart);
+                }
             }
         }
     }
