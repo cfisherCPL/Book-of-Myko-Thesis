@@ -18,6 +18,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject toolbarPanel;
     public GameObject journalPanel;
 
+  
     public void Awake()
     {
         Initialize();

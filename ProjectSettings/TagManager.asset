@@ -11,6 +11,8 @@ TagManager:
   - Teleporter
   - MushroomClone
   - DroppedMushroom
+  - MenuPanel
+  - PrimaryUI
   layers:
   - Default
   - TransparentFX

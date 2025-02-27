@@ -13,14 +13,16 @@ public class SaveController : MonoBehaviour
     [SerializeField] public FoundMushroomTracker foundTracker;
 
     [SerializeField] public GameObject commonJournalPanel;
+    [SerializeField] public NewGameTracker newGameTracker;
 
+    public GameObject[] menuPanels;
 
     private string saveLocation;
     void Start()
     {
         //define the save location
         saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
-      
+        
     }
 
 
@@ -116,6 +118,14 @@ public class SaveController : MonoBehaviour
     {
         if (File.Exists(saveLocation))
         {
+            menuPanels = GameObject.FindGameObjectsWithTag("MenuPanel");
+
+            foreach (GameObject panel in menuPanels)
+            {
+                panel.SetActive(false);
+            }
+
+            
             SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));
             player.transform.position = saveData.playerPosition;
             currentDay.currentDay = saveData.dayOfWeek;

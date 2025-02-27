@@ -12,6 +12,8 @@ public class GoToSleep : MonoBehaviour
     private bool sleepAllowed;
 
     private DayTimeManager dayOfWeek;
+    [SerializeField]
+    private AlreadySpawned spawnTracker;
 
     //stamina deprecated as mechanic 11-19-24
     //private StaminaManager _stamina;
@@ -33,6 +35,7 @@ public class GoToSleep : MonoBehaviour
         if (sleepAllowed && Input.GetKeyDown("n"))
         {
             dayOfWeek.nextDay();
+            spawnTracker.alreadySpawned = false;
             //_stamina.ResetStamina();
         }
             

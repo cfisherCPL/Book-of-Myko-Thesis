@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 2f;
     [SerializeField] private DialogueUI dialogueUI;
+    [SerializeField] private GameObject journalPanel;
+    [SerializeField] private GameObject titleOverlay;
     public DialogueUI DialogueUI => dialogueUI;
 
     public VectorValue spawnPosition;
@@ -35,8 +37,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //prevent movement while title is active
+        if (titleOverlay.activeSelf) return;
+
         //prevent movement while dialogue box is open
         if (dialogueUI.IsOpen) return;
+
+        //prevent movement while journal panel is open
+        if (journalPanel.activeSelf) return;
       
         movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;   
     }

@@ -21,15 +21,16 @@ public class Inventory_UI : MonoBehaviour
 
     private void Awake()
     {
-
+       
         canvas = FindObjectOfType<Canvas>();
-   
+
+        
+
     }
 
     private void Start()
     {
-        
-        inventory = GameManager.instance.player.inventory.GetInventoryByName(inventoryName); 
+        inventory = GameManager.instance.player.inventory.GetInventoryByName(inventoryName);
         SetupSlots();
         Refresh();
         

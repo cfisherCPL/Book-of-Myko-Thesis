@@ -15,7 +15,7 @@ public class DayTimeManager : MonoBehaviour
 
    private void Awake()
     {
-
+        
         if (Instance == null)
         {
             Instance = this;
@@ -25,6 +25,7 @@ public class DayTimeManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
     }
 
     public void nextTime()
@@ -65,10 +66,5 @@ public class DayTimeManager : MonoBehaviour
         
     }
 
-    public void Update()
-    {
-       
-    
-    }
 
 }
