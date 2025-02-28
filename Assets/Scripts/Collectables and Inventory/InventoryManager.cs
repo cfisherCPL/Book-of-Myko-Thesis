@@ -24,7 +24,7 @@ public class InventoryManager : MonoBehaviour
     public Inventory storage;
     public int storageSlotsCount;
 
-    [Header("Letter Gifts")]
+    [Header("LetterGifts")]
     public Inventory letterGifts;
     public int giftsSlotsCount;
 
@@ -40,7 +40,7 @@ public class InventoryManager : MonoBehaviour
         inventoryByName.Add("Backpack", backpack);
         inventoryByName.Add("Toolbar", toolbar);
         inventoryByName.Add("Storage", storage);
-        inventoryByName.Add("Letter Gifts", letterGifts);
+        inventoryByName.Add("LetterGifts", letterGifts);
 
     }
 

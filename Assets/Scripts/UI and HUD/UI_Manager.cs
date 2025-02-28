@@ -17,6 +17,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject storagePanel;
     public GameObject toolbarPanel;
     public GameObject journalPanel;
+    public GameObject letterReqPanel;
 
   
     public void Awake()

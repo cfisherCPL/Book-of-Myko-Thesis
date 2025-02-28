@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public ItemManager itemManager;
     public UI_Manager uiManager;
 
-    public PlayerIsTrigger player;
+    [SerializeField] public PlayerIsTrigger player;
 
 
 
@@ -32,6 +32,6 @@ public class GameManager : MonoBehaviour
         itemManager = GetComponent<ItemManager>();
         uiManager = GetComponent<UI_Manager>();
 
-        player = FindObjectOfType<PlayerIsTrigger>();
+        //player = FindObjectOfType<PlayerIsTrigger>();
     }
 }

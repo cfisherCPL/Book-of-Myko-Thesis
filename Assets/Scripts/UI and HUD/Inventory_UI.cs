@@ -17,7 +17,7 @@ public class Inventory_UI : MonoBehaviour
     
     private bool dragSingle;
 
-    private Inventory inventory;
+    [SerializeField] private Inventory inventory;
 
     private void Awake()
     {
