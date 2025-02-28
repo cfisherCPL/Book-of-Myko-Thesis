@@ -15,6 +15,8 @@ public class GoToSleep : MonoBehaviour
     [SerializeField]
     private AlreadySpawned spawnTracker;
 
+    public AudioManager audioManager;
+
     //stamina deprecated as mechanic 11-19-24
     //private StaminaManager _stamina;
     
@@ -22,6 +24,8 @@ public class GoToSleep : MonoBehaviour
     private void Awake()
     {
         dayOfWeek = FindObjectOfType<DayTimeManager>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
         //_stamina = FindObjectOfType<StaminaManager>();
     }
 
@@ -36,6 +40,8 @@ public class GoToSleep : MonoBehaviour
         {
             dayOfWeek.nextDay();
             spawnTracker.alreadySpawned = false;
+            audioManager.PlayAmbiance(audioManager.dayAmbiance);
+            audioManager.PlayMusic(audioManager.titleMusic);
             //_stamina.ResetStamina();
         }
             

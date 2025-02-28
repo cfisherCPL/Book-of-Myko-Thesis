@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
+  m_Name: FishingFella
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'All said and done, I''d like to fish.
+
+    But that means more sprites,
+
+    and
+    animation features.
+
+    {Space to Continue}'
+  - 'Perhaps in the full game I will!
+
+    And you''ll get a "special mushroom"
+
+    for
+    chatting with me.
+
+    {Space to Continue}'
+  - 'That''d be pretty swell...
+
+
+    {Space to Close}'
+  responses: []

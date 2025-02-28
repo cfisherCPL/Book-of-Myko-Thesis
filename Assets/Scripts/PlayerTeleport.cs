@@ -52,7 +52,7 @@ public class PlayerTeleport : MonoBehaviour
                 {
                     audioManager.StopMusic();
                 }
-                else
+                else if (!audioManager.musicSource.isPlaying)
                 {
                     audioManager.PlayMusic(currentTeleporter.GetComponent<Teleporter>().musicToStart);
                 }

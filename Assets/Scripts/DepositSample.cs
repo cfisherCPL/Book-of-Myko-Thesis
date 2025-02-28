@@ -7,9 +7,10 @@ using System;
 
 public class DepositSample : MonoBehaviour
 {
-    [SerializeField] private TMP_Text popupText;
+    [SerializeField] public GameObject popupFeature;
     [SerializeField] public FoundMushroomTracker mushroomTracker;
     [SerializeField] public Inventory_UI backpackUI;
+    [SerializeField] public GameObject backpackPanel;
     
     public string inventoryName;
     private Inventory inventoryToCheck;
@@ -19,7 +20,7 @@ public class DepositSample : MonoBehaviour
 
     private void Awake()
     {
-        popupText.gameObject.SetActive(false);
+        popupFeature.SetActive(false);
     }
 
 
@@ -36,7 +37,8 @@ public class DepositSample : MonoBehaviour
 
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerIsTrigger player))
         {
-            popupText.gameObject.SetActive(true);
+            popupFeature.SetActive(true);
+            backpackPanel.SetActive(true);
             inRange = true;
         }
     }
@@ -45,7 +47,8 @@ public class DepositSample : MonoBehaviour
     {
         inRange = false;
         Debug.Log("Exited Deposit Trigger");
-        popupText.gameObject.SetActive(false);
+        popupFeature.SetActive(false);
+        backpackPanel.SetActive(false);
       
 
     }
@@ -57,6 +60,7 @@ public class DepositSample : MonoBehaviour
         {
             foreach (Inventory.Slot slot in inventoryToCheck.slots) 
             {
+                
                 if (slot.itemNumber < mushroomTracker.mushroomByItemNumber.Count)
                 {
                     if (!mushroomTracker.mushroomByItemNumber[slot.itemNumber])

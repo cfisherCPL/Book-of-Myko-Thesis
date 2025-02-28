@@ -5,9 +5,9 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     [Header("--------- Audio Source ---------")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource ambianceSource;
-    [SerializeField] AudioSource SFXSource;
+    [SerializeField] public AudioSource musicSource;
+    [SerializeField] public AudioSource ambianceSource;
+    [SerializeField] public AudioSource SFXSource;
 
     [Header("--------- Audio Clip ---------")]
 

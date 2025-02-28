@@ -24,16 +24,23 @@ public class InventoryManager : MonoBehaviour
     public Inventory storage;
     public int storageSlotsCount;
 
+    [Header("Letter Gifts")]
+    public Inventory letterGifts;
+    public int giftsSlotsCount;
+
+
 
     private void Awake()
     {
         backpack = new Inventory(backpackSlotsCount);
         toolbar = new Inventory(toolbarSlotsCount);
         storage = new Inventory(storageSlotsCount);
+        letterGifts = new Inventory(giftsSlotsCount);
 
         inventoryByName.Add("Backpack", backpack);
         inventoryByName.Add("Toolbar", toolbar);
         inventoryByName.Add("Storage", storage);
+        inventoryByName.Add("Letter Gifts", letterGifts);
 
     }
 
@@ -71,6 +78,15 @@ public class InventoryManager : MonoBehaviour
                 storage.Remove(i);
             }
         }
+
+        for (int i = 0; i < giftsSlotsCount; i++)
+        {
+            while (storage.slots[i].count > 0)
+            {
+                letterGifts.Remove(i);
+            }
+        }
+
     }
 
 }
