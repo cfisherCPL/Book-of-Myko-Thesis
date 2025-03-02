@@ -8,11 +8,13 @@ using UnityEngine.UI;
 
 public class LetterRequests : MonoBehaviour
 {
+    [SerializeField] public LetterRequestTracker reqTracker;
     [SerializeField] public GameObject popupFeature;
     [SerializeField] public GameObject backpackPanel;
 
     [SerializeField] public Inventory_UI backpackUI;
     [SerializeField] public Inventory_UI letterReqUI;
+    [SerializeField] public Sprite sentImage;
 
     public string inventoryName;
     private Inventory inventoryToCheck;
@@ -35,6 +37,27 @@ public class LetterRequests : MonoBehaviour
 
 
     [SerializeField] public GameObject SubmitButton;
+    [SerializeField] public TMP_Text RequestTextArea;
+
+
+    public string[] RequestTexts = new string[15]
+     {
+        "I'd really like to chow down on these if you can find them.",
+        "I'm making a tincture for a client and need these, please.",
+        "Doing some special research and need a few things.",
+        "Need a remedy for a sick family member, and only these will do.",
+        "So much research, and ran out of samples. Do you have these?",
+        "Grandma made a mean veggie pizza, but these would top it off!",
+        "These would be so pretty in my bouquet.",
+        "I need help with my Academy entrance journal. These are my last three.",
+        "Maybe you can find these for the town apothecary?",
+        "Long camping trip coming up. These would help see the stars.",
+        "Can't seem to find these anymore. Maybe you can.",
+        "It would mean the world if you could send these to us.",
+        "Do these grow there? I'd be so happy if you could help.",
+        "The Academy has an official special request for these today.",
+        "My wife would like to use these for a new tincture.",
+     };
 
 
 
@@ -69,7 +92,11 @@ public class LetterRequests : MonoBehaviour
     {
         inRange = false;
         Debug.Log("Exited Deposit Trigger");
-        popupFeature.SetActive(false);
+        if (popupFeature.activeSelf)
+        {
+            popupFeature.SetActive(false);
+        }
+        
         backpackPanel.SetActive(false);
 
 
@@ -102,19 +129,7 @@ public class LetterRequests : MonoBehaviour
 
         if (inRange && Input.GetKeyDown("e"))
         {
-            foreach (Inventory.Slot slot in inventoryToCheck.slots)
-            {
-                /*
-                if (slot.itemNumber < mushroomTracker.mushroomByItemNumber.Count)
-                {
-                    if (!mushroomTracker.mushroomByItemNumber[slot.itemNumber])
-                    {
-                        mushroomTracker.mushroomByItemNumber[slot.itemNumber] = true;
-                        slot.RemoveItem();
-                    }
-                }
-                */
-            }
+            
 
             backpackUI.Refresh();
 
@@ -161,7 +176,9 @@ public class LetterRequests : MonoBehaviour
         item3Icon.color = allMushies[numbers[2]].iconColor;
         reqItemNums[2] = allMushies[numbers[2]].itemNumber;
 
-
+        //add some flavor text!
+        int k = UnityEngine.Random.Range(0, RequestTexts.Length);
+        RequestTextArea.text = RequestTexts[k];
 
     }
 
@@ -184,5 +201,30 @@ public class LetterRequests : MonoBehaviour
         reqItemNums[2] = allMushies[0].itemNumber;
     }
 
+
+    public void SendItems()
+    {
+        foreach (Inventory.Slot slot in inventoryToCheck.slots)
+        {
+       
+            slot.RemoveItem();
+    
+        }
+
+
+        item1Text.text = "Sent!";
+        item1Icon.sprite = sentImage;
+        
+        item2Text.text = "Sent!";
+        item2Icon.sprite = sentImage;
+
+        item3Text.text = "Sent!";
+        item3Icon.sprite = sentImage;
+
+        reqTracker.requestsCompleted++;
+
+        RequestTextArea.text = "Thank you little mycologist!";
+
+    }
 
 }

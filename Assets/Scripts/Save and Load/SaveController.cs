@@ -41,6 +41,7 @@ public class SaveController : MonoBehaviour
     {
         int playerBackpack = player.GetComponent<InventoryManager>().backpackSlotsCount;       
         int playerStorage = player.GetComponent<InventoryManager>().storageSlotsCount;
+        int playerLetterBox = player.GetComponent<InventoryManager>().giftsSlotsCount;
         int foundListNum = foundTracker.mushroomByItemNumber.Count;
         UnityEngine.Debug.Log("ListNum was " + foundListNum);
 
@@ -59,6 +60,7 @@ public class SaveController : MonoBehaviour
             //journalPanel_special = new JournalPanelSaveData(journalTrackers[4].GetComponent<JournalEntryTracker>().panelEntries.Count),
             saveBackpack = new Inventory(playerBackpack),
             saveStorage = new Inventory(playerStorage),
+            saveLetterBox = new Inventory(playerLetterBox)
         };
 
         //make new JPSD in the SaveData array for them using the number of entries per panel tracker
@@ -87,6 +89,17 @@ public class SaveController : MonoBehaviour
             saveData.saveStorage.slots[i].maxAllowed = player.GetComponent<InventoryManager>().storage.slots[i].maxAllowed;
             saveData.saveStorage.slots[i].icon = player.GetComponent<InventoryManager>().storage.slots[i].icon;
             saveData.saveStorage.slots[i].iconColor = player.GetComponent<InventoryManager>().storage.slots[i].iconColor;
+        }
+
+        //read player items left in the letter box areas into saveData
+        for (int i = 0; i < saveData.saveLetterBox.slots.Count; i++)
+        {
+            saveData.saveLetterBox.slots[i].itemName = player.GetComponent<InventoryManager>().letterGifts.slots[i].itemName;
+            saveData.saveLetterBox.slots[i].itemNumber = player.GetComponent<InventoryManager>().letterGifts.slots[i].itemNumber;
+            saveData.saveLetterBox.slots[i].count = player.GetComponent<InventoryManager>().letterGifts.slots[i].count;
+            saveData.saveLetterBox.slots[i].maxAllowed = player.GetComponent<InventoryManager>().letterGifts.slots[i].maxAllowed;
+            saveData.saveLetterBox.slots[i].icon = player.GetComponent<InventoryManager>().letterGifts.slots[i].icon;
+            saveData.saveLetterBox.slots[i].iconColor = player.GetComponent<InventoryManager>().letterGifts.slots[i].iconColor;
         }
 
         //read scriptable obj for found mushrooms into saveData
@@ -173,6 +186,17 @@ public class SaveController : MonoBehaviour
                 player.GetComponent<InventoryManager>().backpack.slots[i].icon = saveData.saveBackpack.slots[i].icon;
                 player.GetComponent<InventoryManager>().backpack.slots[i].iconColor = saveData.saveBackpack.slots[i].iconColor;
             }
+
+            for (int i = 0; i < saveData.saveLetterBox.slots.Count; i++)
+            {
+                player.GetComponent<InventoryManager>().letterGifts.slots[i].itemName = saveData.saveLetterBox.slots[i].itemName;
+                player.GetComponent<InventoryManager>().letterGifts.slots[i].itemNumber = saveData.saveLetterBox.slots[i].itemNumber;
+                player.GetComponent<InventoryManager>().letterGifts.slots[i].count = saveData.saveLetterBox.slots[i].count;
+                player.GetComponent<InventoryManager>().letterGifts.slots[i].maxAllowed = saveData.saveLetterBox.slots[i].maxAllowed;
+                player.GetComponent<InventoryManager>().letterGifts.slots[i].icon = saveData.saveLetterBox.slots[i].icon;
+                player.GetComponent<InventoryManager>().letterGifts.slots[i].iconColor = saveData.saveLetterBox.slots[i].iconColor;
+            }
+
 
             for (int i = 0; i < foundTracker.mushroomByItemNumber.Count; i++)
             {

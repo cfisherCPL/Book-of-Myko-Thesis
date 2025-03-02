@@ -16,6 +16,7 @@ public class SaveData
 
     public Inventory saveBackpack;
     public Inventory saveStorage;
+    public Inventory saveLetterBox;
 
     public JournalPanelSaveData journalPanel_common;
     public JournalPanelSaveData journalPanel_forest;

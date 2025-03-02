@@ -8,6 +8,8 @@ using System;
 public class JournalEntry : MonoBehaviour
 {
 
+    [SerializeField] public bool isSpecialType;
+
     public ItemData mushData;
     public FoundMushroomTracker tracker;
     public GameObject journalPanelTab;
@@ -122,29 +124,32 @@ public class JournalEntry : MonoBehaviour
 
     public void RandomKnowledge()
     {
-        //festures in the entry we want to potentially show, as ints
-        List<int> numbers = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+        if (!isSpecialType)
+        { 
+            //festures in the entry we want to potentially show, as ints
+            List<int> numbers = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 
-        //Fisher-Yates shuffle that list
-        for (int i = numbers.Count - 1; i > 0; i--)
-        {
-            int j = UnityEngine.Random.Range(0, i + 1);
-            int temp = numbers[i];
-            numbers[i] = numbers[j];
-            numbers[j] = temp;
-        }
+            //Fisher-Yates shuffle that list
+            for (int i = numbers.Count - 1; i > 0; i--)
+            {
+                int j = UnityEngine.Random.Range(0, i + 1);
+                int temp = numbers[i];
+                numbers[i] = numbers[j];
+                numbers[j] = temp;
+            }
 
-        //reveal four details about the entry without having to discover them
-        int q = 0;
-        while (q < 4)
-        {
-            int z = numbers[q];
-            knownInfoFeatures[z].SetActive(true);
-            knownTracker[z] = true;
-            missingInfoFeatures[z].SetActive(false);
-            missingTracker[z] = false;
+            //reveal four details about the entry without having to discover them
+            int q = 0;
+            while (q < 4)
+            {
+                int z = numbers[q];
+                knownInfoFeatures[z].SetActive(true);
+                knownTracker[z] = true;
+                missingInfoFeatures[z].SetActive(false);
+                missingTracker[z] = false;
 
-            q++;
+                q++;
+            }
         }
 
     }

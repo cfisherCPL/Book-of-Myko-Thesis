@@ -48,6 +48,14 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4613243045818233140, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 51ae41e8e3b5b0546af2692ff4867fd6, type: 2}
+    - target: {fileID: 4613243045818233140, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5961757818730464296, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.328022

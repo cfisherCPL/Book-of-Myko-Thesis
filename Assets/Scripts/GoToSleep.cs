@@ -17,9 +17,14 @@ public class GoToSleep : MonoBehaviour
 
     public AudioManager audioManager;
 
+    [SerializeField] GameObject requestLetterBox;
+    [SerializeField] GameObject confirmSavePanel;
+    [SerializeField] GameObject confirmSleepPanel;
+
+
     //stamina deprecated as mechanic 11-19-24
     //private StaminaManager _stamina;
-    
+
 
     private void Awake()
     {
@@ -38,14 +43,32 @@ public class GoToSleep : MonoBehaviour
     {
         if (sleepAllowed && Input.GetKeyDown("e"))
         {
-            dayOfWeek.nextDay();
+            if (dayOfWeek.currentTime.currentTimeOfDay != 4)
+            {
+                confirmSleepPanel.SetActive(true);
+            }
+            else
+            {
+                SleepUntilTomorrow();
+            }
+        }
+        
+                     
+    }
+
+    public void SleepUntilTomorrow()
+    {
+        dayOfWeek.nextDay();
             spawnTracker.alreadySpawned = false;
             audioManager.PlayAmbiance(audioManager.dayAmbiance);
-            audioManager.PlayMusic(audioManager.titleMusic);
+            if (!audioManager.musicSource.isPlaying)
+            {
+                audioManager.PlayMusic(audioManager.titleMusic);
+            }
+            requestLetterBox.GetComponent<LetterRequests>().GenerateNewRequest();
             //_stamina.ResetStamina();
-        }
-            
-            
+
+            confirmSavePanel.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

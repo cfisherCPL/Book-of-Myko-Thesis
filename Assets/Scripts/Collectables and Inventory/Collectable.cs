@@ -118,25 +118,30 @@ public class Collectable : MonoBehaviour
     public void Update()
     {
         
-        if (canPickUp && Input.GetKeyDown("e"))
+        if (canPickUp)
         {
-            Item item = GetComponent<Item>();
-
-            if (playerTarget.inventory.backpack.ItemCanBeSlotted(item)) 
-            { 
-                if (item != null)
-                {
-                    playerTarget.inventory.Add("Backpack", item);
-                    itemPickedUp.Invoke();
-                    soundEffect.Play();
-                    Destroy(this.gameObject, 0.1f);
-                }
-            }
-            else
+            if (Input.GetMouseButtonDown(0) | Input.GetKeyDown("e"))
             {
-                popupText.SetText("Backpack is Full");
-                popupText.gameObject.SetActive(true);
-                canPickUp = false;
+
+
+                Item item = GetComponent<Item>();
+
+                if (playerTarget.inventory.backpack.ItemCanBeSlotted(item))
+                {
+                    if (item != null)
+                    {
+                        playerTarget.inventory.Add("Backpack", item);
+                        itemPickedUp.Invoke();
+                        soundEffect.Play();
+                        Destroy(this.gameObject, 0.1f);
+                    }
+                }
+                else
+                {
+                    popupText.SetText("Backpack is Full");
+                    popupText.gameObject.SetActive(true);
+                    canPickUp = false;
+                }
             }
             
         }

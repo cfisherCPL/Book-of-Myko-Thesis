@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private GameObject journalPanel;
     [SerializeField] private GameObject titleOverlay;
+    [SerializeField] private GameObject saveConfirmPanel;
     public DialogueUI DialogueUI => dialogueUI;
 
     public VectorValue spawnPosition;
@@ -45,7 +46,10 @@ public class PlayerMovement : MonoBehaviour
 
         //prevent movement while journal panel is open
         if (journalPanel.activeSelf) return;
-      
+
+        //prevent movement after sleep while save confirm panel is open
+        if (saveConfirmPanel.activeSelf) return;
+
         movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;   
     }
 
