@@ -19,6 +19,9 @@ public class UI_Manager : MonoBehaviour
     public GameObject journalPanel;
     public GameObject letterReqPanel;
 
+    public static bool submenuOpen;
+    public static bool draggingItem;
+
   
     public void Awake()
     {
@@ -78,16 +81,19 @@ public class UI_Manager : MonoBehaviour
     {
         //adding this if surround seems to prevent the inventory panel 
         //(not the toolbar) from updating as normal unless it is toggled 1-18-25 cvf
-        if (inventoryPanel != null)
+        if (!submenuOpen)
         {
-            if (!inventoryPanel.activeSelf)
+            if (inventoryPanel != null)
             {
-                inventoryPanel.SetActive(true);
-                RefreshInventoryUI("Backpack");
-            }
-            else
-            {
-                inventoryPanel.SetActive(false);
+                if (!inventoryPanel.activeSelf)
+                {
+                    inventoryPanel.SetActive(true);
+                    RefreshInventoryUI("Backpack");
+                }
+                else
+                {
+                    inventoryPanel.SetActive(false);
+                }
             }
         }
     }

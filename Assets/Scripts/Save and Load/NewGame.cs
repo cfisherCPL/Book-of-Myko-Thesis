@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class NewGame : MonoBehaviour
 {
@@ -14,10 +15,21 @@ public class NewGame : MonoBehaviour
     public GameObject titleOverlay;
     public GameObject defaultPosition;
     public GameObject player;
+    public SaveExistsTracker saveTracker;
+    public GameObject continueButton;
 
     public void Start()
     {
         Invoke("hideMainUI", 0.002f);
+
+        if (saveTracker.saveFileExists)
+        {
+            continueButton.SetActive(true);
+        }
+        else
+        {
+            continueButton.SetActive(false);
+        }
     }
     
     public void resetScriptables()
@@ -66,6 +78,21 @@ public class NewGame : MonoBehaviour
     public void hideMainUI()
     {
         titleOverlay.SetActive(false);
+    }
+
+    public void Update()
+    {
+        if (gameObject.activeSelf)
+        {
+            if (saveTracker.saveFileExists)
+            {
+                continueButton.SetActive(true);
+            }
+            else
+            {
+                continueButton.SetActive(false);
+            }
+        }
     }
 
 

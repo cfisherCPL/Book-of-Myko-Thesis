@@ -11,6 +11,8 @@ public class LetterRequests : MonoBehaviour
     [SerializeField] public LetterRequestTracker reqTracker;
     [SerializeField] public GameObject popupFeature;
     [SerializeField] public GameObject backpackPanel;
+    [SerializeField] public GameObject requestPanel;
+
 
     [SerializeField] public Inventory_UI backpackUI;
     [SerializeField] public Inventory_UI letterReqUI;
@@ -39,6 +41,11 @@ public class LetterRequests : MonoBehaviour
     [SerializeField] public GameObject SubmitButton;
     [SerializeField] public TMP_Text RequestTextArea;
 
+    [SerializeField] public CurrentRequest currentRequest;
+
+    public bool currentReqCompleted;
+    
+
 
     public string[] RequestTexts = new string[15]
      {
@@ -65,6 +72,7 @@ public class LetterRequests : MonoBehaviour
     {
         popupFeature.SetActive(false);
         SubmitButton.SetActive(false);
+        requestPanel.SetActive(false);
     }
 
 
@@ -78,7 +86,7 @@ public class LetterRequests : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Entered Deposit Trigger");
+        Debug.Log("Entered Request Trigger");
 
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerIsTrigger player))
         {
@@ -105,81 +113,128 @@ public class LetterRequests : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (popupFeature.activeSelf)
+        if (inRange && Input.GetKeyDown("e"))
         {
-            
-            int allItemCount = 0;
-            for(int i = 0; i < inventoryToCheck.slots.Count; i++ )
+            if (!requestPanel.activeSelf)
             {
-                if (inventoryToCheck.slots[i].itemNumber == reqItemNums[i])
-                {
-                    allItemCount++;
-                } 
-            }
-            if (allItemCount == 3)
-            {
-                SubmitButton.SetActive(true);
+                requestPanel.SetActive(true);
             }
             else
             {
-                SubmitButton.SetActive(false);
+                requestPanel.SetActive(false);
             }
+            
+            
         }
 
-
-        if (inRange && Input.GetKeyDown("e"))
+        if (requestPanel.activeSelf)
         {
-            
+            if (!currentReqCompleted)
+            {
+                int allItemCount = 0;
+
+                for (int i = 0; i < inventoryToCheck.slots.Count; i++)
+                {
+                    if (inventoryToCheck.slots[i].itemNumber == reqItemNums[i])
+                    {
+                        allItemCount++;
+                    }
+                    else
+                    {
+                        allItemCount--;
+                    }
+                }
+                if (allItemCount == 3)
+                {
+                    SubmitButton.SetActive(true);
+                }
+                else
+                {
+                    SubmitButton.SetActive(false);
+                }
+            }
 
             backpackUI.Refresh();
-
         }
-
 
     }
 
     public void GenerateNewRequest()
     {
-        //festures in the entry we want to potentially show, as ints
-        int[] numbers = new int[allMushies.Length];
-
-        for (int i = 0; i < allMushies.Length; i++) 
+        if (currentReqCompleted == true)
         {
-            numbers[i] = i;
-        }
 
-        //Fisher-Yates shuffle that list
-        for (int i = numbers.Length - 1; i > 0; i--)
-        {
-            int j = UnityEngine.Random.Range(0, i + 1);
-            int temp = numbers[i];
-            numbers[i] = numbers[j];
-            numbers[j] = temp;
-        }
+            //festures in the entry we want to potentially show, as ints
+            int[] numbers = new int[allMushies.Length];
 
-        //add three random items to the Request using the first three items of numbers
-        
+            for (int i = 0; i < allMushies.Length; i++)
+            {
+                numbers[i] = i;
+            }
+
+            //Fisher-Yates shuffle that list
+            for (int i = numbers.Length - 1; i > 0; i--)
+            {
+                int j = UnityEngine.Random.Range(0, i + 1);
+                int temp = numbers[i];
+                numbers[i] = numbers[j];
+                numbers[j] = temp;
+            }
+
+            //add three random items to the Request using the first three items of numbers
+
+
+            item1Text.text = allMushies[numbers[0]].itemName;
+            item1Icon.sprite = allMushies[numbers[0]].icon;
+            item1Icon.color = allMushies[numbers[0]].iconColor;
+            reqItemNums[0] = allMushies[numbers[0]].itemNumber;
+
+            item2Text.text = allMushies[numbers[1]].itemName;
+            item2Icon.sprite = allMushies[numbers[1]].icon;
+            item2Icon.color = allMushies[numbers[1]].iconColor;
+            reqItemNums[1] = allMushies[numbers[1]].itemNumber;
+
+
+            item3Text.text = allMushies[numbers[2]].itemName;
+            item3Icon.sprite = allMushies[numbers[2]].icon;
+            item3Icon.color = allMushies[numbers[2]].iconColor;
+            reqItemNums[2] = allMushies[numbers[2]].itemNumber;
+
+            //add some flavor text!
+            int k = UnityEngine.Random.Range(0, RequestTexts.Length);
+            RequestTextArea.text = RequestTexts[k];
+
+            //save the current request information for saving
+            currentRequest.mush1 = numbers[0];
+            currentRequest.mush2 = numbers[1];
+            currentRequest.mush3 = numbers[2];
+            currentRequest.reqText = k;
+
+            currentReqCompleted = false;
             
-        item1Text.text = allMushies[numbers[0]].itemName;
-        item1Icon.sprite = allMushies[numbers[0]].icon;
-        item1Icon.color = allMushies[numbers[0]].iconColor;
-        reqItemNums[0] = allMushies[numbers[0]].itemNumber;
+        }
 
-        item2Text.text = allMushies[numbers[1]].itemName;
-        item2Icon.sprite = allMushies[numbers[1]].icon;
-        item2Icon.color = allMushies[numbers[1]].iconColor;
-        reqItemNums[1] = allMushies[numbers[1]].itemNumber;
+    }
+
+    public void LoadExistingRequest()
+    {
+        item1Text.text = allMushies[currentRequest.mush1].itemName;
+        item1Icon.sprite = allMushies[currentRequest.mush1].icon;
+        item1Icon.color = allMushies[currentRequest.mush1].iconColor;
+        reqItemNums[0] = allMushies[currentRequest.mush1].itemNumber;
+
+        item2Text.text = allMushies[currentRequest.mush2].itemName;
+        item2Icon.sprite = allMushies[currentRequest.mush2].icon;
+        item2Icon.color = allMushies[currentRequest.mush2].iconColor;
+        reqItemNums[1] = allMushies[currentRequest.mush2].itemNumber;
 
 
-        item3Text.text = allMushies[numbers[2]].itemName;
-        item3Icon.sprite = allMushies[numbers[2]].icon;
-        item3Icon.color = allMushies[numbers[2]].iconColor;
-        reqItemNums[2] = allMushies[numbers[2]].itemNumber;
+        item3Text.text = allMushies[currentRequest.mush3].itemName;
+        item3Icon.sprite = allMushies[currentRequest.mush3].icon;
+        item3Icon.color = allMushies[currentRequest.mush3].iconColor;
+        reqItemNums[2] = allMushies[currentRequest.mush3].itemNumber;
 
-        //add some flavor text!
-        int k = UnityEngine.Random.Range(0, RequestTexts.Length);
-        RequestTextArea.text = RequestTexts[k];
-
+        RequestTextArea.text = RequestTexts[currentRequest.reqText];
     }
 
     public void TestRequestDeposit()
@@ -214,17 +269,30 @@ public class LetterRequests : MonoBehaviour
 
         item1Text.text = "Sent!";
         item1Icon.sprite = sentImage;
+        reqItemNums[0] = 666;
         
         item2Text.text = "Sent!";
         item2Icon.sprite = sentImage;
+        reqItemNums[1] = 666;
 
         item3Text.text = "Sent!";
         item3Icon.sprite = sentImage;
+        reqItemNums[2] = 666;
 
         reqTracker.requestsCompleted++;
 
         RequestTextArea.text = "Thank you little mycologist!";
 
+        currentReqCompleted = true;
+
+        SubmitButton.SetActive(false);
+
     }
 
+
+    public void NewGameRequestSetup()
+    {
+        currentReqCompleted = true;
+        GenerateNewRequest();
+    }
 }

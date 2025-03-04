@@ -17,10 +17,16 @@ public class DepositSample : MonoBehaviour
 
     private bool inRange = false;
 
+    AudioManager audioManager;
+    [SerializeField] AudioClip depositSound;
+
+    private bool itemsDeposited;
 
     private void Awake()
     {
         popupFeature.SetActive(false);
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
     }
 
 
@@ -58,6 +64,8 @@ public class DepositSample : MonoBehaviour
     {
         if (inRange && Input.GetKeyDown("e"))
         {
+            itemsDeposited = false;
+            
             foreach (Inventory.Slot slot in inventoryToCheck.slots) 
             {
                 
@@ -67,12 +75,19 @@ public class DepositSample : MonoBehaviour
                     {
                         mushroomTracker.mushroomByItemNumber[slot.itemNumber] = true;
                         slot.RemoveItem();
+                        itemsDeposited = true;
                     }
                 }
             }
             
             backpackUI.Refresh();
 
+            if (itemsDeposited)
+            {
+                audioManager.PlaySFX(depositSound);
+            }
+            
+            itemsDeposited = false;
         }
     }
 }

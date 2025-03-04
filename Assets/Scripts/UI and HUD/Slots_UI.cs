@@ -56,4 +56,14 @@ public class Slots_UI : MonoBehaviour
         highlight.SetActive(isOn);
     }
 
+    public void BeingDragged()
+    {
+        itemIcon.color = new Color(itemIcon.color.r, itemIcon.color.g, itemIcon.color.b, 0.5f);
+    }
+
+    public void EndDrag()
+    {
+        itemIcon.color = new Color(itemIcon.color.r, itemIcon.color.g, itemIcon.color.b, 1);
+    }
+
 }

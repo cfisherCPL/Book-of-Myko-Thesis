@@ -25,6 +25,8 @@ public class SaveData
     public JournalPanelSaveData journalPanel_special;
 
     public JournalPanelSaveData[] allPanels = new JournalPanelSaveData[5]; 
+
+    public RequestSaveData requestSaveData;
     
 
 }

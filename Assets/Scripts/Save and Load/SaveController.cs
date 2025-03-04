@@ -28,12 +28,30 @@ public class SaveController : MonoBehaviour
 
     [SerializeField] public GameObject[] journalTrackers;
 
+    [SerializeField] public SaveExistsTracker saveFileExists;
+    [SerializeField] public CurrentRequest currentRequest;
+
     private string saveLocation;
+   
+    void Awake()
+    {
+     
+    }
+    
     void Start()
     {
         //define the save location
         saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
-        
+
+        if (File.Exists(saveLocation))
+        {
+            saveFileExists.saveFileExists = true;
+        }
+        else
+        {
+            saveFileExists.saveFileExists = false;
+        }
+
     }
 
 
@@ -60,11 +78,20 @@ public class SaveController : MonoBehaviour
             //journalPanel_special = new JournalPanelSaveData(journalTrackers[4].GetComponent<JournalEntryTracker>().panelEntries.Count),
             saveBackpack = new Inventory(playerBackpack),
             saveStorage = new Inventory(playerStorage),
-            saveLetterBox = new Inventory(playerLetterBox)
+            saveLetterBox = new Inventory(playerLetterBox),
+            requestSaveData = new RequestSaveData()
         };
 
+        
+        saveData.requestSaveData.mush1 = currentRequest.mush1;
+        saveData.requestSaveData.mush2 = currentRequest.mush2;
+        saveData.requestSaveData.mush3 = currentRequest.mush3;
+        saveData.requestSaveData.reqText = currentRequest.reqText;
+        
+
+
         //make new JPSD in the SaveData array for them using the number of entries per panel tracker
-        for(int i=0; i<saveData.allPanels.Length; i++)
+        for (int i=0; i<saveData.allPanels.Length; i++)
         {
             saveData.allPanels[i] = new JournalPanelSaveData(journalTrackers[i].GetComponent<JournalEntryTracker>().panelEntries.Count);
         }
@@ -143,6 +170,8 @@ public class SaveController : MonoBehaviour
 
         UnityEngine.Debug.Log("Data was Saved!");
         //UnityEngine.Debug.Log("The first bool in saveList is: " + saveData.foundMushList[0]);
+
+        saveFileExists.saveFileExists = true;
     }
 
 
@@ -205,6 +234,12 @@ public class SaveController : MonoBehaviour
                 foundTracker.mushroomByItemNumber[i] = temp;
                     
             }
+
+
+            currentRequest.mush1 = saveData.requestSaveData.mush1;
+            currentRequest.mush2 = saveData.requestSaveData.mush2;
+            currentRequest.mush3 = saveData.requestSaveData.mush3;
+            currentRequest.reqText = saveData.requestSaveData.reqText;
 
             /*
             //copy the state data of each element in the journal panel for common mushrooms

@@ -9,6 +9,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject journalPanel;
     [SerializeField] private GameObject titleOverlay;
     [SerializeField] private GameObject saveConfirmPanel;
+    [SerializeField] private GameObject storagePanel;
+    [SerializeField] private GameObject requestPanel;
+    [SerializeField] private UI_Manager UI_Manager;
+
     public DialogueUI DialogueUI => dialogueUI;
 
     public VectorValue spawnPosition;
@@ -38,17 +42,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //prevent movement while title is active
-        if (titleOverlay.activeSelf) return;
-
-        //prevent movement while dialogue box is open
-        if (dialogueUI.IsOpen) return;
-
-        //prevent movement while journal panel is open
-        if (journalPanel.activeSelf) return;
-
-        //prevent movement after sleep while save confirm panel is open
-        if (saveConfirmPanel.activeSelf) return;
+        //prevent movement while any submenu panel is open is active
+        
 
         movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;   
     }
@@ -56,7 +51,43 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (UI_Manager.draggingItem)
+        {
+            rb.velocity = new Vector2(0, 0);
+            return;
+        }
+
+        if (titleOverlay.activeSelf)
+        {
+            rb.velocity = new Vector2(0, 0);
+            return;
+        }
+
         if (dialogueUI.IsOpen)
+        {
+            rb.velocity = new Vector2(0, 0);
+            return;
+        }
+
+        if (journalPanel.activeSelf)
+        {
+            rb.velocity = new Vector2(0, 0);
+            return;
+        }
+
+        if (saveConfirmPanel.activeSelf)
+        {
+            rb.velocity = new Vector2(0, 0);
+            return;
+        }
+
+        if (requestPanel.activeSelf)
+        {
+            rb.velocity = new Vector2(0, 0);
+            return;
+        }
+
+        if (storagePanel.activeSelf)
         {
             rb.velocity = new Vector2(0, 0);
             return;

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class JournalController : MonoBehaviour
 {
-    public GameObject journalPanel; 
+    public GameObject journalPanel;
+    public GameObject dialoguePanel;
+
     void Start()
     {
         journalPanel.SetActive(false);
@@ -13,9 +15,14 @@ public class JournalController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J) && !dialoguePanel.activeSelf)
         {
             TogglePanel();
+        }
+
+        if (dialoguePanel.activeSelf)
+        {
+            journalPanel.SetActive(false);
         }
     }
 
