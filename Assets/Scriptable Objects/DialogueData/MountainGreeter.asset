@@ -19,13 +19,12 @@ MonoBehaviour:
 
 
     {Space to Continue}'
-  - "The developer promised everyone\nthat the orange stuff would actually \nlook
-    like mountain...soon.\n{Space to Continue} "
-  - 'For now the orange stuff is just
+  - 'The developer said that
 
-    barrier to keep you in the walkable area.
+    the mountains would look
 
+    like mountains ASAP.'
+  - 'I really think these assets
 
-    {Space
-    to Close}'
+    are starting to do the trick!'
   responses: []

@@ -9,6 +9,7 @@ public class PlayerLightAuto : MonoBehaviour
     public TimeOfDay tod;
 
     [SerializeField] public Light2D flashlight;
+    [SerializeField] public Light2D secondlight;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,14 @@ public class PlayerLightAuto : MonoBehaviour
 
         else if (tod.currentTimeOfDay == 2 || tod.currentTimeOfDay == 3 || tod.currentTimeOfDay == 4)
         {
-            flashlight.gameObject.SetActive(true);
+            if (!secondlight.gameObject.activeSelf)
+            {
+                flashlight.gameObject.SetActive(true);
+            }
+            else
+            {
+                flashlight.gameObject.SetActive(false);
+            }
         }
 
         /*

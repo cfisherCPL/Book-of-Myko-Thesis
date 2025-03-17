@@ -13,6 +13,11 @@ public class Teleporter : MonoBehaviour
     [SerializeField] public AudioClip musicToStart;
     [SerializeField] public bool stopsMusic;
 
+
+    //teleporters to interior locations should be able to change global light
+    [SerializeField] public bool makesDark;
+    [SerializeField] public bool makeCurrentTime;
+
     public AudioManager audioManager;
 
     public GameObject GetMushSpawner()

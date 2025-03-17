@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerTeleport : MonoBehaviour
 {
@@ -8,7 +9,15 @@ public class PlayerTeleport : MonoBehaviour
     private DayTimeManager timeController;
     private bool changeTime;
 
+    public int currentTime;
+
     AudioManager audioManager;
+
+    private bool makeDark;
+    private bool makeCurrentTime;
+
+    [SerializeField] GameObject globalDaylight;
+    [SerializeField] public Light2D secondlight;
 
     void Awake()
     {
@@ -56,6 +65,20 @@ public class PlayerTeleport : MonoBehaviour
                 {
                     audioManager.PlayMusic(currentTeleporter.GetComponent<Teleporter>().musicToStart);
                 }
+
+                if (makeDark)
+                {
+                    globalDaylight.SetActive(false);
+                    secondlight.gameObject.SetActive(true);
+                }
+
+                if (makeCurrentTime)
+                {
+                    globalDaylight.SetActive(true);
+                    secondlight.gameObject.SetActive(false);
+                }
+
+
             }
         }
     }
@@ -66,6 +89,9 @@ public class PlayerTeleport : MonoBehaviour
         {
             currentTeleporter = collision.gameObject;
             changeTime = currentTeleporter.GetComponent<Teleporter>().GetChangesTime();
+            makeDark = currentTeleporter.GetComponent<Teleporter>().makesDark;
+            makeCurrentTime = currentTeleporter.GetComponent<Teleporter>().makeCurrentTime;
+
         }
     }
 
@@ -77,6 +103,8 @@ public class PlayerTeleport : MonoBehaviour
             {
                 currentTeleporter = null;
                 changeTime = false;
+                makeDark = false;
+                currentTime = 69;
             }
         }
     }
