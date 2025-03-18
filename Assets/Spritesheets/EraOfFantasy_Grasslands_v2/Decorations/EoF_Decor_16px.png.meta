@@ -1,0 +1,3427 @@
+fileFormatVersion: 2
+guid: dbb25f727086a2740836b144d01c41ee
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EoF_Decor_16px_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 436
+        width: 97
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8f4a603d9de5f47a86b02d0075f720
+      internalID: 70546671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 435
+        width: 72
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d8adbd7409c6a45b2b1d72bd339e61
+      internalID: 63831158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 437
+        width: 72
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176655ee6d94c3b45bc453006310db42
+      internalID: 789700388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 437
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88153563af43b5149bc40ce51cd6abd4
+      internalID: -1375464586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_4
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 435
+        width: 61
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79abda8d01f67dc41928698ce69ef9f6
+      internalID: -1698412424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_5
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 434
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4caca55c8a5e5f468c68d8b2ef17b8d
+      internalID: 597023868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_6
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 436
+        width: 47
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c2f072052cc614680931b794abc1cd
+      internalID: 1697210510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_7
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 434
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa166b306817d441a90b67e37b12655
+      internalID: 1550850528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_8
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 435
+        width: 95
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3c260b7d3a1a045a72f5eb6c679838
+      internalID: -612782569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_9
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 435
+        width: 45
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938fd5a55f9b3b1479d9ae295a086860
+      internalID: -1998771906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 434
+        width: 28
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754b7b0627f927b42a1c6c158ca336d4
+      internalID: -1851849741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_11
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 370
+        width: 79
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48288c4f37ef46f43bbbd6a6be17f0d9
+      internalID: -338863901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_12
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 370
+        width: 79
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258300a5152c39944ad5a1022d29e287
+      internalID: -1224670963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_13
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 402
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb056fda76e4834e91493423874914f
+      internalID: -200092422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_14
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 403
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a113f6fd21d2e749b46679cc9f1ad33
+      internalID: -1342880007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_15
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 391
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cab9a56c9867347a60d94409f37529
+      internalID: 1723679428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_16
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 420
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dbeab8ef6a2954dad5370ae2bf50a6
+      internalID: -80792821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_17
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 419
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ffc9163aa6529468aad52f3dba7dd8
+      internalID: 849325962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_18
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 417
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a6acb2059cf8e459b5e0d225feb218
+      internalID: 154266993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_19
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 344
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b584d608a75c1d46a1b9f6447b11379
+      internalID: -228025985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 403
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389df9c35311a2749b4613488269ec49
+      internalID: 746982047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_21
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 390
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969c5c1d40a5b0345b7ddc2a0e20f985
+      internalID: 1750365288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_22
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 390
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09213de7634872c4b9dcbbba6b72981e
+      internalID: 150764807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_23
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 388
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559f5159b636b104a9df7b49b1aeae15
+      internalID: 516668371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_24
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 376
+        width: 45
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27764f5b11c964409dcbd71034d25d6
+      internalID: 1485053205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_25
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 404
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0549229fe6e1d6a488cdee98cf417511
+      internalID: -936274198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_26
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 403
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa5604183712564ca2bd4d8381885c8
+      internalID: 1379301910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_27
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 401
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3a1fc6b6f7fc946aabf8172b1161e0
+      internalID: 894613475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_28
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 345
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b50ca9f06776747a7584c8c1368c27
+      internalID: 575407859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_29
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 386
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d0b6c427d911f4d83260828d2cbdae
+      internalID: 1606536169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_30
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 387
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183a225ee674d9c4dbbd793188d69b50
+      internalID: -1718434182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_31
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 370
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f60019d55afd34eae1a3b178ac76fb
+      internalID: 796987274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_32
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 355
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4deb2f5ad268eb143a40ebfcd3edb061
+      internalID: 2129850435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_33
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 388
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f35ce1d4ca8e634c9142905732e38f5
+      internalID: -1510986207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_34
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 387
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a478f6ee2df5344b18fd669ef41867
+      internalID: -552121230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_35
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 385
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c6b319caebed7479215e0b0f916594
+      internalID: -717124026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_36
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 343
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f10d78cba0944418c2fe9a9622bc05
+      internalID: -270707566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_37
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 342
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccf92536cec18c42a0ef01ebe969036
+      internalID: -1518379619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_38
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 372
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9c51eed8790d54e935a953ad2518a4
+      internalID: -877218533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_39
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 373
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96e512f52eb81b4cabea0e0945a76c0
+      internalID: 1980929615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_40
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 373
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41312203c2c24d442a2805ee5dd0d446
+      internalID: 489987191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_41
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 355
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abf236da7abfcc47b51a20217d02ee9
+      internalID: -2035209572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_42
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 372
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c81acc9dfc5db54a8ebc66215427309
+      internalID: -2058645042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_43
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 370
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63e146692f8d804191e6db692edc7d2
+      internalID: 511871930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_44
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 372
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a45f8a5578fb447a50dc54465c1418
+      internalID: 530441105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_45
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 370
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c94b6c12d7cab4e83266d04c6bff7b
+      internalID: 1257262880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_46
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 361
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeaf7cbce8d37af4a813a2578161e1ec
+      internalID: 1755159442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_47
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 341
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be24bbaa4ebc1184ab4c674585543a37
+      internalID: -1095957655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_48
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 354
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e28a88ec4da2194d893997ed2bd60b3
+      internalID: 1622968400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_49
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 355
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72daa9bc89f305448b6a5f0776af509b
+      internalID: -672467372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_50
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 328
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e7639cb29fe444db85f6d9aef71d90
+      internalID: -1299506840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_51
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 328
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a846c7f695f73a4884ead6695ebcd3d
+      internalID: 320176210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_52
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 327
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785a7115eb3c0484084b7c9b2b61b4f9
+      internalID: -245568737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_53
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 327
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d140a4014101a2468b11f3c70f610a3
+      internalID: 1042712220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_54
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 327
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f08963d794e689459fe5f0408f40b6f
+      internalID: -1236986037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_55
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 327
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed4f9bade0ebcd409b8c1c9db3f8b4f
+      internalID: -1652039455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_56
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 325
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c529b20ec9f8444699ed87d846a12a9
+      internalID: 1806533142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_57
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 326
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a352a3acd3c5d4eb452e52860e8413
+      internalID: 1331424648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_58
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 340
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc77447daed38241a09d291c5efb74d
+      internalID: -1127331326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_59
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 341
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9fca62d2ae93345849d47ec75411c3
+      internalID: 1338997876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_60
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 341
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7135b29e37c29384096ec764eb4bcfd2
+      internalID: 1633515510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_61
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 311
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cba012c02a45014780a102ba455b511
+      internalID: -1966701658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_62
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 337
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61224c6ed8679764ba171fdf65ae0974
+      internalID: 355342586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_63
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 337
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467be63e90232f74ab1fcb22d5608acb
+      internalID: 2122740410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_64
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 338
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a4c59f7b4580e44bdbd190414beb92
+      internalID: -1182055402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_65
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 329
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b8ba4b61e96054fa1cc87a5871de37
+      internalID: -1491425780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_66
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 264
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d90b9c6f4a15f64cb8a9c3c9d66aa99
+      internalID: 57913899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_67
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 323
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3396d720ade7b5d429adaabff4b4bf3f
+      internalID: 177276144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_68
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 310
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba67716530897c46831b59a640bd629
+      internalID: -1437669684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_69
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 310
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb70557a85bc854a9d77b3c705fc772
+      internalID: 1811225200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_70
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 309
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe15624f3d6d4041a42cea3005a4627
+      internalID: 245592533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_71
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 295
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba2bfee47bddac4890c47487f2e4927
+      internalID: -2112653723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_72
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 322
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c869cd73392b284782967accab2c3c2
+      internalID: 1871543764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_73
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 322
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd60ff266eb6c0149a45a719cdf644bc
+      internalID: -59772316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_74
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 265
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2728c2e0305284d8540f61d98d39d7
+      internalID: 1905952529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_75
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 306
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4855ccaf6179e4e4da23fe4d306dd15b
+      internalID: -2039629016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_76
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 305
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4de47926e5a814da123a83e29bfd67
+      internalID: -534019608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_77
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 290
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0962a8c6c2e8f45ba3364d63aafe27
+      internalID: 1224083199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_78
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 296
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6382114586b214d8fe504a04352337
+      internalID: 481450523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_79
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 297
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee00c184b8091934084b025670445c69
+      internalID: -1312980446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_80
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 295
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5c32980dac17040a0ba628a201459b
+      internalID: 842937965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_81
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 306
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60708a20869467e4488035b179ab6e7d
+      internalID: -1723233803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_82
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 293
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c8c73b9cddeca47a54963b7c629722
+      internalID: -1242123667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_83
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 296
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5494da92e503af14891558ce4189738a
+      internalID: 1607523547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_84
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 295
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9685370016562344c8000b3d7ac93df4
+      internalID: -1694295505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_85
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 308
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ebb3e97ecfd8d4da5e9800e16c1d74
+      internalID: 1930606683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_86
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 293
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fbfa6709874e84480109c2ae547e7c
+      internalID: -1797236817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_87
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 296
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c56bf8ed1382d4e883421e3374fcde
+      internalID: -1567684988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_88
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 295
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8d2aebc4694084d95b92f7eaeae429
+      internalID: -1694918566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_89
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 263
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c728fe43de67e4aa22a192d50732ef
+      internalID: 851334050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_90
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 262
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a490c467b3ada1b468e13e5d08ed2d82
+      internalID: -112008377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_91
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 279
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206fcc8d54c405943a23717e90b0626a
+      internalID: -1427611335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_92
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 263
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857a93525a25f0340a72fe5e44c65eda
+      internalID: 398460545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_93
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 292
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76554e65fc550c418712e9927b73ade
+      internalID: 659366513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_94
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 292
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71090ba9f630b4a4bae5b2133c43d73d
+      internalID: 2072024208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_95
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 261
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42140cbc951ed5408490df37d3444c5
+      internalID: -1996692201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_96
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 276
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd972c27f21d0e46b4d49a27a900b23
+      internalID: -72149269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_97
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 258
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f198ff3da6cb8334c9a3b42d3066fcde
+      internalID: 1148365926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_98
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 264
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b038f7da886a05d49ac9496fe06784d0
+      internalID: 1463857220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_99
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 265
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2ba88777eb9e0449dfd3b21135f2d2
+      internalID: 1650981613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_100
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 274
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323f453960bd1f240bf7d1abc9729e51
+      internalID: 1450802501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_101
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 274
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6803c57c3a6294a9945e4fdbc0999b
+      internalID: 975049733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_102
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 282
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11c13245291aa94d8ed5a8fd66d6a41
+      internalID: -2087538722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_103
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 261
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe76251e8ba25c4a90c7217c0320849
+      internalID: 1346085990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_104
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 264
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6361468eb377c8e43b8c16ecc9374d79
+      internalID: 1050101974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_105
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 276
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afacb7989cb592f4aaff1d7c68084066
+      internalID: 1704664855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_106
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 261
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a96652494479fe45bbfc0ca688df7e7
+      internalID: 1519288737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_107
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 264
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e9040d0a967e542b5c371579364984
+      internalID: -1297056286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_108
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 260
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a6e0c6e721cfe419230e8020486e55
+      internalID: -170414970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_109
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 261
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86321b40c094a63489ec9366ca05abbc
+      internalID: -1704708784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_110
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 263
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092035f7edac6ad489e3ede4b5a9e843
+      internalID: -2075038579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_111
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 260
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8fff097400c094c92c19496768455d
+      internalID: -1319400992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_112
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 263
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b69ab817ecdd340b3de0246c2d0b15
+      internalID: 1712301917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_113
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 260
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7226db5c83a2e4345b42cc3924f18d8a
+      internalID: -1687055000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_114
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 263
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcce28bb96acb44fa25e18c88609699
+      internalID: -2115974349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_115
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 194
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6315f36e34ee4ac418b1e48fd637988b
+      internalID: -530928491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_116
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 194
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81f8695ac6717b4baec4571d86083d1
+      internalID: -130214230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_117
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 228
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46aaaf2da99aed74bb82b6d6cb9bbaef
+      internalID: 619068181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_118
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 229
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1c036a94f57fe4a9e215ccd501e993
+      internalID: 1061907912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_119
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 228
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72867f8d155a044784df4970ecbdad8
+      internalID: 624486905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_120
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 230
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14d272d6fa453e4cab106d9a51b37a0
+      internalID: -1427081741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_121
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 230
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd639dcad22cce41b460bdc30a66d7f
+      internalID: 338657175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_122
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 230
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292cf672d781c0146b2af0c616ca06bd
+      internalID: -1303653992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_123
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 224
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8b802eb7c733946aa66ec7c531fd38
+      internalID: 590129190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_124
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 224
+        width: 90
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f42e94fb45db0478761234ca78fba8
+      internalID: 1322905551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_125
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 224
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f4b22d02e464e49a9644aecc57a033
+      internalID: -2127965743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_126
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 224
+        width: 90
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3f5f9d2d7b988419f771567439dde9
+      internalID: -737080557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_127
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 196
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7f1832172be65499d9bde1a71d57aa
+      internalID: -378161995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_128
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 197
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8b6c9f5cdb24a4cab6b46a3bb759b3
+      internalID: -1496181122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_129
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 196
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b666e7c3d45f64f95105e1e3f9b372
+      internalID: -804848337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_130
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 198
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e601a550d92ee3f43822d131d5fdbc8b
+      internalID: 1871812417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_131
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 198
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e05eb46608b8974f8d31af38dff3623
+      internalID: 1581615869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_132
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 198
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64dd4d7f79871e045ae6a2f8ae7b536b
+      internalID: -979294710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_133
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 176
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644776fac2a242a48bd69f32dc9128b8
+      internalID: 1682575447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_134
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 176
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17253ebe9dcdb014fb01bd31fb83249d
+      internalID: -1822362608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_135
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 176
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ff0e2edf0f6a24fbb2ba53e1e21e94
+      internalID: -81545182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_136
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 176
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2e1e861aacdaa49b76eb156bb171eb
+      internalID: 1509063784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_137
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 113
+        width: 97
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f37a4e7302ce74faa2c898c04d1ce9
+      internalID: 1176221989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_138
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 113
+        width: 97
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a43eac1df4278749ae4be22aaa1309d
+      internalID: 1171074412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_139
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 168
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64263ccd3725654f82f0555c100d90f
+      internalID: -1173791107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_140
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 168
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2e754a0df173c46901ce4fcf088c88
+      internalID: 2124040305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_141
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 128
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008699fc37064ee4d9b90f5101b28052
+      internalID: -1246474926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_142
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 128
+        width: 119
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c4f7d654465a74a8e30b88aefeda14
+      internalID: -834942766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_143
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 128
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7335e32e3ebf3b4d862d4f52dcb2903
+      internalID: -697884846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_144
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 128
+        width: 119
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72af0858bebcc3640b151c148da93530
+      internalID: 637805240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_145
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 68
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5430ff7333f13b242b7473ec246e6185
+      internalID: -1593395814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_146
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 68
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caefc558cf1bb064dba2a802f75e3c94
+      internalID: -2133967066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_147
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 27
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de264ff7b80e42d43902df24d59a4c4f
+      internalID: 1629087016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_148
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 27
+        width: 76
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fab4b7e873ea8946829801ab300c397
+      internalID: -574639892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EoF_Decor_16px_149
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 27
+        width: 76
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951d283d1a7ccb641ac3dc443538d382
+      internalID: 1518630562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      EoF_Decor_16px_0: 70546671
+      EoF_Decor_16px_1: 63831158
+      EoF_Decor_16px_10: -1851849741
+      EoF_Decor_16px_100: 1450802501
+      EoF_Decor_16px_101: 975049733
+      EoF_Decor_16px_102: -2087538722
+      EoF_Decor_16px_103: 1346085990
+      EoF_Decor_16px_104: 1050101974
+      EoF_Decor_16px_105: 1704664855
+      EoF_Decor_16px_106: 1519288737
+      EoF_Decor_16px_107: -1297056286
+      EoF_Decor_16px_108: -170414970
+      EoF_Decor_16px_109: -1704708784
+      EoF_Decor_16px_11: -338863901
+      EoF_Decor_16px_110: -2075038579
+      EoF_Decor_16px_111: -1319400992
+      EoF_Decor_16px_112: 1712301917
+      EoF_Decor_16px_113: -1687055000
+      EoF_Decor_16px_114: -2115974349
+      EoF_Decor_16px_115: -530928491
+      EoF_Decor_16px_116: -130214230
+      EoF_Decor_16px_117: 619068181
+      EoF_Decor_16px_118: 1061907912
+      EoF_Decor_16px_119: 624486905
+      EoF_Decor_16px_12: -1224670963
+      EoF_Decor_16px_120: -1427081741
+      EoF_Decor_16px_121: 338657175
+      EoF_Decor_16px_122: -1303653992
+      EoF_Decor_16px_123: 590129190
+      EoF_Decor_16px_124: 1322905551
+      EoF_Decor_16px_125: -2127965743
+      EoF_Decor_16px_126: -737080557
+      EoF_Decor_16px_127: -378161995
+      EoF_Decor_16px_128: -1496181122
+      EoF_Decor_16px_129: -804848337
+      EoF_Decor_16px_13: -200092422
+      EoF_Decor_16px_130: 1871812417
+      EoF_Decor_16px_131: 1581615869
+      EoF_Decor_16px_132: -979294710
+      EoF_Decor_16px_133: 1682575447
+      EoF_Decor_16px_134: -1822362608
+      EoF_Decor_16px_135: -81545182
+      EoF_Decor_16px_136: 1509063784
+      EoF_Decor_16px_137: 1176221989
+      EoF_Decor_16px_138: 1171074412
+      EoF_Decor_16px_139: -1173791107
+      EoF_Decor_16px_14: -1342880007
+      EoF_Decor_16px_140: 2124040305
+      EoF_Decor_16px_141: -1246474926
+      EoF_Decor_16px_142: -834942766
+      EoF_Decor_16px_143: -697884846
+      EoF_Decor_16px_144: 637805240
+      EoF_Decor_16px_145: -1593395814
+      EoF_Decor_16px_146: -2133967066
+      EoF_Decor_16px_147: 1629087016
+      EoF_Decor_16px_148: -574639892
+      EoF_Decor_16px_149: 1518630562
+      EoF_Decor_16px_15: 1723679428
+      EoF_Decor_16px_16: -80792821
+      EoF_Decor_16px_17: 849325962
+      EoF_Decor_16px_18: 154266993
+      EoF_Decor_16px_19: -228025985
+      EoF_Decor_16px_2: 789700388
+      EoF_Decor_16px_20: 746982047
+      EoF_Decor_16px_21: 1750365288
+      EoF_Decor_16px_22: 150764807
+      EoF_Decor_16px_23: 516668371
+      EoF_Decor_16px_24: 1485053205
+      EoF_Decor_16px_25: -936274198
+      EoF_Decor_16px_26: 1379301910
+      EoF_Decor_16px_27: 894613475
+      EoF_Decor_16px_28: 575407859
+      EoF_Decor_16px_29: 1606536169
+      EoF_Decor_16px_3: -1375464586
+      EoF_Decor_16px_30: -1718434182
+      EoF_Decor_16px_31: 796987274
+      EoF_Decor_16px_32: 2129850435
+      EoF_Decor_16px_33: -1510986207
+      EoF_Decor_16px_34: -552121230
+      EoF_Decor_16px_35: -717124026
+      EoF_Decor_16px_36: -270707566
+      EoF_Decor_16px_37: -1518379619
+      EoF_Decor_16px_38: -877218533
+      EoF_Decor_16px_39: 1980929615
+      EoF_Decor_16px_4: -1698412424
+      EoF_Decor_16px_40: 489987191
+      EoF_Decor_16px_41: -2035209572
+      EoF_Decor_16px_42: -2058645042
+      EoF_Decor_16px_43: 511871930
+      EoF_Decor_16px_44: 530441105
+      EoF_Decor_16px_45: 1257262880
+      EoF_Decor_16px_46: 1755159442
+      EoF_Decor_16px_47: -1095957655
+      EoF_Decor_16px_48: 1622968400
+      EoF_Decor_16px_49: -672467372
+      EoF_Decor_16px_5: 597023868
+      EoF_Decor_16px_50: -1299506840
+      EoF_Decor_16px_51: 320176210
+      EoF_Decor_16px_52: -245568737
+      EoF_Decor_16px_53: 1042712220
+      EoF_Decor_16px_54: -1236986037
+      EoF_Decor_16px_55: -1652039455
+      EoF_Decor_16px_56: 1806533142
+      EoF_Decor_16px_57: 1331424648
+      EoF_Decor_16px_58: -1127331326
+      EoF_Decor_16px_59: 1338997876
+      EoF_Decor_16px_6: 1697210510
+      EoF_Decor_16px_60: 1633515510
+      EoF_Decor_16px_61: -1966701658
+      EoF_Decor_16px_62: 355342586
+      EoF_Decor_16px_63: 2122740410
+      EoF_Decor_16px_64: -1182055402
+      EoF_Decor_16px_65: -1491425780
+      EoF_Decor_16px_66: 57913899
+      EoF_Decor_16px_67: 177276144
+      EoF_Decor_16px_68: -1437669684
+      EoF_Decor_16px_69: 1811225200
+      EoF_Decor_16px_7: 1550850528
+      EoF_Decor_16px_70: 245592533
+      EoF_Decor_16px_71: -2112653723
+      EoF_Decor_16px_72: 1871543764
+      EoF_Decor_16px_73: -59772316
+      EoF_Decor_16px_74: 1905952529
+      EoF_Decor_16px_75: -2039629016
+      EoF_Decor_16px_76: -534019608
+      EoF_Decor_16px_77: 1224083199
+      EoF_Decor_16px_78: 481450523
+      EoF_Decor_16px_79: -1312980446
+      EoF_Decor_16px_8: -612782569
+      EoF_Decor_16px_80: 842937965
+      EoF_Decor_16px_81: -1723233803
+      EoF_Decor_16px_82: -1242123667
+      EoF_Decor_16px_83: 1607523547
+      EoF_Decor_16px_84: -1694295505
+      EoF_Decor_16px_85: 1930606683
+      EoF_Decor_16px_86: -1797236817
+      EoF_Decor_16px_87: -1567684988
+      EoF_Decor_16px_88: -1694918566
+      EoF_Decor_16px_89: 851334050
+      EoF_Decor_16px_9: -1998771906
+      EoF_Decor_16px_90: -112008377
+      EoF_Decor_16px_91: -1427611335
+      EoF_Decor_16px_92: 398460545
+      EoF_Decor_16px_93: 659366513
+      EoF_Decor_16px_94: 2072024208
+      EoF_Decor_16px_95: -1996692201
+      EoF_Decor_16px_96: -72149269
+      EoF_Decor_16px_97: 1148365926
+      EoF_Decor_16px_98: 1463857220
+      EoF_Decor_16px_99: 1650981613
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
