@@ -81,7 +81,7 @@ public class InventoryManager : MonoBehaviour
 
         for (int i = 0; i < giftsSlotsCount; i++)
         {
-            while (storage.slots[i].count > 0)
+            while (letterGifts.slots[i].count > 0)
             {
                 letterGifts.Remove(i);
             }

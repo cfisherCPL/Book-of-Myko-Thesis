@@ -29,8 +29,8 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         
 
-        itemManager = GetComponent<ItemManager>();
-        uiManager = GetComponent<UI_Manager>();
+        //itemManager = GetComponent<ItemManager>();
+        //uiManager = GetComponent<UI_Manager>();
 
         //player = FindObjectOfType<PlayerIsTrigger>();
     }

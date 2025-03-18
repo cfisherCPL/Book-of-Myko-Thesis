@@ -97,7 +97,7 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
         "All Location Mushrooms" list in the inspector
         is how many of that mushroom will get spawned at a time
         */
-        for (int i = 0; i < currentlySpawnableMushrooms.Count - 1; i++ )
+        for (int i = 0; i < currentlySpawnableMushrooms.Count; i++ )
         {
             Transform placeHere;
             placeHere = spawnLocations[i].GetComponent<Transform>();
