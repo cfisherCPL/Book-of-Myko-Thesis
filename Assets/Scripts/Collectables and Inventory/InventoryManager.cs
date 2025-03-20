@@ -9,7 +9,8 @@ public class InventoryManager : MonoBehaviour
      * such as the backback, collection box, and display case
      * 1-18-25
      * */
-    
+    [SerializeField] public ItemManager itemManager;
+
     public Dictionary<string, Inventory> inventoryByName = new Dictionary<string, Inventory>();
     
     [Header("Backpack")]
@@ -28,6 +29,8 @@ public class InventoryManager : MonoBehaviour
     public Inventory letterGifts;
     public int giftsSlotsCount;
 
+    
+
 
 
     private void Awake()
@@ -36,6 +39,10 @@ public class InventoryManager : MonoBehaviour
         toolbar = new Inventory(toolbarSlotsCount);
         storage = new Inventory(storageSlotsCount);
         letterGifts = new Inventory(giftsSlotsCount);
+
+        backpack.itemManager = itemManager;
+        storage.itemManager = itemManager;
+        letterGifts.itemManager = itemManager;
 
         inventoryByName.Add("Backpack", backpack);
         inventoryByName.Add("Toolbar", toolbar);
@@ -84,6 +91,52 @@ public class InventoryManager : MonoBehaviour
             while (letterGifts.slots[i].count > 0)
             {
                 letterGifts.Remove(i);
+            }
+        }
+
+    }
+
+
+    public void OrganizeStorageByNumber()
+    {
+        storage.OrganizeByItemNumber();
+    }
+
+    public void StoreAllFromBackpack()
+    {
+        backpack.organizerArray = new int[80];
+
+        for (int i = 0; i < backpackSlotsCount; i++)
+        {
+            if (backpack.slots[i].itemNumber < backpack.organizerArray.Length)
+            {
+                int q = backpack.slots[i].itemNumber;
+                int p = backpack.slots[i].count;
+
+                backpack.organizerArray[q] = backpack.organizerArray[q] + p;
+
+                while (backpack.slots[i].count > 0)
+                {
+                    backpack.Remove(i);
+                }
+            }
+        }
+
+        for (int n = 0; n < backpack.organizerArray.Length; n++)
+        {
+        
+            if (backpack.organizerArray[n] == 0)
+            {
+                continue;
+
+            }
+            else
+            {
+                for (int i = 0; i < backpack.organizerArray[n]; i++)
+                {
+                    Item toAdd = itemManager.GetItemByNumber(n);
+                    storage.Add(toAdd);
+                }
             }
         }
 

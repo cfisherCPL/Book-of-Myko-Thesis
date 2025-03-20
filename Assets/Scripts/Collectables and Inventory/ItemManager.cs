@@ -9,6 +9,10 @@ public class ItemManager : MonoBehaviour
     private Dictionary<string, Item> nameToItemDict = 
         new Dictionary<string, Item>();
 
+    private Dictionary<int, Item> numberToItemDict =
+        new Dictionary<int, Item>();
+
+
     private void Awake()
     {
         foreach (Item item in items)
@@ -22,6 +26,11 @@ public class ItemManager : MonoBehaviour
         if (!nameToItemDict.ContainsKey(item.data.itemName))
         {
             nameToItemDict.Add(item.data.itemName, item);
+        }
+
+        if (!numberToItemDict.ContainsKey(item.data.itemNumber))
+        {
+            numberToItemDict.Add(item.data.itemNumber, item);
         }
     }
 
@@ -37,4 +46,19 @@ public class ItemManager : MonoBehaviour
         }
 
     }
+
+
+    public Item GetItemByNumber(int key)
+    {
+        if (numberToItemDict.ContainsKey(key))
+        {
+            return numberToItemDict[key];
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+
 }

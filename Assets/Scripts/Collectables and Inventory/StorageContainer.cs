@@ -11,6 +11,8 @@ public class StorageContainer : MonoBehaviour
     [SerializeField] private GameObject storageInventoryUI;
     [SerializeField] private UI_Manager uiManager;
 
+    [SerializeField] public GameObject depositAllButton;
+
     private bool inRange = false;
 
 
@@ -70,11 +72,13 @@ public class StorageContainer : MonoBehaviour
             if (!storageInventoryUI.activeSelf)
             {
                 storageInventoryUI.SetActive(true);
+                depositAllButton.SetActive(true);
                 uiManager.RefreshInventoryUI("Storage");
             }
             else
             {
                 storageInventoryUI.SetActive(false);
+                depositAllButton.SetActive(false);
             }
         }
     }
