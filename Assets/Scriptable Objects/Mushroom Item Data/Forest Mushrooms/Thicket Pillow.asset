@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4e905d58a47ed47944b61dd67e4a69, type: 3}
   m_Name: Thicket Pillow
   m_EditorClassIdentifier: 
-  itemNumber: 23
-  itemName: Item Name
-  icon: {fileID: 0}
-  iconColor: {r: 0, g: 0, b: 0, a: 0}
+  itemNumber: 22
+  itemName: Thicket Pillow
+  icon: {fileID: 825946790, guid: bd5ca4c2e0eac7d49944b9d530aa041e, type: 3}
+  iconColor: {r: 1, g: 1, b: 1, a: 1}

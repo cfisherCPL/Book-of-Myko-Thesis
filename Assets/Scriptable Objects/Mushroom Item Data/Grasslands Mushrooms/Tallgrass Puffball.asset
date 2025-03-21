@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4e905d58a47ed47944b61dd67e4a69, type: 3}
   m_Name: Tallgrass Puffball
   m_EditorClassIdentifier: 
-  itemNumber: 43
+  itemNumber: 44
   itemName: Tallgrass Puffball
-  icon: {fileID: -2107284105, guid: fbea4b6e6f2ca4759a531f686edc16bd, type: 3}
-  iconColor: {r: 0.1462264, g: 0.64182824, b: 1, a: 1}
+  icon: {fileID: -826201929, guid: b983786332741d64caeef01c08ef75a9, type: 3}
+  iconColor: {r: 1, g: 1, b: 1, a: 1}

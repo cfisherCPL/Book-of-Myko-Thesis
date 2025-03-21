@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4e905d58a47ed47944b61dd67e4a69, type: 3}
   m_Name: Sylvan Crown
   m_EditorClassIdentifier: 
-  itemNumber: 26
-  itemName: Item Name
-  icon: {fileID: 0}
-  iconColor: {r: 0, g: 0, b: 0, a: 0}
+  itemNumber: 25
+  itemName: Sylvan Crown
+  icon: {fileID: -1644921829, guid: b983786332741d64caeef01c08ef75a9, type: 3}
+  iconColor: {r: 1, g: 1, b: 1, a: 1}
