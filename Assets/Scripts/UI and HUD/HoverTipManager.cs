@@ -46,4 +46,6 @@ public class HoverTipManager : MonoBehaviour
         tipText.text = default;
         tipWindow.gameObject.SetActive(false);
     }
+
+    
 }

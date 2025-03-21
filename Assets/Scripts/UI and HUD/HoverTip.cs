@@ -17,7 +17,7 @@ public class HoverTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         StopAllCoroutines();
         thisSlot = this.GetComponent<Slots_UI>();
-        Debug.Log("Set slotID to " + thisSlot.slotID);
+        //Debug.Log("Set slotID to " + thisSlot.slotID);
         
         int mushNum = 0;
         string mushName = thisSlot.inventory.slots[thisSlot.slotID].itemName;
@@ -57,4 +57,13 @@ public class HoverTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
         ShowMessage();
     }
+
+    void Update()
+    {
+        if (!this.gameObject.activeSelf)
+        {
+            HoverTipManager.OnMouseLoseFocus();
+        }
+    }
+
 }

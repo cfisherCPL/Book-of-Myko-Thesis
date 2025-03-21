@@ -21,7 +21,6 @@ public class UI_Manager : MonoBehaviour
 
     public static bool submenuOpen;
     public static bool draggingItem;
-
   
     public void Awake()
     {
@@ -93,6 +92,7 @@ public class UI_Manager : MonoBehaviour
                 else
                 {
                     inventoryPanel.SetActive(false);
+                    HoverTipManager.OnMouseLoseFocus();
                 }
             }
         }

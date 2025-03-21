@@ -44,7 +44,7 @@ public class LetterRequests : MonoBehaviour
     [SerializeField] public CurrentRequest currentRequest;
 
     public bool currentReqCompleted;
-    
+
 
 
     public string[] RequestTexts = new string[15]
@@ -122,6 +122,7 @@ public class LetterRequests : MonoBehaviour
             else
             {
                 requestPanel.SetActive(false);
+                HoverTipManager.OnMouseLoseFocus();
             }
             
             

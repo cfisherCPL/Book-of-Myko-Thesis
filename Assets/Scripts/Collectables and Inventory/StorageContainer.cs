@@ -79,6 +79,7 @@ public class StorageContainer : MonoBehaviour
             {
                 storageInventoryUI.SetActive(false);
                 depositAllButton.SetActive(false);
+                HoverTipManager.OnMouseLoseFocus();
             }
         }
     }
