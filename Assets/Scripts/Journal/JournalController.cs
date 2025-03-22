@@ -15,7 +15,7 @@ public class JournalController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J) && !dialoguePanel.activeSelf)
+        if (Input.GetKeyDown(KeyCode.J) | Input.GetKeyDown(KeyCode.Q) && !dialoguePanel.activeSelf)
         {
             TogglePanel();
         }
