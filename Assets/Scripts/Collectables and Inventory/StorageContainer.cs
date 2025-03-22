@@ -7,7 +7,7 @@ using System;
 
 public class StorageContainer : MonoBehaviour
 {
-    [SerializeField] private TMP_Text popupText;
+    [SerializeField] private GameObject popupText;
     [SerializeField] private GameObject storageInventoryUI;
     [SerializeField] private UI_Manager uiManager;
 
