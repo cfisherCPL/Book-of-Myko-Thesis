@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject saveConfirmPanel;
     [SerializeField] private GameObject storagePanel;
     [SerializeField] private GameObject requestPanel;
+    [SerializeField] private GameObject dataSavedPanel;
+    [SerializeField] private GameObject welcomeLetterPanel;
     [SerializeField] private UI_Manager UI_Manager;
 
     public DialogueUI DialogueUI => dialogueUI;
@@ -57,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (titleOverlay.activeSelf)
+        if (titleOverlay.activeSelf | welcomeLetterPanel.activeSelf)
         {
             rb.velocity = new Vector2(0, 0);
             return;
@@ -75,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (saveConfirmPanel.activeSelf)
+        if (saveConfirmPanel.activeSelf | dataSavedPanel.activeSelf)
         {
             rb.velocity = new Vector2(0, 0);
             return;
