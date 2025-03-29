@@ -19,8 +19,9 @@ MonoBehaviour:
 
     {Space
     to continue}'
-  - "This is the maximum line length in this box.\nWell, what do you know... \nI
-    can have FOUR lines.\n{Space to continue}"
+  - "This is the maximum line length in this box, at least I think so.\nWell, what
+    do you know... \nI can have FOUR lines show up without scrolling.\n{Space to
+    continue}"
   - 'Get busy and find some mushrooms!
 
     {Space to close}'

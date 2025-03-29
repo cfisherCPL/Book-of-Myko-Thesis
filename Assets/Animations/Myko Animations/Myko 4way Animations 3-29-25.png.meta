@@ -1,0 +1,721 @@
+fileFormatVersion: 2
+guid: e06e1f039b6eb5b489fe5ab398fb6eef
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 214
+        width: 26
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac6c967f76a99c4494806b18f3833fd
+      internalID: -686241685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 214
+        width: 26
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d20217ed92bf22438e94b589ade2d6b
+      internalID: 2001257995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 214
+        width: 26
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d654e22d87e2914591763ac3090b4fa
+      internalID: 354808154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 214
+        width: 26
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675f88fecfc4d5948a8303a030e19938
+      internalID: 1308215305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 215
+        width: 26
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b903add99457b749ba91bcfb7ad290a
+      internalID: 1182088760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 183
+        width: 26
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad12bf44426734c48a331bc3cac36e29
+      internalID: 1311235506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 183
+        width: 26
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a850aca2e11ab6644b7672832b35ae9a
+      internalID: -1372399798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 183
+        width: 26
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67be0afc5fc7f204f87e8067c969fabc
+      internalID: 830280988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 183
+        width: 26
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea1b94682a11364fb1fefa4556d4ada
+      internalID: -2133379224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 144
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9932b9ed42e38be47b04ebb04123b1fe
+      internalID: 2090530822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 143
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06400bcff3c13bb439209e19363d950e
+      internalID: -1456233181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_11
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 143
+        width: 23
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7b75687b110e34784eb2265a5b849f
+      internalID: 965408349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_12
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 143
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b340015f7dfb07944bf2b8aeac2c617d
+      internalID: -1442726202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_13
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 143
+        width: 23
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf522e322cbfb14282459dbf18a26f9
+      internalID: 564096816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_14
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 106
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d53d531836ef344bdd6fb71a07bb4d
+      internalID: -1769860610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_15
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 106
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf6dd1d2702c224d8a3fb6942a689bc
+      internalID: -1540588879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 106
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6c43a105d09fe40994e82435684375
+      internalID: -755700320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_17
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 106
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f578f1870f7b82458dd6e024356a6aa
+      internalID: 84991141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 63
+        width: 22
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060256d9d5effef4cb314479e5d11855
+      internalID: -347078977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 62
+        width: 22
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce67ca52add4084aa21c66e224e122e
+      internalID: 451954482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 63
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18909eb60791c3e4fb14a6855389e31a
+      internalID: -1738245605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 62
+        width: 22
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51eacf0e078c89a4db6957434c1a0b99
+      internalID: -963763756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_22
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 63
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e18194df1f5f8d4393ffda9f354cc60
+      internalID: -2059434329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_23
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 26
+        width: 22
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794dfc13ad416df48b00be3891968ad0
+      internalID: -1623839784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_24
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 26
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47662153b7f75864fa697fb85e6d8297
+      internalID: -1244567063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_25
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 26
+        width: 22
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a866eb2d062286d408cbd1a49e3f3717
+      internalID: 1315819995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Myko 4way Animations 3-29-25_26
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 26
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90cd4db225d2d1b43b7105f727aec5f4
+      internalID: 1712465626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Myko 4way Animations 3-29-25_0: -686241685
+      Myko 4way Animations 3-29-25_1: 2001257995
+      Myko 4way Animations 3-29-25_10: -1456233181
+      Myko 4way Animations 3-29-25_11: 965408349
+      Myko 4way Animations 3-29-25_12: -1442726202
+      Myko 4way Animations 3-29-25_13: 564096816
+      Myko 4way Animations 3-29-25_14: -1769860610
+      Myko 4way Animations 3-29-25_15: -1540588879
+      Myko 4way Animations 3-29-25_16: -755700320
+      Myko 4way Animations 3-29-25_17: 84991141
+      Myko 4way Animations 3-29-25_18: -347078977
+      Myko 4way Animations 3-29-25_19: 451954482
+      Myko 4way Animations 3-29-25_2: 354808154
+      Myko 4way Animations 3-29-25_20: -1738245605
+      Myko 4way Animations 3-29-25_21: -963763756
+      Myko 4way Animations 3-29-25_22: -2059434329
+      Myko 4way Animations 3-29-25_23: -1623839784
+      Myko 4way Animations 3-29-25_24: -1244567063
+      Myko 4way Animations 3-29-25_25: 1315819995
+      Myko 4way Animations 3-29-25_26: 1712465626
+      Myko 4way Animations 3-29-25_3: 1308215305
+      Myko 4way Animations 3-29-25_4: 1182088760
+      Myko 4way Animations 3-29-25_5: 1311235506
+      Myko 4way Animations 3-29-25_6: -1372399798
+      Myko 4way Animations 3-29-25_7: 830280988
+      Myko 4way Animations 3-29-25_8: -2133379224
+      Myko 4way Animations 3-29-25_9: 2090530822
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

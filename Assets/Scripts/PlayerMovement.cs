@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
     public VectorValue spawnPosition;
 
 
+    Animator anim;
+    private Vector2 lastMoveDirection;
+
+
 // Some elements needed to handle character facing.    
     bool facingRight;
     float inputHorizontal;
@@ -38,16 +42,30 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //prevent movement while any submenu panel is open is active
+        ProccessInputs();
+        Animate();
         
+            
+        inputHorizontal = Input.GetAxisRaw("Horizontal");
+        inputVertical = Input.GetAxisRaw("Vertical");
 
-        movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;   
+        if (inputHorizontal < 0 && !facingRight)
+        {
+            FlipCharacter();
+        }
+
+        if (inputHorizontal > 0 && facingRight)
+        {
+            FlipCharacter();
+        }
+
+
     }
 
 
@@ -97,18 +115,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = movementDirection * movementSpeed;
 
-        inputHorizontal = Input.GetAxisRaw("Horizontal");
-        inputVertical = Input.GetAxisRaw("Vertical");
-
-        if (inputHorizontal < 0 && !facingRight)
-        {
-            FlipCharacter();
-        }
-
-        if (inputHorizontal > 0 && facingRight)
-        {
-            FlipCharacter();
-        }
+       
         
     }
 
@@ -120,6 +127,29 @@ public class PlayerMovement : MonoBehaviour
 
         facingRight = !facingRight;
 
+    }
+
+    void ProccessInputs()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        if ( (moveX == 0 && moveY == 0) && (inputHorizontal !=0 || inputVertical != 0))
+        {
+            lastMoveDirection = movementDirection;
+        }
+
+        movementDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+    }
+
+
+    void Animate()
+    {
+        anim.SetFloat("MoveX", inputHorizontal);
+        anim.SetFloat("MoveY", inputVertical);
+        anim.SetFloat("MoveMagnitude", movementDirection.magnitude);
+        anim.SetFloat("LastMoveX", lastMoveDirection.x);
+        anim.SetFloat("LastMoveY", lastMoveDirection.y);
     }
 
 }
