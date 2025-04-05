@@ -113,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        rb.velocity = movementDirection * movementSpeed;
+        rb.velocity = movementDirection.normalized * movementSpeed;
 
        
         

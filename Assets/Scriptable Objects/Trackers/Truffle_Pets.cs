@@ -10,7 +10,7 @@ public class Truffle_Pets : ScriptableObject
 
     public void PetOnce()
     {
-        timesPet += 1 ;
+        timesPet = timesPet + 1 ;
     }
 
     public void ResetPets()

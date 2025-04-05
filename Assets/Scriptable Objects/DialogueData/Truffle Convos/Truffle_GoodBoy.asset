@@ -17,9 +17,7 @@ MonoBehaviour:
 
     BORK!
 
-    BORK! BORK!'
-  responses:
-  - responseText: Scratch his ear.
-    dialogueObject: {fileID: 11400000, guid: 08a4a394fd59e49609c0338896533f0c, type: 2}
-  - responseText: Pat his head.
-    dialogueObject: {fileID: 11400000, guid: 2dac683ce8b3e43c18fd514210d82814, type: 2}
+    BORK! BORK!
+
+    {Space to Close}'
+  responses: []

@@ -41,7 +41,7 @@ public class NewGame : MonoBehaviour
         }
 
         //set day of week to monday
-        //stretchgoal: let player pick the start day? 2/26/28
+        //stretchgoal: let player pick the start day? 2/26/25
         dayOfWeek.currentDay = 0;
         //set time of day to morning
         timeOfDay.currentTimeOfDay = 0;
