@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
   m_Name: Truffle_GoodBoy
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - '(Hell yeah I am)
+
+    BORK!
+
+    BORK! BORK!'
+  responses:
+  - responseText: Scratch his ear.
+    dialogueObject: {fileID: 11400000, guid: 08a4a394fd59e49609c0338896533f0c, type: 2}
+  - responseText: Pat his head.
+    dialogueObject: {fileID: 11400000, guid: 2dac683ce8b3e43c18fd514210d82814, type: 2}

@@ -12,5 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
   m_Name: Truffle_01
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - '[Truffle]
+
+    Bork!
+
+    {Space to Continue}
+
+'
+  - Bork. Bork?
+  responses:
+  - responseText: Okay then buddy.
+    dialogueObject: {fileID: 11400000, guid: b39511b2b607c4f8a8625b580b40c8e4, type: 2}
+  - responseText: Goooood boy.
+    dialogueObject: {fileID: 11400000, guid: b4379308a78744ce088d2ef3770ba0a6, type: 2}

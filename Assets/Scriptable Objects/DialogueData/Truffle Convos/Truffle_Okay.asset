@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Truffle_Okay
   m_EditorClassIdentifier: 
   dialogue:
-  - "Bork. \n\n[Space to Close]"
+  - "Bork... \n\n{Space to Close}"
   responses: []

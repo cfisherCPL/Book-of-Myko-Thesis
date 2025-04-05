@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
   m_Name: Truffle_Pet
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - '*vigorous tail wagging*
+
+
+    {Space to Close}'
   responses: []
