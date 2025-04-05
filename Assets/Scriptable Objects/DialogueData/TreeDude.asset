@@ -15,11 +15,32 @@ MonoBehaviour:
   dialogue:
   - "Oh hey there!\nI'm just chilling in the hollow of \nthis giant tree.\n{Space
     to Continue}"
-  - 'In the future I''ll do more.
+  - 'I''m pretty sure a dryad
 
-    I''m sure of it.
+    appeared here recently.
+
 
     {Space to Continue}'
-  - "Come back in the full game.\nI'll give you something called \na \"special mushroom\".\n{Space
-    to Close}"
+  - 'They''re really the best.
+
+    They even showed me how to draw!
+
+
+    {Space
+    to Continue}'
+  - 'I wish my sketches were
+
+    half as delightful as theirs.
+
+    I''ll keep practicing.
+
+    {Space
+    to Continue}'
+  - 'One day I''ll work up the courage
+
+    to share my art too!
+
+
+    {Space to
+    Close}'
   responses: []

@@ -15,12 +15,12 @@ MonoBehaviour:
   dialogue:
   - 'The top of the mountain is chilly.
 
-    You look like you might be lost.
+    Are you lost?
 
-    I
-    know I am!
+    I know I am!
 
-    {Space to Continue}'
+    {Space
+    to Continue}'
   - 'That''s okay though.
 
     I really like it here.

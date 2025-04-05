@@ -13,18 +13,24 @@ MonoBehaviour:
   m_Name: CaveObserver
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Those pillars look ominous.
+  - 'That cave looks ominous.
 
-    Or are they inviting?
+    Or is it inviting?
 
-
-    {Space to Continue}'
-  - 'Perhaps in the full game
-
-    they will lead to a larger space.
-
-    I sure
-    hope so!
 
     {Space to Continue}'
+  - 'It''s bigger on the inside.
+
+    But I''ll just chill here...
+
+    Maybe there''s
+    mushrooms?
+
+    {Space to Continue}'
+  - 'That''s a question for you,
+
+    little mycologist.
+
+
+    {Space to Close}'
   responses: []

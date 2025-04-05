@@ -19,10 +19,13 @@ public class PlayerTeleport : MonoBehaviour
     [SerializeField] GameObject globalDaylight;
     [SerializeField] public Light2D secondlight;
 
+    private FadeInOut fade;
+
     void Awake()
     {
         changeTime = false;
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        fade = FindObjectOfType<FadeInOut>();
     }
     void Update()
     {
@@ -30,6 +33,9 @@ public class PlayerTeleport : MonoBehaviour
         {
             if (currentTeleporter != null)
             {
+                //move the player to the target location
+                StartCoroutine(ChangeLocation());
+
                 //wipe current area's mushrooms
                 if (currentTeleporter.GetComponent<Teleporter>().clearsMushrooms)
                 {
@@ -51,11 +57,7 @@ public class PlayerTeleport : MonoBehaviour
                         audioManager.PlayAmbiance(audioManager.dayAmbiance);
                     }
                 }
-
-                //move the player to the target location
-                transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
-
-                
+                                                              
 
                 if (currentTeleporter.GetComponent<Teleporter>().stopsMusic)
                 {
@@ -107,5 +109,14 @@ public class PlayerTeleport : MonoBehaviour
                 currentTime = 69;
             }
         }
+    }
+
+
+    public IEnumerator ChangeLocation()
+    {
+        fade.FadeIn();
+        yield return new WaitForSeconds(1);
+        transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
+        fade.FadeOut();
     }
 }

@@ -25,6 +25,7 @@ public class GoToSleep : MonoBehaviour
     //stamina deprecated as mechanic 11-19-24
     //private StaminaManager _stamina;
 
+    private FadeInOut fade;
 
     private void Awake()
     {
@@ -37,6 +38,7 @@ public class GoToSleep : MonoBehaviour
     private void Start()
     {
         sleepTextPopUp.gameObject.SetActive(false);
+        fade = FindObjectOfType<FadeInOut>();
     }
 
     private void Update()
@@ -49,8 +51,10 @@ public class GoToSleep : MonoBehaviour
             }
             else
             {
+                fade.FadeIn();
                 SleepUntilTomorrow();
             }
+
         }
         
                      
@@ -86,6 +90,11 @@ public class GoToSleep : MonoBehaviour
 
     }
 
-
+    public IEnumerator FadeToSleep()
+    {
+        fade.FadeIn();
+        yield return new WaitForSeconds(1);
+        fade.FadeOut();
+    }
 
 }

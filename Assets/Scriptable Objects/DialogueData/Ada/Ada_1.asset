@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
+  m_Name: Ada_1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '[Ada the Tinkerer]
+
+    This location is known for
+
+    rare brain-shaped fungi.
+
+    {Space
+    to Continue}'
+  - 'I wonder if we could
+
+    use one of these weird
+
+    little growths as a real
+    brain.
+
+    {Space to Continue}'
+  - 'Imagine that:
+
+    A robot using a mushroom
+
+    for a brain.
+
+    {Space to
+    Continue}'
+  - "Do you think something \nlike that is possible?"
+  responses:
+  - responseText: Pure science fiction.
+    dialogueObject: {fileID: 11400000, guid: 64f970c2152ceef4eb35c8a146b36ae9, type: 2}
+  - responseText: Worthy of research!
+    dialogueObject: {fileID: 11400000, guid: d114df3ffc64870479694aa54ff5beac, type: 2}

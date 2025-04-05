@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
+  m_Name: Mo_1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '[Mo the Dryad]
+
+    Hello there little mycologist.
+
+    I''ve seen you hard
+    at work!
+
+    {Space to Continue}'
+  - "Just wanted to say: \nyour animated tail wiggle?\nCHARMING.\n{Space to Continue}"
+  - 'I''m thinking about decorating
+
+    the inside of GigaTree.
+
+    Right after
+    one more project...
+
+    {Space to Continue}'
+  - 'What do you think about
+
+    sprucing this place up a bit?'
+  responses:
+  - responseText: I like it more natural.
+    dialogueObject: {fileID: 11400000, guid: 2ad4ff6503a4df940a9781bbb7a8ce2f, type: 2}
+  - responseText: A few throw pillows maybe?
+    dialogueObject: {fileID: 11400000, guid: 88ca004f14c989342b886b5c04e5aeed, type: 2}

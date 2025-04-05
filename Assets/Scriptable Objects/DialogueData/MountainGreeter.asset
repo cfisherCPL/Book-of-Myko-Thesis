@@ -15,16 +15,26 @@ MonoBehaviour:
   dialogue:
   - 'I came here to hike.
 
-    But this game is "in-progress".
+    But boy howdy is this area
 
+    kinda big.
+
+    {Space
+    to Continue}'
+  - 'I did my best to keep on
+
+    the trails, but I roamed
+
+    into some cool side
+    nooks.
 
     {Space to Continue}'
-  - 'The developer said that
+  - 'These mountains really are
 
-    the mountains would look
+    something everyone should
 
-    like mountains ASAP.'
-  - 'I really think these assets
+    try roaming about
+    in.
 
-    are starting to do the trick!'
+    {Space to Close}'
   responses: []

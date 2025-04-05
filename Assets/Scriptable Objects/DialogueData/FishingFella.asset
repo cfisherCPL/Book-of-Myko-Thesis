@@ -13,24 +13,27 @@ MonoBehaviour:
   m_Name: FishingFella
   m_EditorClassIdentifier: 
   dialogue:
-  - 'All said and done, I''d like to fish.
+  - 'This little pond has become
 
-    But that means more sprites,
-
-    and
-    animation features.
-
-    {Space to Continue}'
-  - 'Perhaps in the full game I will!
-
-    And you''ll get a "special mushroom"
-
-    for
-    chatting with me.
-
-    {Space to Continue}'
-  - 'That''d be pretty swell...
+    my favorite retreat fom town.
 
 
-    {Space to Close}'
+    {Space
+    to Continue}'
+  - 'Clear waters and calm
+
+    spaces are something everyone
+
+    deserves to have.
+
+    {Space
+    to Continue}'
+  - 'I hope your journey around here
+
+    treats you extra well,
+
+    little mycologist.
+
+    {Space
+    to Close}'
   responses: []
