@@ -20,7 +20,10 @@ public class GoToSleep : MonoBehaviour
     [SerializeField] GameObject requestLetterBox;
     [SerializeField] GameObject confirmSavePanel;
     [SerializeField] GameObject confirmSleepPanel;
+    [SerializeField] GameObject savedNoticePanel;
 
+
+    public bool preventInput;
 
     //stamina deprecated as mechanic 11-19-24
     //private StaminaManager _stamina;
@@ -43,7 +46,17 @@ public class GoToSleep : MonoBehaviour
 
     private void Update()
     {
-        if (sleepAllowed && Input.GetKeyDown("e"))
+        if (confirmSavePanel.activeSelf || confirmSleepPanel.activeSelf || savedNoticePanel.activeSelf)
+        {
+            preventInput = true;
+            sleepTextPopUp.gameObject.SetActive(false);
+        }
+        else 
+        { 
+            preventInput = false; 
+        }
+        
+        if (sleepAllowed && Input.GetKeyDown("e") && !preventInput)
         {
             if (dayOfWeek.currentTime.currentTimeOfDay != 4)
             {

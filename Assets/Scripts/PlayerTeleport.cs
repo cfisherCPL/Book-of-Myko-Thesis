@@ -23,6 +23,8 @@ public class PlayerTeleport : MonoBehaviour
 
     private NPC_Activator NPC_Activator;
 
+    public bool preventInput;
+
     void Awake()
     {
         changeTime = false;
@@ -32,7 +34,7 @@ public class PlayerTeleport : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !preventInput)
         {
             if (currentTeleporter != null)
             {
@@ -84,6 +86,8 @@ public class PlayerTeleport : MonoBehaviour
                 }
 
                 NPC_Activator.ActivateDeactivateAll();
+
+                preventInput = false;
             }
         }
     }
@@ -117,6 +121,7 @@ public class PlayerTeleport : MonoBehaviour
 
     public IEnumerator ChangeLocation()
     {
+        preventInput = true;
         fade.FadeIn();
         yield return new WaitForSeconds(1);
         transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;

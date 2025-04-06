@@ -24,6 +24,7 @@ public class LetterRequests : MonoBehaviour
     private bool inRange = false;
 
     [SerializeField] ItemData[] allMushies;
+    [SerializeField] GameObject[] greenChecks;
 
     public int[] reqItemNums = new int[3];
 
@@ -44,6 +45,9 @@ public class LetterRequests : MonoBehaviour
     [SerializeField] public CurrentRequest currentRequest;
 
     public bool currentReqCompleted;
+
+    [SerializeField] public GameObject specialMushroom;
+    [SerializeField] public Transform mushSpawnLoc;
 
 
 
@@ -139,10 +143,12 @@ public class LetterRequests : MonoBehaviour
                     if (inventoryToCheck.slots[i].itemNumber == reqItemNums[i])
                     {
                         allItemCount++;
+                        greenChecks[i].SetActive(true);
                     }
                     else
                     {
                         allItemCount--;
+                        greenChecks[i].SetActive(false);
                     }
                 }
                 if (allItemCount == 3)
@@ -267,6 +273,9 @@ public class LetterRequests : MonoBehaviour
     
         }
 
+        foreach (GameObject mark in greenChecks)
+        { mark.SetActive(false); }
+
 
         item1Text.text = "Sent!";
         item1Icon.sprite = sentImage;
@@ -287,6 +296,11 @@ public class LetterRequests : MonoBehaviour
         currentReqCompleted = true;
 
         SubmitButton.SetActive(false);
+
+        if (reqTracker.requestsCompleted % 5 == 0)
+        {
+            GameObject giftMush = Instantiate(specialMushroom, mushSpawnLoc.position, mushSpawnLoc.rotation, this.transform);
+        }
 
     }
 

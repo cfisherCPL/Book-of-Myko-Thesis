@@ -23,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     private Vector2 lastMoveDirection;
 
+    private PlayerTeleport playerTeleport;
+    private GoToSleep goToSleep;
+
 
 // Some elements needed to handle character facing.    
     bool facingRight;
@@ -36,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerTeleport = GetComponent<PlayerTeleport>();
+        goToSleep = FindObjectOfType<GoToSleep>();
         transform.position = spawnPosition.initialValue;
     }
 
@@ -48,23 +53,29 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ProccessInputs();
-        Animate();
-        
-            
-        inputHorizontal = Input.GetAxisRaw("Horizontal");
-        inputVertical = Input.GetAxisRaw("Vertical");
-
-        if (inputHorizontal < 0 && !facingRight)
+        if (playerTeleport.preventInput || goToSleep.preventInput)
         {
-            FlipCharacter();
+            return;
         }
-
-        if (inputHorizontal > 0 && facingRight)
+        else
         {
-            FlipCharacter();
-        }
+            ProccessInputs();
+            Animate();
 
+
+            inputHorizontal = Input.GetAxisRaw("Horizontal");
+            inputVertical = Input.GetAxisRaw("Vertical");
+
+            if (inputHorizontal < 0 && !facingRight)
+            {
+                FlipCharacter();
+            }
+
+            if (inputHorizontal > 0 && facingRight)
+            {
+                FlipCharacter();
+            }
+        }
 
     }
 
