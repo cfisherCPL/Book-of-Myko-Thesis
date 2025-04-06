@@ -21,11 +21,14 @@ public class PlayerTeleport : MonoBehaviour
 
     private FadeInOut fade;
 
+    private NPC_Activator NPC_Activator;
+
     void Awake()
     {
         changeTime = false;
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         fade = FindObjectOfType<FadeInOut>();
+        NPC_Activator = FindObjectOfType<NPC_Activator>();
     }
     void Update()
     {
@@ -80,7 +83,7 @@ public class PlayerTeleport : MonoBehaviour
                     secondlight.gameObject.SetActive(false);
                 }
 
-
+                NPC_Activator.ActivateDeactivateAll();
             }
         }
     }

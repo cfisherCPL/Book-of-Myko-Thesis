@@ -138,10 +138,13 @@ public class Mushroom_Spawner_Outside : MonoBehaviour
 
     void Update()
     {
+        //Don't want accidental wipe by players! 4-5-25
+        /*
         if (Input.GetKeyDown(KeyCode.L))
         {
             clearSpawnedMushrooms();
             Debug.Log("Local Mushrooms Eradicated.");
         }
+        */
     }
 }
