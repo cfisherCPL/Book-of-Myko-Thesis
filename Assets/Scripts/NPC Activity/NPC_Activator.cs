@@ -16,6 +16,8 @@ public class NPC_Activator : MonoBehaviour
         
         foreach (GameObject npc in allAvailableNPC)
         {
+            npc.GetComponent<NPC_Info>().gaveSpecialMushroom = false;
+
             //check if spawnable day matches current
             int dayNumber = dayofWeek.currentDay;
             int timeNumber = timeOfDay.currentTimeOfDay;
