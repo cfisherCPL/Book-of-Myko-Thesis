@@ -22,6 +22,10 @@ public class GoToSleep : MonoBehaviour
     [SerializeField] GameObject confirmSleepPanel;
     [SerializeField] GameObject savedNoticePanel;
 
+    [SerializeField] GameObject endGameLetter;
+    [SerializeField] FoundMushroomTracker mushTracker;
+    [SerializeField] GameObject cabinExit;
+    [SerializeField] CentralTracker centralTracker;
 
     public bool preventInput;
 
@@ -76,16 +80,43 @@ public class GoToSleep : MonoBehaviour
     public void SleepUntilTomorrow()
     {
         dayOfWeek.nextDay();
-            spawnTracker.alreadySpawned = false;
-            audioManager.PlayAmbiance(audioManager.dayAmbiance);
-            if (!audioManager.musicSource.isPlaying)
-            {
-                audioManager.PlayMusic(audioManager.titleMusic);
-            }
-            requestLetterBox.GetComponent<LetterRequests>().GenerateNewRequest();
-            //_stamina.ResetStamina();
+        spawnTracker.alreadySpawned = false;
+        audioManager.PlayAmbiance(audioManager.dayAmbiance);
+        if (!audioManager.musicSource.isPlaying)
+        {
+            audioManager.PlayMusic(audioManager.titleMusic);
+        }
+               
+        requestLetterBox.GetComponent<LetterRequests>().GenerateNewRequest();
+        //_stamina.ResetStamina();
 
-            confirmSavePanel.SetActive(true);
+        if (CheckForComplete())
+        {
+            cabinExit.SetActive(false);
+            endGameLetter.SetActive(true);
+        }
+
+        confirmSavePanel.SetActive(true);
+    }
+
+    public bool CheckForComplete()
+    {
+        bool allMushFound = true;
+
+        foreach (bool mush in mushTracker.mushroomByItemNumber)
+        {
+            if (!mush)
+            {
+                allMushFound = false;
+                break;
+            }
+            else
+            {
+                centralTracker.allMushFound = true;
+            }
+        }
+
+        return allMushFound;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
