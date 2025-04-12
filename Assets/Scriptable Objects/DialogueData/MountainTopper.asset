@@ -13,18 +13,14 @@ MonoBehaviour:
   m_Name: MountainTopper
   m_EditorClassIdentifier: 
   dialogue:
-  - 'The top of the mountain is chilly.
-
-    Are you lost?
+  - 'Are you lost?
 
     I know I am!
 
-    {Space
-    to Continue}'
+    {Space to Continue}'
   - 'That''s okay though.
 
     I really like it here.
-
 
     {Space to Continue}'
   - 'If you''re lost, just wander!

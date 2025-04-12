@@ -25,4 +25,8 @@ MonoBehaviour:
 
 
     {Space to Close}'
-  responses: []
+  responses:
+  - responseText: Absolutely!
+    dialogueObject: {fileID: 11400000, guid: e8d922843137dd64198efd4838edb447, type: 2}
+  - responseText: Or ponder orbs?
+    dialogueObject: {fileID: 11400000, guid: e8d922843137dd64198efd4838edb447, type: 2}

@@ -10,29 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
-  m_Name: FishingFella
+  m_Name: Sometimes
   m_EditorClassIdentifier: 
   dialogue:
-  - 'This little pond has become
+  - 'HEHEHEHEHEH. Neat.
 
-    my favorite retreat fom town.
+    I like your parents.
 
-
-    {Space
-    to Continue}'
-  - 'Clear waters and calm
-
-    spaces are something everyone
-
-    deserves to have.
-
-    {Space
-    to Continue}'
-  - 'I hope your journey around here
-
-    treats you extra well,
-
-    little mycologist.
+    Come back and play sometime!
 
     {Space
     to Close}'
