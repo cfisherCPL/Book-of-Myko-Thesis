@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemNumber: 66
   itemName: Baily's Friendship Cap
-  icon: {fileID: 2027584979, guid: fbea4b6e6f2ca4759a531f686edc16bd, type: 3}
-  iconColor: {r: 1, g: 0.9414168, b: 0.3238992, a: 1}
+  icon: {fileID: 21300000, guid: 3e55a5935b0505c448a8c521afdd909e, type: 3}
+  iconColor: {r: 1, g: 1, b: 1, a: 1}
