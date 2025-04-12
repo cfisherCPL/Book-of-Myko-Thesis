@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: Jean_1
   m_EditorClassIdentifier: 
   dialogue:
-  - 'This little pond has become
+  - '[Jean the Fisher]
 
-    my favorite retreat fom town.
+    This little pond has become
+
+    my favorite retreat
+    fom town.
 
 
-    {Space
-    to Continue}'
+    {Space to Continue}'
   - 'Clear waters and calm
 
     spaces are something everyone
