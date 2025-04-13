@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
+  m_Name: Joy_0
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '[Researcher Joy]
+
+    Another Royal Academy fellow!
+
+    Welcome to the GigaTree.
+
+    {Space
+    to Continue}'
+  - 'My dissertation is all about
+
+    the biological history of this...
+
+    ...."tree".
+
+    {Space
+    to Continue}'
+  - 'I''m starting to think the
+
+    GigaTree isn''t some normal
+
+    tree at all!'
+  responses:
+  - responseText: No way!
+    dialogueObject: {fileID: 11400000, guid: 7f289a3e5ecc77f4db9f9522f9a009a4, type: 2}
+  - responseText: For real?
+    dialogueObject: {fileID: 11400000, guid: 8c8ac513edba37b459789e5c94a174d4, type: 2}

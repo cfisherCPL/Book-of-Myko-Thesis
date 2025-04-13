@@ -9,6 +9,7 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
     [SerializeField] private TMP_Text popupText;
+    [SerializeField] public ActionTracker npc_convos;
 
     public void UpdateDialogueObject(DialogueObject dialogueObject)
     {
@@ -59,6 +60,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         }
         
         player.DialogueUI.ShowDialogue(dialogueObject);
+
+        npc_convos.CountOnce();
     }
 
 }

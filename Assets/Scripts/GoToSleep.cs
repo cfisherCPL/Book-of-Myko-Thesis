@@ -92,11 +92,16 @@ public class GoToSleep : MonoBehaviour
 
         if (CheckForComplete())
         {
-            cabinExit.SetActive(false);
-            endGameLetter.SetActive(true);
+            if (!centralTracker.endLetterRead)
+            {
+                cabinExit.SetActive(false);
+                endGameLetter.SetActive(true);
+            }
         }
 
         confirmSavePanel.SetActive(true);
+
+        centralTracker.daysPassed += 1;
     }
 
     public bool CheckForComplete()
@@ -110,10 +115,7 @@ public class GoToSleep : MonoBehaviour
                 allMushFound = false;
                 break;
             }
-            else
-            {
-                centralTracker.allMushFound = true;
-            }
+            
         }
 
         return allMushFound;

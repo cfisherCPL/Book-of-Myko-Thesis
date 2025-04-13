@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
+  m_Name: Chloe_2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '[Audiologist Chloe]
+
+    Can you imagine what layering
+
+    new sound effects
+    does for the listener?
+
+    {Space to Continue}'
+  - 'The subtlety...the beauty....
+
+    If only I had more time to record!
+
+    {Space
+    to Continue}'
+  - Maybe the mushrooms could help me?
+  responses:
+  - responseText: Brilliant idea, Chloe.
+    dialogueObject: {fileID: 11400000, guid: 0fa6a34ca92763644829bdec5918305c, type: 2}

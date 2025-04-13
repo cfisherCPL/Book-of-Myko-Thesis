@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
+  m_Name: Rachel_0
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '[Rachel the Writer]
+
+    These kinds of open spaces are
+
+    exactly what I
+    needed to inspire me.
+
+    {Space to Continue}'
+  - 'Sometimes the small stories,
+
+    little words, and vignettes
+
+    are what
+    make the big stories sing.
+
+    {Space to Continue}'
+  - 'That journal in your pocket
+
+    looks like its ready to tell
+
+    quite a story,
+    eh?'
+  responses:
+  - responseText: Perhaps one day.
+    dialogueObject: {fileID: 11400000, guid: f5ce30ee06e2f59418fb77ca0c6c2032, type: 2}
+  - responseText: Mushroom by mushroom!
+    dialogueObject: {fileID: 11400000, guid: aa0c26fe46710cf4080646eeed67c88d, type: 2}

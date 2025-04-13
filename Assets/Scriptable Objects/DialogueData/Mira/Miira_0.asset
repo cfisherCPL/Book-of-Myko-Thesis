@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
+  m_Name: Miira_0
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '[Mermaid Mira]
+
+    These underground water systems
+
+    are vast networks of
+    travel for merfolk.
+
+    {Space to Continue}'
+  - 'I like popping up to exchange
+
+    thingamabobs and whats-its
+
+    with surface
+    folk.
+
+    {Space to Continue}'
+  - 'You''re one of those mycologists!
+
+    Did you know that there are
+
+    species
+    of underwater fungi?'
+  responses:
+  - responseText: Only rumors!
+    dialogueObject: {fileID: 11400000, guid: ae9322e0120724645b1c1dc9f6756a57, type: 2}
+  - responseText: Do you have one?
+    dialogueObject: {fileID: 11400000, guid: 5b069f1958bfb654aa5aba9c098475f3, type: 2}

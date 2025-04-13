@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d23d2fb81cd46d44b61c5cbfed83f07, type: 3}
+  m_Name: Generally
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'My son says I shouldn''t work myself sick
+
+    He''s right, of course...
+
+    {Space
+    to Continue}'
+  - '...but I keep working because I''m not
+
+    sure what happens when I stop.
+
+    I
+    just don''t want to dissapoint anyone.
+
+    {Space to Close}'
+  responses: []
