@@ -10,7 +10,7 @@ public class Teleporter : MonoBehaviour
     [SerializeField] public bool changesTime;
     [SerializeField] public bool clearsMushrooms;
     [SerializeField] public GameObject localMushroomSpawner;
-    [SerializeField] public AudioClip musicToStart;
+    [SerializeField] public AudioClip[] musicToStart;
     [SerializeField] public bool stopsMusic;
 
 

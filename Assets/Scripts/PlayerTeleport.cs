@@ -70,7 +70,9 @@ public class PlayerTeleport : MonoBehaviour
                 }
                 else if (!audioManager.musicSource.isPlaying)
                 {
-                    audioManager.PlayMusic(currentTeleporter.GetComponent<Teleporter>().musicToStart);
+                    int numClips = currentTeleporter.GetComponent<Teleporter>().musicToStart.Length;
+
+                    audioManager.PlayMusic(currentTeleporter.GetComponent<Teleporter>().musicToStart[(int)Random.Range(0,numClips)]);
                 }
 
                 if (makeDark)
@@ -87,7 +89,7 @@ public class PlayerTeleport : MonoBehaviour
 
                 NPC_Activator.ActivateDeactivateAll();
 
-                preventInput = false;
+              
             }
         }
     }
@@ -126,5 +128,6 @@ public class PlayerTeleport : MonoBehaviour
         yield return new WaitForSeconds(1);
         transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
         fade.FadeOut();
+        preventInput = false;
     }
 }

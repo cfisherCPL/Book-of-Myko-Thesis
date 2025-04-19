@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
+using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -44,6 +46,27 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = clip;
         musicSource.Play();
     }
+
+    public IEnumerator Fade( bool fadeIn, AudioSource source, float duration, float targetVolume)
+    {
+        if (!fadeIn)
+        {
+            double lengthOfSource = (double)source.clip.samples / source.clip.frequency;
+            yield return new WaitForSecondsRealtime((float)(lengthOfSource - duration));
+        }
+
+        float time = 0f;
+        float startVol = source.volume;
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+            source.volume = Mathf.Lerp(startVol, targetVolume, time/duration);
+            yield return null;
+        }
+
+        yield break;
+    }
+
 
 
     /*

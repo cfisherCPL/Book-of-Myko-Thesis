@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -53,12 +54,24 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerTeleport.preventInput || goToSleep.preventInput)
+        if (playerTeleport.preventInput || goToSleep.preventInput ||
+                UI_Manager.draggingItem ||
+                titleOverlay.activeSelf ||
+                welcomeLetterPanel.activeSelf ||
+                dialogueUI.IsOpen ||
+                journalPanel.activeSelf ||
+                saveConfirmPanel.activeSelf ||
+                dataSavedPanel.activeSelf ||
+                requestPanel.activeSelf ||
+                storagePanel.activeSelf
+                )
         {
+            anim.enabled = false;
             return;
         }
         else
         {
+            anim.enabled = true;
             ProccessInputs();
             Animate();
 
@@ -82,47 +95,23 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (UI_Manager.draggingItem)
+        if (goToSleep.preventInput ||
+                UI_Manager.draggingItem ||
+                titleOverlay.activeSelf || 
+                welcomeLetterPanel.activeSelf ||
+                dialogueUI.IsOpen ||
+                journalPanel.activeSelf||
+                saveConfirmPanel.activeSelf || 
+                dataSavedPanel.activeSelf ||
+                requestPanel.activeSelf||
+                storagePanel.activeSelf   
+                )
         {
+            anim.enabled = false;
             rb.velocity = new Vector2(0, 0);
             return;
         }
 
-        if (titleOverlay.activeSelf | welcomeLetterPanel.activeSelf)
-        {
-            rb.velocity = new Vector2(0, 0);
-            return;
-        }
-
-        if (dialogueUI.IsOpen)
-        {
-            rb.velocity = new Vector2(0, 0);
-            return;
-        }
-
-        if (journalPanel.activeSelf)
-        {
-            rb.velocity = new Vector2(0, 0);
-            return;
-        }
-
-        if (saveConfirmPanel.activeSelf | dataSavedPanel.activeSelf)
-        {
-            rb.velocity = new Vector2(0, 0);
-            return;
-        }
-
-        if (requestPanel.activeSelf)
-        {
-            rb.velocity = new Vector2(0, 0);
-            return;
-        }
-
-        if (storagePanel.activeSelf)
-        {
-            rb.velocity = new Vector2(0, 0);
-            return;
-        }
 
         rb.velocity = movementDirection.normalized * movementSpeed;
 
@@ -161,6 +150,7 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("MoveMagnitude", movementDirection.magnitude);
         anim.SetFloat("LastMoveX", lastMoveDirection.x);
         anim.SetFloat("LastMoveY", lastMoveDirection.y);
+                
     }
 
 }
