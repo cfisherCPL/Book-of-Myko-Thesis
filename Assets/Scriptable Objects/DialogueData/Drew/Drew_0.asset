@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Drew_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "[Dr. Drew]\nSome mushrooms are incredible \nfor reducing inflammation!\n{Space
+  - "[Doctor Drew]\nSome mushrooms are incredible \nfor reducing inflammation!\n{Space
     to Continue}"
   - 'Other mushrooms make quite
 

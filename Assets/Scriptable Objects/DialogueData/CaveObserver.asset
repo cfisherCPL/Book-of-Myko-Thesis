@@ -17,20 +17,19 @@ MonoBehaviour:
 
     Or is it inviting?
 
-
     {Space to Continue}'
-  - 'It''s bigger on the inside.
+  - 'I heard it''s bigger on the inside.
 
     But I''ll just chill here...
 
-    Maybe there''s
-    mushrooms?
+    {Space
+    to Continue}'
+  - 'Maybe there''s mushrooms?
 
-    {Space to Continue}'
-  - 'That''s a question for you,
+    That''s a question for you to answer,
 
-    little mycologist.
-
+    little
+    mycologist.
 
     {Space to Close}'
   responses: []

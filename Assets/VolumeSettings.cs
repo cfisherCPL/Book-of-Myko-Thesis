@@ -15,10 +15,18 @@ public class VolumeSettings : MonoBehaviour
 
     private void Start()
     {
-        SetAmbianceVolume();
-        SetFootstepsVolume();
-        SetMusicVolume();
-        SetSFXVolume();
+        if (PlayerPrefs.HasKey("musicVolume"))
+        {
+            LoadVolume();
+        }
+        else
+        {
+            SetAmbianceVolume();
+            SetFootstepsVolume();
+            SetMusicVolume();
+            SetSFXVolume();
+        }
+        
     }
 
     public void SetMusicVolume()
