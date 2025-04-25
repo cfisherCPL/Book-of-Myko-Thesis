@@ -9,6 +9,12 @@ public class SaveData
 {
     public Vector3 playerPosition;
 
+    public int daysPassed;
+    public int trufflePets;
+    public int requestsCompleted;
+    public int convosHad;
+
+
     public int dayOfWeek;
     public int timeOfDay;
     public bool alreadySpawned;

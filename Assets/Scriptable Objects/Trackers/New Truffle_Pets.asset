@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b19a33d565ca64c4ab397d758d2b7f41, type: 3}
   m_Name: New Truffle_Pets
   m_EditorClassIdentifier: 
-  timesPet: 0
+  timesPet: 10

@@ -7,4 +7,10 @@ using UnityEngine;
 public class LetterRequestTracker : ScriptableObject
 {
     public int requestsCompleted;
+
+
+    public void ResetCount()
+    {
+        requestsCompleted = 0;
+    }
 }

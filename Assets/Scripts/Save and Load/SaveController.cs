@@ -31,6 +31,12 @@ public class SaveController : MonoBehaviour
     [SerializeField] public SaveExistsTracker saveFileExists;
     [SerializeField] public CurrentRequest currentRequest;
 
+    [Header("Sticker Trackers")]
+    public ActionTracker npcConvoTracker;
+    public Truffle_Pets truffleTracker;
+    public LetterRequestTracker letterReqTracker;
+    public CentralTracker centralTracker;
+
     private string saveLocation;
    
     void Awake()
@@ -82,8 +88,14 @@ public class SaveController : MonoBehaviour
             requestSaveData = new RequestSaveData()
         };
 
-        
-        saveData.requestSaveData.mush1 = currentRequest.mush1;
+        saveData.daysPassed = centralTracker.daysPassed;
+        saveData.trufflePets = truffleTracker.timesPet;
+        saveData.requestsCompleted = letterReqTracker.requestsCompleted;
+        saveData.convosHad = npcConvoTracker.actionCount;
+
+
+
+    saveData.requestSaveData.mush1 = currentRequest.mush1;
         saveData.requestSaveData.mush2 = currentRequest.mush2;
         saveData.requestSaveData.mush3 = currentRequest.mush3;
         saveData.requestSaveData.reqText = currentRequest.reqText;
@@ -194,7 +206,10 @@ public class SaveController : MonoBehaviour
             currentTime.currentTimeOfDay = saveData.timeOfDay;
             spawnTracker.alreadySpawned = saveData.alreadySpawned;
 
-            
+            centralTracker.daysPassed = saveData.daysPassed;
+            truffleTracker.timesPet = saveData.trufflePets;
+            letterReqTracker.requestsCompleted = saveData.requestsCompleted;
+            npcConvoTracker.actionCount = saveData.convosHad;
 
             for (int i = 0; i < saveData.saveStorage.slots.Count; i++)
             {

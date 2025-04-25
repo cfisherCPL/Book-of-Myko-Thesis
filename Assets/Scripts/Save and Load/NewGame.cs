@@ -18,6 +18,12 @@ public class NewGame : MonoBehaviour
     public SaveExistsTracker saveTracker;
     public GameObject continueButton;
 
+    [Header("Sticker Trackers")]
+    public ActionTracker npcConvoTracker;
+    public Truffle_Pets truffleTracker;
+    public LetterRequestTracker letterReqTracker;
+    public CentralTracker centralTracker;
+
     public void Start()
     {
         Invoke("hideMainUI", 0.002f);
@@ -39,6 +45,17 @@ public class NewGame : MonoBehaviour
         {
             mushTracker.mushroomByItemNumber[i] = false;
         }
+
+        //reset days passed count
+        centralTracker.ResetAll();
+        //reset letter request completed count
+        letterReqTracker.ResetCount();
+        //reset truffle pet count
+        truffleTracker.ResetPets();
+        //reset npc convos count
+        npcConvoTracker.ResetCount();
+
+
 
         //set day of week to monday
         //stretchgoal: let player pick the start day? 2/26/25

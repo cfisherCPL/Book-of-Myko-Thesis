@@ -490,7 +490,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: '`'
+    positiveButton: escape
     altNegativeButton: 
     altPositiveButton: p
     gravity: 1000

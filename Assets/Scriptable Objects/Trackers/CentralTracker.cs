@@ -23,4 +23,15 @@ public class CentralTracker : ScriptableObject
     {
         endLetterRead = true;
     }
+
+
+    public void ResetAll()
+    {
+        npcsMet = 0;
+        conversations = 0;
+        catsMet = 0;
+        totalMushPicked = 0;
+        totalMushPicked = 0;
+        daysPassed = 0;
+    }
 }

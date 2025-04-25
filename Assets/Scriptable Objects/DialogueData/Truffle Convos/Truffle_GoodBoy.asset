@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Truffle_GoodBoy
   m_EditorClassIdentifier: 
   dialogue:
-  - '(Hell yeah I am)
+  - '*hell yeah I am*
 
     BORK!
 
