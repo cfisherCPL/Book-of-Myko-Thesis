@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Truffle_01
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Truffle]
+  - '<color="green"><b>[Truffle]</b></color>
 
     Bork!
 
     {Space to Continue}
 
 '
-  - Bork. Bork?
+  - "Bork. Bork?\n\r"
   responses:
   - responseText: Okay then buddy.
     dialogueObject: {fileID: 11400000, guid: b39511b2b607c4f8a8625b580b40c8e4, type: 2}

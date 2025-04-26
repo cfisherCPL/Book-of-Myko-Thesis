@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Truffle_PetsTime
   m_EditorClassIdentifier: 
   dialogue:
-  - 'More attention!
+  - '<i>*More attention!*<i>
 
     BORK?!'
   responses:

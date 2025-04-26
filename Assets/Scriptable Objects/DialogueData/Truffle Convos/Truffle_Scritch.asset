@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Truffle_Scritch
   m_EditorClassIdentifier: 
   dialogue:
-  - '*quiet doggy smiles*
+  - '<i>*quiet doggy smiles*</i>
 
 
     {Space to Close}'
