@@ -29,12 +29,15 @@ public class InventoryManager : MonoBehaviour
     public Inventory letterGifts;
     public int giftsSlotsCount;
 
-    
+    public AudioClip depositSound;
+    public AudioManager audioManager;
 
 
 
     private void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
         backpack = new Inventory(backpackSlotsCount);
         toolbar = new Inventory(toolbarSlotsCount);
         storage = new Inventory(storageSlotsCount);
@@ -104,6 +107,8 @@ public class InventoryManager : MonoBehaviour
 
     public void StoreAllFromBackpack()
     {
+        
+
         backpack.organizerArray = new int[80];
 
         for (int i = 0; i < backpackSlotsCount; i++)

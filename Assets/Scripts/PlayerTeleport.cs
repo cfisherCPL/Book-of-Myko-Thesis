@@ -49,6 +49,13 @@ public class PlayerTeleport : MonoBehaviour
 
                 }
 
+                //play a soundeffect if it is supposed to
+                //wipe current area's mushrooms
+                if (currentTeleporter.GetComponent<Teleporter>().playsSFX)
+                {
+                    audioManager.PlaySFX(currentTeleporter.GetComponent<Teleporter>().clipToPlay);
+                }
+
                 //change time to  next if that's what the teleporter does
                 if (changeTime)
                 {
@@ -128,6 +135,7 @@ public class PlayerTeleport : MonoBehaviour
         yield return new WaitForSeconds(1);
         transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
         fade.FadeOut();
+        yield return new WaitForSeconds(0.3f);
         preventInput = false;
     }
 }

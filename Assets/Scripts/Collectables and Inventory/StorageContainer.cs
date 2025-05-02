@@ -13,12 +13,17 @@ public class StorageContainer : MonoBehaviour
 
     [SerializeField] public GameObject depositAllButton;
 
+    [SerializeField] public AudioClip openSound;
+    [SerializeField] public AudioClip closeSound;
+    
     private bool inRange = false;
 
+    AudioManager audioManager;
 
     private void Awake()
     {
         popupText.gameObject.SetActive(false);
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     
 
@@ -30,6 +35,7 @@ public class StorageContainer : MonoBehaviour
         {
             popupText.gameObject.SetActive(true);
             inRange = true;
+            
         }
     }
 
@@ -65,7 +71,7 @@ public class StorageContainer : MonoBehaviour
     }
 
 
-    void TogglePanelUI()
+    public void TogglePanelUI()
     {
         if (storageInventoryUI != null)
         {
@@ -74,13 +80,16 @@ public class StorageContainer : MonoBehaviour
                 storageInventoryUI.SetActive(true);
                 depositAllButton.SetActive(true);
                 uiManager.RefreshInventoryUI("Storage");
+                audioManager.PlaySFX(openSound);
             }
             else
             {
                 storageInventoryUI.SetActive(false);
                 depositAllButton.SetActive(false);
                 HoverTipManager.OnMouseLoseFocus();
+                audioManager.PlaySFX(closeSound);
             }
         }
+        
     }
 }

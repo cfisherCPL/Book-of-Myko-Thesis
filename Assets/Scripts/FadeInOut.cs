@@ -44,11 +44,13 @@ public class FadeInOut : MonoBehaviour
     public void FadeIn()
     {
         fadein = true;
+        fadeout = false;
     }
 
 
     public void FadeOut()
     {
         fadeout = true;
+        fadein = false;
     }
 }

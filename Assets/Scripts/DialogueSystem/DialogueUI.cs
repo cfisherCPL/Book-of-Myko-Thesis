@@ -71,7 +71,7 @@ public class DialogueUI : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                typewriterEffect.Stop(); 
+                //typewriterEffect.Stop(); 
             }
 
         }

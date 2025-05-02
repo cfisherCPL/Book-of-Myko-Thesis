@@ -14,8 +14,9 @@ public class PlayerIsTrigger : MonoBehaviour
     public bool inventoryFull = false;
     //public Inventory toolbar;
     public InventoryManager inventory;
+    AudioManager audioManager;
 
-   
+   [SerializeField] public AudioClip dropSound;
 
     //singleton pattern disabled 11-19-24
     //public static PlayerIsTrigger Instance { get; private set; }
@@ -24,8 +25,9 @@ public class PlayerIsTrigger : MonoBehaviour
     {
 
         inventory = GetComponent<InventoryManager>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
- 
+
     }
 
     public void DropItem (Item item)
@@ -35,6 +37,8 @@ public class PlayerIsTrigger : MonoBehaviour
         Vector2 spawnOffset = Random.insideUnitCircle * 1.25f;
 
         Item droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.identity);
+
+        audioManager.PlaySFX(dropSound);
 
         droppedItem.tag = "DroppedMushroom";
 

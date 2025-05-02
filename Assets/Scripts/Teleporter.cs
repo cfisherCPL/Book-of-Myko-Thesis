@@ -18,6 +18,9 @@ public class Teleporter : MonoBehaviour
     [SerializeField] public bool makesDark;
     [SerializeField] public bool makeCurrentTime;
 
+    [SerializeField] public bool playsSFX;
+    [SerializeField] public AudioClip clipToPlay;
+
     public AudioManager audioManager;
 
     public GameObject GetMushSpawner()

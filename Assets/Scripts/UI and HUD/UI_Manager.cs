@@ -21,10 +21,15 @@ public class UI_Manager : MonoBehaviour
 
     public static bool submenuOpen;
     public static bool draggingItem;
-  
+
+    AudioManager audioManager;
+    [SerializeField] AudioClip openSound;
+    [SerializeField] AudioClip closeSound;
+
     public void Awake()
     {
         Initialize();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Start()
@@ -88,11 +93,13 @@ public class UI_Manager : MonoBehaviour
                 {
                     inventoryPanel.SetActive(true);
                     RefreshInventoryUI("Backpack");
+                    //audioManager.PlaySFX(openSound);
                 }
                 else
                 {
                     inventoryPanel.SetActive(false);
                     HoverTipManager.OnMouseLoseFocus();
+                    //audioManager.PlaySFX(closeSound);
                 }
             }
         }
