@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Shawn_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Spelunker Shawn]
+  - '<color="green"><b>[Spelunker Shawn]</b></color>
 
     Well hey there new friend!
 
-    I''m trying out my new 
-    gear.
+    I''m
+    trying out my new  gear.
 
     {Space to Continue}'
   - 'Gosh I just dig getting to

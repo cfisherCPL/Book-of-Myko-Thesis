@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Ross_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Ross the Dad Guy]
+  - '<color="green"><b>[Ross the Dad Guy]</b></color>
 
-    What a beautiful cabin they
+    What a beautiful cabin
+    they
 
     set up here for ya!
 
-    {Space
-    to Continue}'
+    {Space to Continue}'
   - 'Have you considered installing
 
     a backup generator or solar panels?

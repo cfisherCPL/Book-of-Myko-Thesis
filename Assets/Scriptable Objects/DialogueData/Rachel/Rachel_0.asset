@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Rachel_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Rachel the Writer]
+  - '<color="green"><b>[Rachel the Writer]</b></color>
 
-    These kinds of open spaces are
+    These kinds of open spaces
+    are
 
-    exactly what I
-    needed to inspire me.
+    exactly what I needed to inspire me.
 
     {Space to Continue}'
   - 'Sometimes the small stories,

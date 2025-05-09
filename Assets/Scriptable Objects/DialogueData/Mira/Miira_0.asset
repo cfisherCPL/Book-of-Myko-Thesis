@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Miira_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Mermaid Mira]
+  - '<color="green"><b>[Mermaid Mira]</b></color>
 
     These underground water systems
 
-    are vast networks of
-    travel for merfolk.
+    are
+    vast networks of travel for merfolk.
 
     {Space to Continue}'
   - 'I like popping up to exchange

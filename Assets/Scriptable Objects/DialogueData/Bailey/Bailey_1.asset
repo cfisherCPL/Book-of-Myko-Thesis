@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: Bailey_1
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Bailey the Wanderer]
+  - '<color="green"><b>[Bailey the Wanderer]</b></color>
 
-    I just really like helping folks out.
+    I just really like
+    helping folks out.
 
-    That fella
-    across the pond?
+    The fella usually across the pond?
 
-    I think he forgot his fishing pole.
+    I think he forgot
+    his fishing pole.
 
     {Space to Continue}'
   - 'But if he''s not going to fish,

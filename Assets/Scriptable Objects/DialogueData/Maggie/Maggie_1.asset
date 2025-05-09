@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Maggie_1
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Maggie]
+  - '<color="green"><b>[Magpie Maggie]</b></color>
 
-    This spot in the forest is perfect.
+    This spot in the forest is
+    perfect.
 
-    I''m just here for...
-    a bit of quiet.
+    I''m just here for... a bit of quiet.
 
     What about you?'
   responses:

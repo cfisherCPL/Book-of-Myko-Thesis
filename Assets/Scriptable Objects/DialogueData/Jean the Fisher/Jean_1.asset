@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Jean_1
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Jean the Fisher]
+  - '<color="green"><b>[Jean the Fisher]</b> </color>
 
     This little pond has become
 
-    my favorite retreat
-    fom town.
+    my
+    favorite retreat from town.
 
 
     {Space to Continue}'

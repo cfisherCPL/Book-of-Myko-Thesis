@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Quentin_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Quentin the Goblin]
+  - '<color="green"><b>[Quentin the Goblin]</b></color>
 
-    My mom and dad are around here...
+    My mom and dad are around
+    here...
 
     ...somewhere?
 
-    {Space
-    to Continue}'
+    {Space to Continue}'
   - 'I''m a big boy now anyway.
 
     Goblins grow up faster.

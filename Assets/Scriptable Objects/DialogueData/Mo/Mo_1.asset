@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Mo_1
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Mo the Dryad]
+  - '<color="green"><b>[Mo the Dryad]</b></color>
 
     Hello there little mycologist.
 
-    I''ve seen you hard
-    at work!
+    I''ve
+    seen you hard at work!
 
     {Space to Continue}'
   - "Just wanted to say: \nyour animated tail wiggle?\nCHARMING.\n{Space to Continue}"

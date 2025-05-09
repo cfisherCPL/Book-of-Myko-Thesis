@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Chloe_2
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Audiologist Chloe]
+  - '<color="green"><b>[Audiologist Chloe]</b></color>
 
-    Can you imagine what layering
+    Can you imagine what
+    layering
 
-    new sound effects
-    does for the listener?
+    new sound effects does for the listener?
 
     {Space to Continue}'
   - 'The subtlety...the beauty....

@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: Chloe_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Audiologist Chloe]
+  - '<color="green"><b>[BAudiologist Chloe]</b></color>
 
-    Normally I''m a girl all about music,
+    Normally I''m a girl
+    all about music,
 
-    but this
-    place has THE ambiance I need.
+    but this place has THE ambiance I need.
 
-    {Space to Continue}'
+    {Space to
+    Continue}'
   - 'Speaking of which:
 
     Your footfalls sound *exceptionally* crispy.

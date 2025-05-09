@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: George_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '[George]
+  - '<color="green"><b>[George the Grump]</b></color>
 
-    It takes a bit of time, but making sure
+    It takes a bit of time,
+    but making sure
 
-    the grass is trim
-    and tidy is worth it.
+    the grass is trim and tidy is worth it.
 
     {Space to Continue}'
   - 'I should probably be resting, but

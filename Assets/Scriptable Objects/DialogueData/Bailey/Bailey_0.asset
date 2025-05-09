@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Bailey_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Bailey the Wanderer]
+  - '<color="green"><b>[Bailey the Wanderer]</b></color>
 
-    The acorns in this area
+    The acorns in this
+    area
 
-    make great bits for
-    board games.
+    make great bits for board games.
 
     {Space to Continue}'
   - "I hope you find all the little\nitems you need for your \ncreative outlet, friend.\n{Space

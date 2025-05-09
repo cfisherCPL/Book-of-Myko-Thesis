@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Ada_1
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Ada the Artificer]
+  - '<color="green"><b>[Ada the Artificer]</b></color>
 
-    This location is known for
+    This location is known
+    for
 
     rare brain-shaped fungi.
 
-    {Space
-    to Continue}'
+    {Space to Continue}'
   - 'I wonder if we could
 
     use one of these weird

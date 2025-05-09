@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Joy_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Researcher Joy]
+  - '<color="green"><b>[Researcher Joy]</b></color>
 
     Another Royal Academy fellow!
 
-    Welcome to the GigaTree.
+    Welcome
+    to the GigaTree.
 
-    {Space
-    to Continue}'
+    {Space to Continue}'
   - 'My dissertation is all about
 
     the biological history of this...

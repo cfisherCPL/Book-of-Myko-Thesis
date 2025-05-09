@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: Chloe_1
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Audiologist Chloe]
+  - '<color="green"><b>[Audiologist Chloe]</b></color>
 
-    The wind around here has a very warm tone,
+    The wind around here
+    has a very warm tone,
 
-    and
-    the birds add such a lively voice.
+    and the birds add such a lively voice.
 
-    {Space to Continue}'
+    {Space
+    to Continue}'
   - 'I do my best to listen with *both* ears.
 
     100% natural Doppler effect!

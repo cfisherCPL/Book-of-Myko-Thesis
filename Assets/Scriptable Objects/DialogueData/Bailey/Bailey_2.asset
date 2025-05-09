@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Bailey_2
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Bailey the Wanderer]
+  - '<color="green"><b>[Bailey the Wanderer]</b></color>
 
-    Today was a good day of wandering.
+    Today was a good day
+    of wandering.
 
-    I met so
-    many nice people.
+    I met so many nice people.
 
     {Space to Continue}'
   - 'If you get a chance,

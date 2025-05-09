@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: WeekendCamper
   m_EditorClassIdentifier: 
   dialogue:
-  - '[Ben the Dude]
+  - '<color="green"><b>[Ben the Dude]</b></color>
 
     Yeah, the mountains are chilly.
 
-    But mushrooms can help
-    warm ya.
+    But
+    mushrooms can help warm ya.
 
     {Space to Continue}'
   - 'Your mind is the real fire.
