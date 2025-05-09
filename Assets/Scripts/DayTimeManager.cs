@@ -66,5 +66,9 @@ public class DayTimeManager : MonoBehaviour
         
     }
 
+    public IEnumerator WaitABit()
+    {
+        yield return new WaitForSeconds(1.5f);
+    }
 
 }

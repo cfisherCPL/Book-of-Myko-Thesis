@@ -69,6 +69,7 @@ public class GoToSleep : MonoBehaviour
             else
             {
                 fade.FadeIn();
+                
                 SleepUntilTomorrow();
             }
 
@@ -79,7 +80,8 @@ public class GoToSleep : MonoBehaviour
 
     public void SleepUntilTomorrow()
     {
-        dayOfWeek.nextDay();
+        StartCoroutine(WaitABit());
+        
         spawnTracker.alreadySpawned = false;
         audioManager.PlayAmbiance(audioManager.dayAmbiance);
         if (!audioManager.musicSource.isPlaying)
@@ -141,6 +143,14 @@ public class GoToSleep : MonoBehaviour
         fade.FadeIn();
         yield return new WaitForSeconds(1);
         fade.FadeOut();
+    }
+
+
+    public IEnumerator WaitABit()
+    {
+ 
+        yield return new WaitForSeconds(1.5f);
+        dayOfWeek.nextDay();
     }
 
 }
