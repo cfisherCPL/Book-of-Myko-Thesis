@@ -33,7 +33,9 @@ MonoBehaviour:
 
     GigaTree isn''t some normal
 
-    tree at all!'
+    tree at all!
+
+'
   responses:
   - responseText: No way!
     dialogueObject: {fileID: 11400000, guid: 7f289a3e5ecc77f4db9f9522f9a009a4, type: 2}

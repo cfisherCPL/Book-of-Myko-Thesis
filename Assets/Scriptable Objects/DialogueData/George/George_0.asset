@@ -34,7 +34,9 @@ MonoBehaviour:
     works extra hard for the people you love.
 
     Is
-    that right?'
+    that right?
+
+'
   responses:
   - responseText: I guess so?
     dialogueObject: {fileID: 11400000, guid: 4220022ac619f1d44b67e485f373513e, type: 2}

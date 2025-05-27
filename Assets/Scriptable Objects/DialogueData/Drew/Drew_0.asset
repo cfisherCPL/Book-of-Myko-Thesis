@@ -15,15 +15,19 @@ MonoBehaviour:
   dialogue:
   - "<color=\"green\"><b>[Doctor Drew]</b></color>\nSome mushrooms are incredible
     \nfor reducing inflammation!\n{Space to Continue}"
-  - 'Other mushrooms make quite
+  - 'Other mushrooms make quite a
 
     ...uh...permanent solution for inflammation.
+
 
     {Space
     to Continue}'
   - 'What kind are you looking for,
 
-    little mycologist?'
+    little mycologist?
+
+
+'
   responses:
   - responseText: ...safe ones, preferably.
     dialogueObject: {fileID: 11400000, guid: f8e3e77cc01b70e4c9e0e107f51d58be, type: 2}

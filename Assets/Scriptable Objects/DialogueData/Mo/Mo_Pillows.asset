@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Mo_Pillows
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Of course.
+  - 'OF COURSE.
 
     Comfy tree? Comfy pillows!
+
 
     {Space to Close}'
   responses: []

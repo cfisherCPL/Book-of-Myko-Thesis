@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chloe_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '<color="green"><b>[BAudiologist Chloe]</b></color>
+  - '<color="green"><b>[Audiologist Chloe]</b></color>
 
     Normally I''m a girl
     all about music,
@@ -26,6 +26,7 @@ MonoBehaviour:
 
     Your footfalls sound *exceptionally* crispy.
 
+
     {Space
     to Continue}'
   - 'Did you know that fungi have
@@ -33,7 +34,9 @@ MonoBehaviour:
     a bioelectrical network that functions
 
     very
-    similar to audio signals?'
+    similar to audio signals?
+
+'
   responses:
   - responseText: Wicked interesting!
     dialogueObject: {fileID: 11400000, guid: eff2c75cce1bb4b44b88c43ad60af7f5, type: 2}

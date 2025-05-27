@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: safe
   m_EditorClassIdentifier: 
   dialogue:
-  - "They Hippocratic Oath would \nhave me agree with you there.\n{Space to Continue}"
+  - "They Hippocratic Oath would \nhave me agree with you there.\n\n{Space to Continue}"
   - 'But occasionally, through science,
 
     we can discover something new

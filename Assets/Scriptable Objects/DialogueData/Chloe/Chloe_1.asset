@@ -26,11 +26,12 @@ MonoBehaviour:
 
     100% natural Doppler effect!
 
+
     {Space
     to Continue}
 
 '
-  - "Have you seen a mushroom that \nGROWS in stereo?"
+  - "Have you seen a mushroom that \nGROWS in stereo?\n\n"
   responses:
   - responseText: That would be FANTASTIC.
     dialogueObject: {fileID: 11400000, guid: d451d3a81343dd64f84fc7ada2a3448e, type: 2}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Ada_PureSciFi
   m_EditorClassIdentifier: 
   dialogue:
-  - "...Perhaps. \nBut all progress\nstarts with a little dream.\n{Space to Close}"
+  - "...Perhaps. \nBut all progress\nstarts with a little dream.\n\n{Space to Close}"
   responses: []

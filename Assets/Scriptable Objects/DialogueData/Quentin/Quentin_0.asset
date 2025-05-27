@@ -29,7 +29,10 @@ MonoBehaviour:
     {Space to Continue}'
   - 'My dad calls me a goomba.
 
-    Do your parents have a nickname for you?'
+    Do your parents have a nickname for you?
+
+
+'
   responses:
   - responseText: Just Myko, most of the time.
     dialogueObject: {fileID: 11400000, guid: c95a028afeac666469fd3dfe4bb77231, type: 2}

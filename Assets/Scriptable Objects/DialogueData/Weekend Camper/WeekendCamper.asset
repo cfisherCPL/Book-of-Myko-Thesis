@@ -36,7 +36,10 @@ MonoBehaviour:
     to Continue}'
   - 'What does the cosmos
 
-    have in store for you?'
+    have in store for you?
+
+
+'
   responses:
   - responseText: Uh, the stars?
     dialogueObject: {fileID: 11400000, guid: 9230ae2c58932a74cbe58e43bb9005d5, type: 2}

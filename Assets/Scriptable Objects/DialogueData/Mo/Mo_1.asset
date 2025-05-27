@@ -32,7 +32,10 @@ MonoBehaviour:
     {Space to Continue}'
   - 'What do you think about
 
-    sprucing this place up a bit?'
+    sprucing this place up a bit?
+
+
+'
   responses:
   - responseText: I like it more natural.
     dialogueObject: {fileID: 11400000, guid: 2ad4ff6503a4df940a9781bbb7a8ce2f, type: 2}

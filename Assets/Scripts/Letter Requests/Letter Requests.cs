@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class LetterRequests : MonoBehaviour
 {
+    public AudioManager audioManager;
+
     [SerializeField] public LetterRequestTracker reqTracker;
     [SerializeField] public GameObject popupFeature;
     [SerializeField] public GameObject backpackPanel;
@@ -49,6 +51,7 @@ public class LetterRequests : MonoBehaviour
     [SerializeField] public GameObject specialMushroom;
     [SerializeField] public Transform mushSpawnLoc;
 
+    [SerializeField] public AudioClip sendItemsSFX;
 
 
     public string[] RequestTexts = new string[15]
@@ -77,6 +80,8 @@ public class LetterRequests : MonoBehaviour
         popupFeature.SetActive(false);
         SubmitButton.SetActive(false);
         requestPanel.SetActive(false);
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
     }
 
 
@@ -296,6 +301,8 @@ public class LetterRequests : MonoBehaviour
         currentReqCompleted = true;
 
         SubmitButton.SetActive(false);
+
+        audioManager.PlaySFX(sendItemsSFX);
 
         if (reqTracker.requestsCompleted % 5 == 0)
         {

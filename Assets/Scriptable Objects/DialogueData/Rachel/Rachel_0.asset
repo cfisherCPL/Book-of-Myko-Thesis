@@ -34,7 +34,9 @@ MonoBehaviour:
     looks like its ready to tell
 
     quite a story,
-    eh?'
+    eh?
+
+'
   responses:
   - responseText: Perhaps one day.
     dialogueObject: {fileID: 11400000, guid: f5ce30ee06e2f59418fb77ca0c6c2032, type: 2}

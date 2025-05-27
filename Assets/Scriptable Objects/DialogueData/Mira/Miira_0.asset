@@ -34,7 +34,9 @@ MonoBehaviour:
     Did you know that there are
 
     species
-    of underwater fungi?'
+    of underwater fungi?
+
+'
   responses:
   - responseText: Only rumors!
     dialogueObject: {fileID: 11400000, guid: ae9322e0120724645b1c1dc9f6756a57, type: 2}

@@ -25,6 +25,7 @@ MonoBehaviour:
 
     chat with people about spelunking!
 
+
     {Space
     to Continue}'
   - 'Ya know, I was drawn down here
@@ -40,7 +41,9 @@ MonoBehaviour:
     Perfect for a gab session!
 
     Any
-    news from topside?'
+    news from topside?
+
+'
   responses:
   - responseText: Reddit crashed!
     dialogueObject: {fileID: 11400000, guid: a757c2ffa5f2c1748bb0385b7b1b07e8, type: 2}

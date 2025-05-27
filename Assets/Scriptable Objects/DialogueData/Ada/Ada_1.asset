@@ -37,7 +37,7 @@ MonoBehaviour:
 
     {Space to
     Continue}'
-  - "Do you think something \nlike that is possible?"
+  - "Do you think something \nlike that is possible?\n\n"
   responses:
   - responseText: Pure science fiction.
     dialogueObject: {fileID: 11400000, guid: 64f970c2152ceef4eb35c8a146b36ae9, type: 2}

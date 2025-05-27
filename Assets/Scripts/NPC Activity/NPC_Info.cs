@@ -1,15 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class NPC_Info : MonoBehaviour
 {
+    public AudioManager audioManager;
+
     public List<bool> daysList = new List<bool>(7);
     public List<bool> timesList = new List<bool>(5);
 
     public bool gaveSpecialMushroom;
     [SerializeField] public GameObject specialMushroom;
     [SerializeField] public Transform mushSpawnLoc;
+    [SerializeField] public AudioClip dropMushSFX;
 
     [Header("Days Active")]
     public bool monday;
@@ -46,6 +50,13 @@ public class NPC_Info : MonoBehaviour
         timesList.Insert(4, midnight);
     }
 
+    private void Awake()
+    {
+       
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
+    }
+
 
     public void GiveSpecialMushroom()
     {
@@ -53,6 +64,7 @@ public class NPC_Info : MonoBehaviour
         {
             GameObject giftMush = Instantiate(specialMushroom, mushSpawnLoc.position, mushSpawnLoc.rotation, this.transform);
             gaveSpecialMushroom = true;
+            audioManager.PlaySFX(dropMushSFX);
         }
     }
 }

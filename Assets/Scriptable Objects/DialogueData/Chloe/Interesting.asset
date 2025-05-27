@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Interesting
   m_EditorClassIdentifier: 
   dialogue:
-  - 'I really really is.
+  - 'It really truly  is.
+
 
 
     {Space to Continue}'
-  - "They just might be listening...\n...everywhere. \nLike tiny microphones."
+  - "They just might be listening...\n...everywhere. \nLike tiny microphones.\n"
   responses: []

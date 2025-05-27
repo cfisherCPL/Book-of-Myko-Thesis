@@ -25,9 +25,14 @@ MonoBehaviour:
 
     If only I had more time to record!
 
+
     {Space
     to Continue}'
-  - Maybe the mushrooms could help me?
+  - 'Maybe the mushrooms could help me?
+
+
+
+'
   responses:
   - responseText: Brilliant idea, Chloe.
     dialogueObject: {fileID: 11400000, guid: 0fa6a34ca92763644829bdec5918305c, type: 2}

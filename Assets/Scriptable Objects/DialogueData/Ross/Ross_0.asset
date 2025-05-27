@@ -33,11 +33,9 @@ MonoBehaviour:
 
     likes my jokes.
 
-    Here''s one for ya:
 
-    {Space
-    to Continue}'
-  - "What do you call a \nmushroom encyclopedia?"
+    {Space to Continue}'
+  - "Here's one for ya:\n\nWhat do you call a \nmushroom encyclopedia?"
   responses:
   - responseText: A darn good book.
     dialogueObject: {fileID: 11400000, guid: 509ccaf9bc8035f4580d99229498a559, type: 2}

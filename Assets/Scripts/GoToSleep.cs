@@ -27,6 +27,8 @@ public class GoToSleep : MonoBehaviour
     [SerializeField] GameObject cabinExit;
     [SerializeField] CentralTracker centralTracker;
 
+    [SerializeField] public AudioClip sleepSFX;
+
     public bool preventInput;
 
     //stamina deprecated as mechanic 11-19-24
@@ -86,7 +88,7 @@ public class GoToSleep : MonoBehaviour
         audioManager.PlayAmbiance(audioManager.dayAmbiance);
         if (!audioManager.musicSource.isPlaying)
         {
-            audioManager.PlayMusic(audioManager.titleMusic);
+            audioManager.PlaySFX(sleepSFX);
         }
                
         requestLetterBox.GetComponent<LetterRequests>().GenerateNewRequest();

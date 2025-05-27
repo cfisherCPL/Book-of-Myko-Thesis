@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Perhaps
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Always with an eye forward.
+  - 'Always with an eye forward,
+
+    little mycologist.
 
 
     {Space to Continue}'

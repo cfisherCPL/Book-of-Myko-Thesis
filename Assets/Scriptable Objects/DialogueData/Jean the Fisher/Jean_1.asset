@@ -20,7 +20,6 @@ MonoBehaviour:
     my
     favorite retreat from town.
 
-
     {Space to Continue}'
   - 'Clear waters and calm
 
@@ -30,7 +29,11 @@ MonoBehaviour:
 
     {Space
     to Continue}'
-  - What brings you pond-side today?
+  - 'What brings you pond-side today?
+
+
+
+'
   responses:
   - responseText: Thinking about fishing.
     dialogueObject: {fileID: 11400000, guid: bbb8d66033aafd440a28019349f260f6, type: 2}
