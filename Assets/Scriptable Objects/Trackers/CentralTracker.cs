@@ -33,5 +33,8 @@ public class CentralTracker : ScriptableObject
         totalMushPicked = 0;
         totalMushPicked = 0;
         daysPassed = 0;
+
+        allMushFound = false;
+        endLetterRead = false;
     }
 }

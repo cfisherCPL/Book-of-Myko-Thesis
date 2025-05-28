@@ -122,6 +122,7 @@ public class GoToSleep : MonoBehaviour
             
         }
 
+        centralTracker.allMushFound = allMushFound;
         return allMushFound;
     }
 
