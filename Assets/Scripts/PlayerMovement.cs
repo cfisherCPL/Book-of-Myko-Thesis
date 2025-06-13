@@ -104,7 +104,8 @@ public class PlayerMovement : MonoBehaviour
                 saveConfirmPanel.activeSelf || 
                 dataSavedPanel.activeSelf ||
                 requestPanel.activeSelf||
-                storagePanel.activeSelf   
+                storagePanel.activeSelf ||
+                playerTeleport.preventInput
                 )
         {
             anim.enabled = false;

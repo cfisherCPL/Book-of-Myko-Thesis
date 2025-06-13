@@ -25,6 +25,8 @@ public class PlayerTeleport : MonoBehaviour
 
     public bool preventInput;
 
+    public bool teleportCoRoutineFinished;
+
     void Awake()
     {
         changeTime = false;
@@ -34,10 +36,18 @@ public class PlayerTeleport : MonoBehaviour
     }
     void Update()
     {
+        if (teleportCoRoutineFinished)
+        {
+            preventInput = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.E) && !preventInput)
         {
             if (currentTeleporter != null)
             {
+                //stop the player avatar from moving when they hit E
+                preventInput = true;
+
                 //move the player to the target location
                 StartCoroutine(ChangeLocation());
 
@@ -130,12 +140,14 @@ public class PlayerTeleport : MonoBehaviour
 
     public IEnumerator ChangeLocation()
     {
-        preventInput = true;
+
+        teleportCoRoutineFinished = false;
         fade.FadeIn();
+        Vector3 positionSave = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
         yield return new WaitForSeconds(1);
-        transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
+        transform.position = positionSave;
         fade.FadeOut();
         yield return new WaitForSeconds(0.3f);
-        preventInput = false;
+        teleportCoRoutineFinished = true;
     }
 }
