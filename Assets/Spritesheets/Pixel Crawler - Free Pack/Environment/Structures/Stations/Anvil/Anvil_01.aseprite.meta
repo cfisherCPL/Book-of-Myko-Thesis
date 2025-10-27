@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -824,286 +825,326 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 661054786
+    uuid:
+      value0: 3874708682
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -420258614
     name: Anvil_01
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Anvil_01_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: d89c9031e23a2974192fff93fff41663
-    - name: Anvil_01_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: 0aed670e0be0fac4bb260b194581ac38
-    - name: Anvil_01_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 47
       spriteId: 3429a8ec5200ce64c98270b7acb92a60
-    - name: Anvil_01_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 53
       spriteId: 78bb475e148018a4f9626824711eefd2
-    - name: Anvil_01_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 58
       spriteId: c8ef381aae9ca3d45828e4c64bfabcf4
-    - name: Anvil_01_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 61
       spriteId: 08d6157a3bf9a054d911929b1992840b
-    - name: Anvil_01_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 61
       spriteId: 06f08e54ed0147a489a3138cfa832360
-    - name: Anvil_01_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 55
       spriteId: 9d4a830ebf7e7c54380016bcae865b6d
-    - name: Anvil_01_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: 9c42e08ebb9d6de44a1050460e2fd9e8
-    - name: Anvil_01_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: 90a4878712ad6d94fbda2ce0622772d0
-    - name: Anvil_01_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: 4f22ba09d9a89b248be323f0aac4aadd
-    - name: Anvil_01_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 47
       spriteId: 7e0f7bada8f12764d9a9e0f65e0ff5ab
-    - name: Anvil_01_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 53
       spriteId: dbf037cbe73b3454499e13727c2a0bde
-    - name: Anvil_01_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 58
       spriteId: 73ba3fd04072c2a41b1f19a86c1a84f7
-    - name: Anvil_01_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 61
       spriteId: 8eb1c2f3d538ee347a45421f3b21b0e5
-    - name: Anvil_01_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 61
       spriteId: d52ac5f1e1e839b4fad6b32e48c0a998
-    - name: Anvil_01_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 55
       spriteId: 65a2b9895d2eb6d4590bcaa2dd7a3925
-    - name: Anvil_01_Frame_17
+    - name: Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: 6f8f9970ecae0d745a1ab8653040e876
-    - name: Anvil_01_Frame_18
+    - name: Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: c26ae6bddac50db40b60e7ec44655330
-    - name: Anvil_01_Frame_19
+    - name: Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 47
       spriteId: ee1588fab22a0264292b51eaa404a6a4
-    - name: Anvil_01_Frame_20
+    - name: Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 53
       spriteId: 6a3502916cd75104691597e638fa67cb
-    - name: Anvil_01_Frame_21
+    - name: Frame_21
       frameIndex: 21
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 58
       spriteId: 808576c68bfe3124b8091661e1c2d06a
-    - name: Anvil_01_Frame_22
+    - name: Frame_22
       frameIndex: 22
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 61
       spriteId: a22460c8351764649ab610d68b84265c
-    - name: Anvil_01_Frame_23
+    - name: Frame_23
       frameIndex: 23
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 61
       spriteId: a8c6a0b104e0dd8428955d3078ff83b9
-    - name: Anvil_01_Frame_24
+    - name: Frame_24
       frameIndex: 24
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 55
       spriteId: 0255735c03a26174ba1b2b59625bee2f
-    - name: Anvil_01_Frame_25
+    - name: Frame_25
       frameIndex: 25
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: 678e049ef9fd4da41a25de972328a7a1
-    - name: Anvil_01_Frame_26
+    - name: Frame_26
       frameIndex: 26
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: a34bdb5230063af45847dda9caebb92f
-    - name: Anvil_01_Frame_27
+    - name: Frame_27
       frameIndex: 27
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: bdb7345e96ed8ff4b9aacfc0f30013c5
-    - name: Anvil_01_Frame_28
+    - name: Frame_28
       frameIndex: 28
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: 0709e5b3d4235ea45adf52c30cc63553
-    - name: Anvil_01_Frame_29
+    - name: Frame_29
       frameIndex: 29
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: c1463d2a3525a5f418e73b744efb0ea4
-    - name: Anvil_01_Frame_30
+    - name: Frame_30
       frameIndex: 30
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: b0830a389c866b94a9fb2871cfba8e0c
-    - name: Anvil_01_Frame_31
+    - name: Frame_31
       frameIndex: 31
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: 85b9383fee17ef248b2a65ac48402957
-    - name: Anvil_01_Frame_32
+    - name: Frame_32
       frameIndex: 32
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: d3ede69bfe842204eb4f53cce2971d3c
-    - name: Anvil_01_Frame_33
+    - name: Frame_33
       frameIndex: 33
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
         width: 62
         height: 41
       spriteId: b4a4767488cf99f4ca4250989a52f1de
-    - name: Anvil_01_Frame_34
+    - name: Frame_34
       frameIndex: 34
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 2
@@ -1117,3 +1158,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 80}
+  previousTextureSize: {x: 512, y: 512}

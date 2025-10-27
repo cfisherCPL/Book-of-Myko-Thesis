@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -364,102 +365,119 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -841695177
+    uuid:
+      value0: 408985043
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 408985043
     name: Pan_03
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Pan_03_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 1
         width: 23
         height: 14
       spriteId: 7385dd5c9745bff4dafac1e1d6ee53a4
-    - name: Pan_03_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 1
         width: 23
         height: 13
       spriteId: 16ceb6e929b73cd4fbe8a846a0742053
-    - name: Pan_03_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 1
         width: 23
         height: 14
       spriteId: 4b423091586800241a8367b113f1ad7c
-    - name: Pan_03_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 1
         width: 23
         height: 13
       spriteId: 7424d355250ff9146a4b6fbf16032527
-    - name: Pan_03_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 1
         width: 24
         height: 20
       spriteId: d117b71f9d730ae4893d85fb5fa851d5
-    - name: Pan_03_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 1
         width: 25
         height: 23
       spriteId: a5b4f5a1db75adb4582bdde7213d338d
-    - name: Pan_03_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 1
         width: 23
         height: 27
       spriteId: 9cd49517f43bfa7488a09d2facc8535d
-    - name: Pan_03_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 5
         y: 1
         width: 25
         height: 24
       spriteId: 8489b59c1c066da498708dc95dca0b25
-    - name: Pan_03_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 1
         width: 23
         height: 17
       spriteId: 6b9919911a7b69c419aea9cc7faf4541
-    - name: Pan_03_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 1
         width: 23
         height: 15
       spriteId: d676a6b14e32d854cab18fb5cd40bb7a
-    - name: Pan_03_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 1
         width: 23
         height: 14
       spriteId: 9a3cdd5f07bce714c839814c864443a4
-    - name: Pan_03_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 1
@@ -473,3 +491,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
+  previousTextureSize: {x: 128, y: 128}

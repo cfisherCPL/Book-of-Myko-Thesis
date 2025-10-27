@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -244,54 +245,65 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 121444545
+    uuid:
+      value0: 2066650373
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 2066650373
     name: Walk_Side
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Walk_Side_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 25
         y: 16
         width: 14
         height: 30
       spriteId: 35ce6639aa5f354418f9802aa00f0276
-    - name: Walk_Side_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 25
         y: 16
         width: 13
         height: 29
       spriteId: 7540804da2a420643a0d053cff0608e6
-    - name: Walk_Side_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 25
         y: 16
         width: 13
         height: 30
       spriteId: 1d574c882f24df34194d9c3bf40b6287
-    - name: Walk_Side_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 25
         y: 17
         width: 13
         height: 29
       spriteId: 0e25911c2e6f77640a9c89be9da6b299
-    - name: Walk_Side_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 25
         y: 16
         width: 14
         height: 29
       spriteId: 352f81087c53b0f47a218089bd0b434e
-    - name: Walk_Side_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
@@ -305,3 +317,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 64}
+  previousTextureSize: {x: 64, y: 128}

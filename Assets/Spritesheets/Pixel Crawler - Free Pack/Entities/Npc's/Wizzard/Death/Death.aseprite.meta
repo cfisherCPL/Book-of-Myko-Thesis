@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -244,54 +245,65 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -814945124
+    uuid:
+      value0: 3611345420
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -683621876
     name: Death
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Death_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 0
         width: 25
         height: 32
       spriteId: b65c455a906f6914cb53e270f8c65c7d
-    - name: Death_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 0
         width: 25
         height: 30
       spriteId: c6976998dfbb8994394aa2a3bfa98759
-    - name: Death_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 0
         width: 37
         height: 25
       spriteId: 4d5e20dce47b5a84bb43a8ec07056f30
-    - name: Death_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 11
         y: 0
         width: 40
         height: 17
       spriteId: 7abdfa08f3d364d4bbb130ad195f5a0a
-    - name: Death_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 0
         width: 42
         height: 14
       spriteId: e2b1d8e4353bc554da0e37db33b46342
-    - name: Death_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 0
@@ -305,3 +317,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 32}
+  previousTextureSize: {x: 128, y: 128}

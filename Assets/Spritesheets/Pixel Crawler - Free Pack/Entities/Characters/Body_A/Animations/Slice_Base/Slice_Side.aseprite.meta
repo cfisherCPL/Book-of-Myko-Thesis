@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -284,70 +285,83 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1026692734
+    uuid:
+      value0: 4184195594
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -110771702
     name: Slice_Side
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Slice_Side_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 16
         width: 33
         height: 35
       spriteId: 8da9b8a41e7837f4c8eb16b141f2c5b6
-    - name: Slice_Side_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 16
         width: 33
         height: 36
       spriteId: 688dd5bbd4c059e48b5a8265c3f47332
-    - name: Slice_Side_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 7
         y: 16
         width: 32
         height: 37
       spriteId: a655c96686c0a8e40953b6c82f1cd933
-    - name: Slice_Side_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 6
         width: 62
         height: 37
       spriteId: 28ca5a1e8125d514c93f6627dd757c11
-    - name: Slice_Side_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 23
         y: 16
         width: 41
         height: 26
       spriteId: 56bc3dc1b8007414b960b0885c70da97
-    - name: Slice_Side_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
         width: 36
         height: 26
       spriteId: f4d6a166898bf584f89748c412413a46
-    - name: Slice_Side_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
         width: 25
         height: 28
       spriteId: f43ae12c44766c547a277e223c58ae74
-    - name: Slice_Side_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 23
         y: 16
@@ -361,3 +375,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 64}
+  previousTextureSize: {x: 128, y: 128}
