@@ -87,9 +87,12 @@ public class PlayerTeleport : MonoBehaviour
                 }
                 else if (!audioManager.musicSource.isPlaying)
                 {
-                    int numClips = currentTeleporter.GetComponent<Teleporter>().musicToStart.Length;
+                    if (currentTeleporter.GetComponent<Teleporter>().musicToStart.Length > 0)
+                    {
+                        int numClips = currentTeleporter.GetComponent<Teleporter>().musicToStart.Length;
 
-                    audioManager.PlayMusic(currentTeleporter.GetComponent<Teleporter>().musicToStart[(int)Random.Range(0,numClips)]);
+                        audioManager.PlayMusic(currentTeleporter.GetComponent<Teleporter>().musicToStart[(int)Random.Range(0, numClips)]);
+                    }
                 }
 
                 if (makeDark)
