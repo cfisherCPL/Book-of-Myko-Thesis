@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -244,54 +245,65 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1171502980
+    uuid:
+      value0: 3935004012
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -359963284
     name: Walk_Down
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Walk_Down_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 25
         y: 16
         width: 14
         height: 30
       spriteId: ed82b2acac9f16c4585e517f38c98218
-    - name: Walk_Down_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 17
         width: 16
         height: 28
       spriteId: b521744d626ceae4ca8cd604a88886ac
-    - name: Walk_Down_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
         width: 16
         height: 30
       spriteId: e74e828415d446745b67e42d8e69820d
-    - name: Walk_Down_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 25
         y: 16
         width: 14
         height: 30
       spriteId: 42141113fc1e6804b99c46dc883d396d
-    - name: Walk_Down_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 17
         width: 16
         height: 28
       spriteId: 8b351a27697835e469618d22a1b3af32
-    - name: Walk_Down_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
@@ -305,3 +317,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 64}
+  previousTextureSize: {x: 64, y: 128}

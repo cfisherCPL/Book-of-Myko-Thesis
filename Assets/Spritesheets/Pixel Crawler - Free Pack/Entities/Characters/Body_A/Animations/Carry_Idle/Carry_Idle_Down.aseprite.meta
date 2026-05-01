@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -204,38 +205,47 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -2026140775
+    uuid:
+      value0: 2905088317
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -1389878979
     name: Carry_Idle_Down
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Carry_Idle_Down_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
         width: 16
         height: 30
       spriteId: 6ede534295149c94084661fe053d85a1
-    - name: Carry_Idle_Down_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
         width: 16
         height: 29
       spriteId: d0b0dfe97c56572478606cf0dfc3d738
-    - name: Carry_Idle_Down_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
         width: 16
         height: 28
       spriteId: fe96e9dfa6016894cb575eef08e5058a
-    - name: Carry_Idle_Down_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
@@ -249,3 +259,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 64}
+  previousTextureSize: {x: 64, y: 128}

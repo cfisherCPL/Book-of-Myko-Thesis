@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -284,70 +285,83 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2098449472
+    uuid:
+      value0: 2450279744
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -1844687552
     name: Collect_Up
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Collect_Up_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
         width: 16
         height: 30
       spriteId: 42689e20e4d152f4ba3b8c59600544eb
-    - name: Collect_Up_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
         width: 16
         height: 28
       spriteId: dcd7fa20550d71a41a72f400d6834c18
-    - name: Collect_Up_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 13
         height: 26
       spriteId: e253b78fa2352594d8c827d0ea7778ee
-    - name: Collect_Up_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 13
         height: 25
       spriteId: b46769a606379484c80f66982ad12fd5
-    - name: Collect_Up_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 13
         height: 26
       spriteId: 99038665ea95e8f41b31e516bc242230
-    - name: Collect_Up_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 13
         height: 28
       spriteId: 43ff841a5c4f3584eacb08882acdf0e5
-    - name: Collect_Up_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 24
         y: 16
         width: 16
         height: 31
       spriteId: 306ba506bc6390c4a914fbc7a26d5415
-    - name: Collect_Up_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 22
         y: 16
@@ -361,3 +375,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 64}
+  previousTextureSize: {x: 128, y: 128}

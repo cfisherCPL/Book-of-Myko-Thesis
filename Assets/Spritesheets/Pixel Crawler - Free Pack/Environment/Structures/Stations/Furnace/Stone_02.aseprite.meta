@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -204,38 +205,47 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1293474930
+    uuid:
+      value0: 1803440966
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 1803440966
     name: Stone_02
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Stone_02_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: -126
         width: 151
         height: 185
       spriteId: 0d600eb9650d6e6419356756c060dc69
-    - name: Stone_02_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: -126
         width: 151
         height: 185
       spriteId: 6c30a3a02011a2e449aacf4a6d999fd2
-    - name: Stone_02_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: -126
         width: 151
         height: 185
       spriteId: c664a33df034c4244b1e5fc0a68370a8
-    - name: Stone_02_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: -126
@@ -249,3 +259,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 48, y: 64}
+  previousTextureSize: {x: 512, y: 512}

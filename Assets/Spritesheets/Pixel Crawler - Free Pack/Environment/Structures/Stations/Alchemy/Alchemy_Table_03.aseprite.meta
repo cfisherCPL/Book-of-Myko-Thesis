@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -564,182 +565,209 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 370825354
+    uuid:
+      value0: 1623717682
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 1623717682
     name: Alchemy_Table_03
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Alchemy_Table_03_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 3e6efeb6fa20aca408deead27673f081
-    - name: Alchemy_Table_03_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 189f89eee3249384397b65508f237ae4
-    - name: Alchemy_Table_03_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: a2d46892fa9e6184d822090ae530dd4f
-    - name: Alchemy_Table_03_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 38af452a52fc6dc40b078a63ed9e7920
-    - name: Alchemy_Table_03_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 28d5e55f19422d541bc16e630db81307
-    - name: Alchemy_Table_03_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 3908fcb6b0cdffb49a00dae34ebbe1ac
-    - name: Alchemy_Table_03_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 5c2e6db8d2a835748a1cd64d313d858d
-    - name: Alchemy_Table_03_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 11372c10d6e7b0a4abd4ed20fb0c0214
-    - name: Alchemy_Table_03_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: cb65c35d1bacab747b55af1c6965666d
-    - name: Alchemy_Table_03_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: c8a47ff8a13dce546b0064fc4bf7b801
-    - name: Alchemy_Table_03_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: b7c5f22adc6472d43b488406bf7c8a9a
-    - name: Alchemy_Table_03_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 40ffcda40095ab445a20fecab1a52a1b
-    - name: Alchemy_Table_03_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 222666fddc5f788488a7249210d33dcb
-    - name: Alchemy_Table_03_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 2cf61f7f4bded054e993d3d0de8c1c35
-    - name: Alchemy_Table_03_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 67cb0ac2d019b8c42910ec832b94322a
-    - name: Alchemy_Table_03_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: b65614650dd454e4b984d5ced3872859
-    - name: Alchemy_Table_03_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 1a41a03215de73b43a7bc98bea3a0c81
-    - name: Alchemy_Table_03_Frame_17
+    - name: Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 110a48cb639a25444bab69cf43deefac
-    - name: Alchemy_Table_03_Frame_18
+    - name: Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: d39759cc33595004eae4a7c2107e6742
-    - name: Alchemy_Table_03_Frame_19
+    - name: Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 3b75c24954b64284ebd3f333a353036e
-    - name: Alchemy_Table_03_Frame_20
+    - name: Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 80
         height: 72
       spriteId: 9e179b42092566148aa7f17b4bf75ef2
-    - name: Alchemy_Table_03_Frame_21
+    - name: Frame_21
       frameIndex: 21
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
@@ -753,3 +781,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 80, y: 80}
+  previousTextureSize: {x: 512, y: 512}

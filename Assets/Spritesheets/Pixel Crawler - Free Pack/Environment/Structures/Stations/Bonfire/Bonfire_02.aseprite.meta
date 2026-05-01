@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -204,38 +205,47 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -642558780
+    uuid:
+      value0: 820591828
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 820591828
     name: Bonfire_02
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Bonfire_02_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 30
         height: 29
       spriteId: d7245b4e2dabc3c4a95f738ec6b7929e
-    - name: Bonfire_02_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 30
         height: 29
       spriteId: 10d833290e41dec48b946bd81c116ae5
-    - name: Bonfire_02_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 30
         height: 29
       spriteId: 73c3f3b3b465a6b4e9bb9dab82ef71f0
-    - name: Bonfire_02_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
@@ -249,3 +259,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
+  previousTextureSize: {x: 128, y: 128}

@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -1324,486 +1325,551 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1744633210
+    uuid:
+      value0: 2471025634
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -1823941662
     name: Level_3
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Level_3_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 86d13838e509f8445a42c9f3354d83bb
-    - name: Level_3_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: fcf7911da7217754881e7e77b135c088
-    - name: Level_3_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 8e65aaae1385bc947901caf94dbfdeda
-    - name: Level_3_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: c02e5058d03d35749a4c9823691e2cba
-    - name: Level_3_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 259fb2385b6defa46b247ba0c4f2b523
-    - name: Level_3_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 68e2820c15fda6c4aa1e88abda803b86
-    - name: Level_3_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: 87ea79a8b39c0f2409d85af009b84aa9
-    - name: Level_3_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: 479b7e9090cf9854aa351e8e42ae905b
-    - name: Level_3_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: dbbe341754d0abb4486b7b6781e01f24
-    - name: Level_3_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: 494d25625f9ecdb459bbcc1941f9472c
-    - name: Level_3_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: a93d786c311784248b826ef421274251
-    - name: Level_3_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: 2422b6fbe5342ff49bd7be7fc73ddb31
-    - name: Level_3_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: 3013bd34b437d5f42854830db4364dd2
-    - name: Level_3_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: 6b6766136fb401242951ac6e6efcb54a
-    - name: Level_3_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: 8e1eb8b586fbf334492f4afd46c6b3fe
-    - name: Level_3_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 4
         width: 112
         height: 75
       spriteId: 1af3025a2861b4344a48a725b87a4dfd
-    - name: Level_3_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: d4f1ed94b69ce8d45bdd79abc9de7eea
-    - name: Level_3_Frame_17
+    - name: Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: a9bef891385411f4495e9c8912274cf9
-    - name: Level_3_Frame_18
+    - name: Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 18b7de71f98c9174e963df2dc8426b3a
-    - name: Level_3_Frame_19
+    - name: Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 6ae118b42290f4a48906cc2e21e3713a
-    - name: Level_3_Frame_20
+    - name: Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: e5f66b8447bd8fe44ad795243601b7ce
-    - name: Level_3_Frame_21
+    - name: Frame_21
       frameIndex: 21
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: f7c239a1471e7c843b5895446e5f1f36
-    - name: Level_3_Frame_22
+    - name: Frame_22
       frameIndex: 22
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 9da3bca257775374589a36ecbdc34f23
-    - name: Level_3_Frame_23
+    - name: Frame_23
       frameIndex: 23
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: bcaabd3b90a90a941b5f5f53fe89cebf
-    - name: Level_3_Frame_24
+    - name: Frame_24
       frameIndex: 24
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 497f8938383439747b674be17091fb89
-    - name: Level_3_Frame_25
+    - name: Frame_25
       frameIndex: 25
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: fed6cecf6f219214b865bdb4a3e84986
-    - name: Level_3_Frame_26
+    - name: Frame_26
       frameIndex: 26
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 6b284c5b1fb635c49915f6859e317d72
-    - name: Level_3_Frame_27
+    - name: Frame_27
       frameIndex: 27
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: a001882c33434dd4f8ed61948c2b939a
-    - name: Level_3_Frame_28
+    - name: Frame_28
       frameIndex: 28
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: c44b4fc1911cf6e499834ae32e6f311d
-    - name: Level_3_Frame_29
+    - name: Frame_29
       frameIndex: 29
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 9f196d3c132efc7449129116871fa11f
-    - name: Level_3_Frame_30
+    - name: Frame_30
       frameIndex: 30
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: ad7e74cb8728c1a468f61b69ff15ed81
-    - name: Level_3_Frame_31
+    - name: Frame_31
       frameIndex: 31
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: df0b417b8064bfd48b0a65b8bccafa84
-    - name: Level_3_Frame_32
+    - name: Frame_32
       frameIndex: 32
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 555e70b876ef4c14cbe1919b04359de7
-    - name: Level_3_Frame_33
+    - name: Frame_33
       frameIndex: 33
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 2da67ef78c9e01243a23369a6f1bcdeb
-    - name: Level_3_Frame_34
+    - name: Frame_34
       frameIndex: 34
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 37d57f3dafe309b44ac0372c10dffcbe
-    - name: Level_3_Frame_35
+    - name: Frame_35
       frameIndex: 35
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: b2157834a7389b24dbd69b0798c1f765
-    - name: Level_3_Frame_36
+    - name: Frame_36
       frameIndex: 36
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: de2e9b64dcb7fbc4aafc34abc2a5b50d
-    - name: Level_3_Frame_37
+    - name: Frame_37
       frameIndex: 37
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 43a003747053c384889443a5caa4efc6
-    - name: Level_3_Frame_38
+    - name: Frame_38
       frameIndex: 38
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 1bb66ad33251e0f42b16b6b471e59aeb
-    - name: Level_3_Frame_39
+    - name: Frame_39
       frameIndex: 39
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: fc44339111788de4aa31bf52f1da6344
-    - name: Level_3_Frame_40
+    - name: Frame_40
       frameIndex: 40
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: e92bec76561584a46819f5e4e1a5f49d
-    - name: Level_3_Frame_41
+    - name: Frame_41
       frameIndex: 41
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: ce919bd8040f91941a8f09532ec98e3a
-    - name: Level_3_Frame_42
+    - name: Frame_42
       frameIndex: 42
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 9dd852e4e1b31bf45b23050186b2ff48
-    - name: Level_3_Frame_43
+    - name: Frame_43
       frameIndex: 43
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 7bf52881e6fcda84e97834bb8d6c8c77
-    - name: Level_3_Frame_44
+    - name: Frame_44
       frameIndex: 44
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: cfd8eab62d3c3034c9b2045a83bb2ee5
-    - name: Level_3_Frame_45
+    - name: Frame_45
       frameIndex: 45
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 001e5259f8139b54b8c5b1d869027f8e
-    - name: Level_3_Frame_46
+    - name: Frame_46
       frameIndex: 46
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: bb2bbf36a4cb2654ea4bff008be1af29
-    - name: Level_3_Frame_47
+    - name: Frame_47
       frameIndex: 47
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: fde5f5df364ab9d4984f8a4ac786d637
-    - name: Level_3_Frame_48
+    - name: Frame_48
       frameIndex: 48
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 24ea9fec4eec4d24b900dbfdbf63f8f3
-    - name: Level_3_Frame_49
+    - name: Frame_49
       frameIndex: 49
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 68bf96270c26995499510e4818c739ec
-    - name: Level_3_Frame_50
+    - name: Frame_50
       frameIndex: 50
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: f61491eeb73c9654eb36decc1c6ec74a
-    - name: Level_3_Frame_51
+    - name: Frame_51
       frameIndex: 51
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 148f870bcdd8d4344ac5b53411dbbb1a
-    - name: Level_3_Frame_52
+    - name: Frame_52
       frameIndex: 52
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 7f3ee8c45f0680a418866f2443164015
-    - name: Level_3_Frame_53
+    - name: Frame_53
       frameIndex: 53
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 774008f61463f5141a43281d8a58c67a
-    - name: Level_3_Frame_54
+    - name: Frame_54
       frameIndex: 54
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 58e53541d7437b74e90b9d912c80c730
-    - name: Level_3_Frame_55
+    - name: Frame_55
       frameIndex: 55
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: 4b402c598c2df6c45b164e5e48e769f4
-    - name: Level_3_Frame_56
+    - name: Frame_56
       frameIndex: 56
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: a74a1d0c832aade4089bdc7fad73c6e9
-    - name: Level_3_Frame_57
+    - name: Frame_57
       frameIndex: 57
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: ed6998ce47151cb40be59e1879f75ca0
-    - name: Level_3_Frame_58
+    - name: Frame_58
       frameIndex: 58
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 112
         height: 80
       spriteId: e393aa62d47d78d488a228193ab6caeb
-    - name: Level_3_Frame_59
+    - name: Frame_59
       frameIndex: 59
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
@@ -1817,3 +1883,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 112, y: 80}
+  previousTextureSize: {x: 1024, y: 1024}

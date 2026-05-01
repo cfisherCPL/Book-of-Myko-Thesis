@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -284,70 +285,83 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1157458687
+    uuid:
+      value0: 1078940229
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 1078940229
     name: Crush_Up
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Crush_Up_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 19
         height: 30
       spriteId: 472baf6fb4e663d469c7fc3dd7dcbbbe
-    - name: Crush_Up_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 19
         height: 31
       spriteId: 1e8852950075e014bbb9547a379b00c9
-    - name: Crush_Up_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 19
         height: 32
       spriteId: 4a5e665cf5ed8554b9a05e8e94ea434d
-    - name: Crush_Up_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 15
         height: 33
       spriteId: 5a42c5867814341488b2b287cde0d6a9
-    - name: Crush_Up_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 15
         height: 31
       spriteId: a5bd27fa7e71c3649ab61b7f0039add1
-    - name: Crush_Up_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 15
         height: 34
       spriteId: eeab94b5bbe5dd54a83819df975f5f44
-    - name: Crush_Up_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
         width: 15
         height: 37
       spriteId: 774120a8d3d93af4981a353351619016
-    - name: Crush_Up_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 26
         y: 16
@@ -361,3 +375,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 64}
+  previousTextureSize: {x: 128, y: 128}

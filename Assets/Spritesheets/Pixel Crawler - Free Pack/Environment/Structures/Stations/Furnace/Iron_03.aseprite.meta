@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -204,38 +205,47 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 461274156
+    uuid:
+      value0: 3019539420
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -1275427876
     name: Iron_03
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Iron_03_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 48
         height: 64
       spriteId: 27a292c21dd89554b837212b84329d64
-    - name: Iron_03_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 48
         height: 64
       spriteId: 30dde225dc33ebc41916cc69db720272
-    - name: Iron_03_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 48
         height: 64
       spriteId: dadbf71eaf8dfba4e9407eeee9d1bca5
-    - name: Iron_03_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
@@ -249,3 +259,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 48, y: 64}
+  previousTextureSize: {x: 128, y: 256}
